@@ -1,0 +1,4628 @@
+nohup: 忽略输入
+/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/../models/layers/monoconv.py:54: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  'mono_exponent', torch.tensor(#mono_exponent被注册为模型的一部分，但不会作为可训练的参数进行优化，生成的m个滤波器都在这。
+/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/..
+iid:True, method:slice, seed:2, model:resnet18, variant:mono, cifar100:False, onebyone:False,checkpoint,Noneteacher:None
+==> Preparing data..
+Files already downloaded and verified
+Files already downloaded and verified
+==> Building model..
+layer4.0: 1323008
+layer3.0: 333824
+layer2.0: 84992
+1.conv1: 17280
+layer4.1: 10240
+linear: 5130
+layer3.1: 5120
+layer1.0: 2560
+layer2.1: 2560
+1.bn1: 1920
+layer1.1: 1280
+Epoch:0
+0
+Train Loss: 1.572 | Acc: 41.598 (20799/50000)
+Train Loss: 1.118 | Acc: 60.230 (30115/50000)
+1
+Train Loss: 1.612 | Acc: 40.202 (20101/50000)
+Train Loss: 1.152 | Acc: 58.666 (29333/50000)
+2
+Train Loss: 1.620 | Acc: 39.414 (19707/50000)
+Train Loss: 1.158 | Acc: 58.292 (29146/50000)
+3
+Train Loss: 1.573 | Acc: 41.338 (20669/50000)
+Train Loss: 1.131 | Acc: 59.550 (29775/50000)
+4
+Train Loss: 1.608 | Acc: 40.030 (20015/50000)
+Train Loss: 1.146 | Acc: 58.740 (29370/50000)
+5
+Train Loss: 1.601 | Acc: 40.360 (20180/50000)
+Train Loss: 1.137 | Acc: 58.940 (29470/50000)
+6
+Train Loss: 1.613 | Acc: 40.304 (20152/50000)
+Train Loss: 1.172 | Acc: 57.598 (28799/50000)
+7
+Train Loss: 1.585 | Acc: 40.838 (20419/50000)
+Train Loss: 1.131 | Acc: 59.354 (29677/50000)
+8
+Train Loss: 1.605 | Acc: 40.048 (20024/50000)
+Train Loss: 1.167 | Acc: 57.882 (28941/50000)
+9
+Train Loss: 1.625 | Acc: 39.622 (19811/50000)
+Train Loss: 1.173 | Acc: 57.754 (28877/50000)
+10
+Train Loss: 1.613 | Acc: 39.814 (19907/50000)
+Train Loss: 1.134 | Acc: 59.374 (29687/50000)
+layer2.0
+layer3.0
+layer3.1
+layer2.1
+layer1.1
+1.bn1
+layer4.1
+layer1.0
+1.conv1
+linear
+layer4.0
+Test Loss: 2.455 | Acc: 12.890 (1289/10000)
+Epoch:1
+0
+Train Loss: 1.271 | Acc: 53.724 (26862/50000)
+Train Loss: 0.919 | Acc: 67.354 (33677/50000)
+1
+Train Loss: 1.114 | Acc: 59.928 (29964/50000)
+Train Loss: 0.816 | Acc: 71.198 (35599/50000)
+2
+Train Loss: 0.984 | Acc: 64.798 (32399/50000)
+Train Loss: 0.743 | Acc: 73.934 (36967/50000)
+3
+Train Loss: 0.965 | Acc: 65.848 (32924/50000)
+Train Loss: 0.731 | Acc: 74.394 (37197/50000)
+4
+Train Loss: 0.956 | Acc: 66.148 (33074/50000)
+Train Loss: 0.726 | Acc: 74.442 (37221/50000)
+5
+Train Loss: 0.937 | Acc: 66.606 (33303/50000)
+Train Loss: 0.717 | Acc: 74.904 (37452/50000)
+6
+Train Loss: 0.939 | Acc: 66.546 (33273/50000)
+Train Loss: 0.720 | Acc: 74.746 (37373/50000)
+7
+Train Loss: 0.917 | Acc: 67.320 (33660/50000)
+Train Loss: 0.705 | Acc: 75.252 (37626/50000)
+8
+Train Loss: 0.889 | Acc: 68.598 (34299/50000)
+Train Loss: 0.690 | Acc: 75.798 (37899/50000)
+9
+Train Loss: 0.826 | Acc: 70.908 (35454/50000)
+Train Loss: 0.652 | Acc: 77.058 (38529/50000)
+10
+Train Loss: 0.825 | Acc: 70.712 (35356/50000)
+Train Loss: 0.647 | Acc: 77.216 (38608/50000)
+linear
+layer1.1
+layer1.0
+1.conv1
+layer3.1
+layer4.1
+layer2.1
+layer3.0
+1.bn1
+layer4.0
+layer2.0
+Test Loss: 1.990 | Acc: 43.510 (4351/10000)
+Epoch:2
+0
+Train Loss: 0.653 | Acc: 77.064 (38532/50000)
+Train Loss: 0.532 | Acc: 81.326 (40663/50000)
+1
+Train Loss: 0.654 | Acc: 77.012 (38506/50000)
+Train Loss: 0.530 | Acc: 81.310 (40655/50000)
+2
+Train Loss: 0.650 | Acc: 77.074 (38537/50000)
+Train Loss: 0.523 | Acc: 81.588 (40794/50000)
+3
+Train Loss: 0.640 | Acc: 77.442 (38721/50000)
+Train Loss: 0.517 | Acc: 81.782 (40891/50000)
+4
+Train Loss: 0.639 | Acc: 77.514 (38757/50000)
+Train Loss: 0.519 | Acc: 81.824 (40912/50000)
+5
+Train Loss: 0.626 | Acc: 77.878 (38939/50000)
+Train Loss: 0.505 | Acc: 82.228 (41114/50000)
+6
+Train Loss: 0.618 | Acc: 78.344 (39172/50000)
+Train Loss: 0.494 | Acc: 82.630 (41315/50000)
+7
+Train Loss: 0.603 | Acc: 78.810 (39405/50000)
+Train Loss: 0.483 | Acc: 83.112 (41556/50000)
+8
+Train Loss: 0.541 | Acc: 80.858 (40429/50000)
+Train Loss: 0.437 | Acc: 84.624 (42312/50000)
+9
+Train Loss: 0.535 | Acc: 81.126 (40563/50000)
+Train Loss: 0.441 | Acc: 84.450 (42225/50000)
+10
+Train Loss: 0.460 | Acc: 83.616 (41808/50000)
+Train Loss: 0.387 | Acc: 86.220 (43110/50000)
+layer1.0
+1.conv1
+layer4.1
+layer1.1
+1.bn1
+layer2.0
+layer3.1
+linear
+layer3.0
+layer4.0
+layer2.1
+Test Loss: 1.433 | Acc: 57.350 (5735/10000)
+Epoch:3
+0
+Train Loss: 0.415 | Acc: 85.208 (42604/50000)
+Train Loss: 0.344 | Acc: 87.796 (43898/50000)
+1
+Train Loss: 0.408 | Acc: 85.556 (42778/50000)
+Train Loss: 0.342 | Acc: 87.764 (43882/50000)
+2
+Train Loss: 0.412 | Acc: 85.466 (42733/50000)
+Train Loss: 0.341 | Acc: 87.878 (43939/50000)
+3
+Train Loss: 0.403 | Acc: 85.728 (42864/50000)
+Train Loss: 0.332 | Acc: 88.192 (44096/50000)
+4
+Train Loss: 0.404 | Acc: 85.596 (42798/50000)
+Train Loss: 0.328 | Acc: 88.418 (44209/50000)
+5
+Train Loss: 0.398 | Acc: 85.830 (42915/50000)
+Train Loss: 0.327 | Acc: 88.400 (44200/50000)
+6
+Train Loss: 0.385 | Acc: 86.322 (43161/50000)
+Train Loss: 0.321 | Acc: 88.580 (44290/50000)
+7
+Train Loss: 0.382 | Acc: 86.286 (43143/50000)
+Train Loss: 0.314 | Acc: 88.770 (44385/50000)
+8
+Train Loss: 0.401 | Acc: 85.578 (42789/50000)
+Train Loss: 0.314 | Acc: 88.852 (44426/50000)
+9
+Train Loss: 0.358 | Acc: 87.200 (43600/50000)
+Train Loss: 0.291 | Acc: 89.744 (44872/50000)
+10
+Train Loss: 0.282 | Acc: 89.820 (44910/50000)
+Train Loss: 0.250 | Acc: 90.980 (45490/50000)
+layer1.1
+layer3.1
+layer2.0
+layer3.0
+layer2.1
+layer4.0
+1.bn1
+linear
+layer4.1
+layer1.0
+1.conv1
+Test Loss: 1.858 | Acc: 54.590 (5459/10000)
+Epoch:4
+0
+Train Loss: 0.304 | Acc: 89.054 (44527/50000)
+Train Loss: 0.245 | Acc: 91.248 (45624/50000)
+1
+Train Loss: 0.296 | Acc: 89.612 (44806/50000)
+Train Loss: 0.246 | Acc: 91.180 (45590/50000)
+2
+Train Loss: 0.298 | Acc: 89.356 (44678/50000)
+Train Loss: 0.241 | Acc: 91.502 (45751/50000)
+3
+Train Loss: 0.286 | Acc: 89.868 (44934/50000)
+Train Loss: 0.238 | Acc: 91.398 (45699/50000)
+4
+Train Loss: 0.247 | Acc: 91.182 (45591/50000)
+Train Loss: 0.213 | Acc: 92.466 (46233/50000)
+5
+Train Loss: 0.244 | Acc: 91.294 (45647/50000)
+Train Loss: 0.211 | Acc: 92.416 (46208/50000)
+6
+Train Loss: 0.186 | Acc: 93.570 (46785/50000)
+Train Loss: 0.182 | Acc: 93.426 (46713/50000)
+7
+Train Loss: 0.192 | Acc: 93.322 (46661/50000)
+Train Loss: 0.181 | Acc: 93.620 (46810/50000)
+8
+Train Loss: 0.218 | Acc: 92.150 (46075/50000)
+Train Loss: 0.202 | Acc: 92.732 (46366/50000)
+9
+Train Loss: 0.216 | Acc: 92.274 (46137/50000)
+Train Loss: 0.194 | Acc: 93.068 (46534/50000)
+10
+Train Loss: 0.215 | Acc: 92.176 (46088/50000)
+Train Loss: 0.186 | Acc: 93.342 (46671/50000)
+layer4.0
+linear
+1.conv1
+layer3.0
+layer3.1
+layer2.1
+1.bn1
+layer4.1
+layer1.1
+layer1.0
+layer2.0
+Test Loss: 1.614 | Acc: 58.320 (5832/10000)
+Epoch:5
+0
+Train Loss: 0.203 | Acc: 92.764 (46382/50000)
+Train Loss: 0.172 | Acc: 93.824 (46912/50000)
+1
+Train Loss: 0.149 | Acc: 94.810 (47405/50000)
+Train Loss: 0.144 | Acc: 94.858 (47429/50000)
+2
+Train Loss: 0.179 | Acc: 93.574 (46787/50000)
+Train Loss: 0.161 | Acc: 94.246 (47123/50000)
+3
+Train Loss: 0.188 | Acc: 93.246 (46623/50000)
+Train Loss: 0.159 | Acc: 94.450 (47225/50000)
+4
+Train Loss: 0.151 | Acc: 94.494 (47247/50000)
+Train Loss: 0.143 | Acc: 94.936 (47468/50000)
+5
+Train Loss: 0.157 | Acc: 94.490 (47245/50000)
+Train Loss: 0.147 | Acc: 94.774 (47387/50000)
+6
+Train Loss: 0.152 | Acc: 94.566 (47283/50000)
+Train Loss: 0.139 | Acc: 95.096 (47548/50000)
+7
+Train Loss: 0.155 | Acc: 94.378 (47189/50000)
+Train Loss: 0.134 | Acc: 95.378 (47689/50000)
+8
+Train Loss: 0.147 | Acc: 94.824 (47412/50000)
+Train Loss: 0.128 | Acc: 95.686 (47843/50000)
+9
+Train Loss: 0.146 | Acc: 94.830 (47415/50000)
+Train Loss: 0.128 | Acc: 95.554 (47777/50000)
+10
+Train Loss: 0.145 | Acc: 94.974 (47487/50000)
+Train Loss: 0.133 | Acc: 95.344 (47672/50000)
+1.bn1
+layer4.1
+layer1.1
+layer2.1
+layer1.0
+layer4.0
+layer3.1
+linear
+layer2.0
+layer3.0
+1.conv1
+Test Loss: 1.989 | Acc: 58.280 (5828/10000)
+Epoch:6
+0
+Train Loss: 0.119 | Acc: 95.834 (47917/50000)
+Train Loss: 0.108 | Acc: 96.300 (48150/50000)
+1
+Train Loss: 0.113 | Acc: 96.084 (48042/50000)
+Train Loss: 0.104 | Acc: 96.428 (48214/50000)
+2
+Train Loss: 0.114 | Acc: 96.066 (48033/50000)
+Train Loss: 0.101 | Acc: 96.554 (48277/50000)
+3
+Train Loss: 0.112 | Acc: 96.098 (48049/50000)
+Train Loss: 0.094 | Acc: 96.782 (48391/50000)
+4
+Train Loss: 0.113 | Acc: 96.112 (48056/50000)
+Train Loss: 0.098 | Acc: 96.666 (48333/50000)
+5
+Train Loss: 0.110 | Acc: 96.306 (48153/50000)
+Train Loss: 0.097 | Acc: 96.666 (48333/50000)
+6
+Train Loss: 0.074 | Acc: 97.626 (48813/50000)
+Train Loss: 0.076 | Acc: 97.432 (48716/50000)
+7
+Train Loss: 0.070 | Acc: 97.822 (48911/50000)
+Train Loss: 0.070 | Acc: 97.686 (48843/50000)
+8
+Train Loss: 0.083 | Acc: 97.234 (48617/50000)
+Train Loss: 0.086 | Acc: 97.092 (48546/50000)
+9
+Train Loss: 0.081 | Acc: 97.298 (48649/50000)
+Train Loss: 0.085 | Acc: 97.228 (48614/50000)
+10
+Train Loss: 0.068 | Acc: 97.802 (48901/50000)
+Train Loss: 0.079 | Acc: 97.348 (48674/50000)
+layer2.1
+1.bn1
+1.conv1
+layer3.1
+layer4.1
+linear
+layer1.0
+layer2.0
+layer4.0
+layer3.0
+layer1.1
+Test Loss: 2.186 | Acc: 57.950 (5795/10000)
+Epoch:7
+0
+Train Loss: 0.063 | Acc: 97.958 (48979/50000)
+Train Loss: 0.060 | Acc: 98.114 (49057/50000)
+1
+Train Loss: 0.063 | Acc: 97.954 (48977/50000)
+Train Loss: 0.051 | Acc: 98.442 (49221/50000)
+2
+Train Loss: 0.066 | Acc: 97.886 (48943/50000)
+Train Loss: 0.055 | Acc: 98.280 (49140/50000)
+3
+Train Loss: 0.060 | Acc: 98.144 (49072/50000)
+Train Loss: 0.056 | Acc: 98.240 (49120/50000)
+4
+Train Loss: 0.055 | Acc: 98.318 (49159/50000)
+Train Loss: 0.049 | Acc: 98.442 (49221/50000)
+5
+Train Loss: 0.050 | Acc: 98.472 (49236/50000)
+Train Loss: 0.051 | Acc: 98.364 (49182/50000)
+6
+Train Loss: 0.063 | Acc: 98.016 (49008/50000)
+Train Loss: 0.067 | Acc: 97.812 (48906/50000)
+7
+Train Loss: 0.067 | Acc: 97.786 (48893/50000)
+Train Loss: 0.056 | Acc: 98.248 (49124/50000)
+8
+Train Loss: 0.062 | Acc: 97.972 (48986/50000)
+Train Loss: 0.060 | Acc: 98.010 (49005/50000)
+9
+Train Loss: 0.043 | Acc: 98.774 (49387/50000)
+Train Loss: 0.046 | Acc: 98.554 (49277/50000)
+10
+Train Loss: 0.035 | Acc: 99.064 (49532/50000)
+Train Loss: 0.032 | Acc: 99.110 (49555/50000)
+layer1.1
+1.bn1
+layer1.0
+layer4.0
+layer3.1
+linear
+layer3.0
+1.conv1
+layer4.1
+layer2.1
+layer2.0
+Test Loss: 1.974 | Acc: 62.480 (6248/10000)
+Epoch:8
+0
+Train Loss: 0.047 | Acc: 98.606 (49303/50000)
+Train Loss: 0.041 | Acc: 98.806 (49403/50000)
+1
+Train Loss: 0.044 | Acc: 98.684 (49342/50000)
+Train Loss: 0.039 | Acc: 98.874 (49437/50000)
+2
+Train Loss: 0.040 | Acc: 98.854 (49427/50000)
+Train Loss: 0.029 | Acc: 99.210 (49605/50000)
+3
+Train Loss: 0.045 | Acc: 98.554 (49277/50000)
+Train Loss: 0.039 | Acc: 98.818 (49409/50000)
+4
+Train Loss: 0.027 | Acc: 99.294 (49647/50000)
+Train Loss: 0.021 | Acc: 99.512 (49756/50000)
+5
+Train Loss: 0.023 | Acc: 99.480 (49740/50000)
+Train Loss: 0.017 | Acc: 99.608 (49804/50000)
+6
+Train Loss: 0.027 | Acc: 99.332 (49666/50000)
+Train Loss: 0.019 | Acc: 99.544 (49772/50000)
+7
+Train Loss: 0.017 | Acc: 99.660 (49830/50000)
+Train Loss: 0.012 | Acc: 99.814 (49907/50000)
+8
+Train Loss: 0.014 | Acc: 99.776 (49888/50000)
+Train Loss: 0.007 | Acc: 99.932 (49966/50000)
+9
+Train Loss: 0.013 | Acc: 99.846 (49923/50000)
+Train Loss: 0.007 | Acc: 99.924 (49962/50000)
+10
+Train Loss: 0.012 | Acc: 99.842 (49921/50000)
+Train Loss: 0.006 | Acc: 99.960 (49980/50000)
+1.bn1
+layer2.0
+layer1.0
+linear
+layer3.1
+layer4.0
+layer1.1
+1.conv1
+layer4.1
+layer2.1
+layer3.0
+Test Loss: 1.946 | Acc: 63.380 (6338/10000)
+Epoch:9
+0
+Train Loss: 0.009 | Acc: 99.894 (49947/50000)
+Train Loss: 0.003 | Acc: 99.988 (49994/50000)
+1
+Train Loss: 0.009 | Acc: 99.862 (49931/50000)
+Train Loss: 0.004 | Acc: 99.978 (49989/50000)
+2
+Train Loss: 0.005 | Acc: 99.970 (49985/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.005 | Acc: 99.964 (49982/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.005 | Acc: 99.966 (49983/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.004 | Acc: 99.988 (49994/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+layer2.1
+layer4.0
+layer3.0
+1.bn1
+layer1.1
+layer4.1
+layer1.0
+linear
+layer3.1
+1.conv1
+Test Loss: 1.637 | Acc: 68.630 (6863/10000)
+Epoch:10
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+layer1.1
+1.bn1
+layer4.0
+layer2.1
+layer1.0
+layer4.1
+layer2.0
+layer3.1
+1.conv1
+linear
+Test Loss: 1.461 | Acc: 70.210 (7021/10000)
+Epoch:11
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+layer1.0
+layer2.1
+1.bn1
+layer3.0
+layer3.1
+layer1.1
+1.conv1
+linear
+layer4.0
+layer2.0
+Test Loss: 1.349 | Acc: 71.010 (7101/10000)
+Epoch:12
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+layer1.1
+layer1.0
+layer3.1
+1.conv1
+layer4.0
+layer2.1
+1.bn1
+linear
+layer3.0
+layer2.0
+Test Loss: 1.373 | Acc: 70.110 (7011/10000)
+Epoch:13
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+layer3.0
+layer4.0
+layer1.0
+layer2.0
+layer3.1
+linear
+layer4.1
+layer2.1
+1.conv1
+layer1.1
+Test Loss: 1.403 | Acc: 69.900 (6990/10000)
+Epoch:14
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer2.0
+layer3.0
+1.conv1
+layer3.1
+layer4.1
+layer2.1
+layer4.0
+layer1.0
+1.bn1
+linear
+layer1.1
+Test Loss: 1.328 | Acc: 69.700 (6970/10000)
+Epoch:15
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer4.0
+layer1.0
+layer3.1
+layer3.0
+layer2.1
+linear
+1.conv1
+layer2.0
+layer4.1
+layer1.1
+1.bn1
+Test Loss: 1.306 | Acc: 69.870 (6987/10000)
+Epoch:16
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer2.1
+layer4.0
+1.conv1
+layer1.0
+layer2.0
+layer3.1
+1.bn1
+linear
+layer4.1
+layer1.1
+layer3.0
+Test Loss: 1.307 | Acc: 69.650 (6965/10000)
+Epoch:17
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+linear
+layer4.1
+layer3.0
+layer4.0
+layer1.0
+1.bn1
+layer1.1
+1.conv1
+layer2.0
+layer3.1
+layer2.1
+Test Loss: 1.343 | Acc: 69.160 (6916/10000)
+Epoch:18
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer3.1
+layer4.0
+linear
+layer3.0
+1.bn1
+1.conv1
+layer1.0
+layer2.0
+layer4.1
+layer1.1
+layer2.1
+Test Loss: 1.366 | Acc: 68.480 (6848/10000)
+Epoch:19
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer4.1
+layer2.1
+layer3.1
+layer4.0
+linear
+layer3.0
+1.bn1
+1.conv1
+layer1.0
+layer1.1
+layer2.0
+Test Loss: 1.357 | Acc: 68.080 (6808/10000)
+Epoch:20
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer3.1
+layer3.0
+layer2.0
+layer1.1
+layer4.1
+linear
+layer1.0
+layer4.0
+1.conv1
+layer2.1
+1.bn1
+Test Loss: 1.369 | Acc: 67.090 (6709/10000)
+Epoch:21
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1.conv1
+1.bn1
+linear
+layer4.1
+layer3.1
+layer2.1
+layer4.0
+layer3.0
+layer1.1
+layer2.0
+layer1.0
+Test Loss: 1.386 | Acc: 67.140 (6714/10000)
+Epoch:22
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer4.1
+1.conv1
+layer3.1
+layer1.1
+layer1.0
+layer2.1
+linear
+layer2.0
+layer4.0
+layer3.0
+1.bn1
+Test Loss: 1.393 | Acc: 66.490 (6649/10000)
+Epoch:23
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+layer4.1
+layer2.1
+layer1.1
+layer4.0
+linear
+layer3.1
+1.bn1
+layer3.0
+layer2.0
+layer1.0
+Test Loss: 1.397 | Acc: 66.270 (6627/10000)
+Epoch:24
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+linear
+1.conv1
+layer3.1
+layer4.1
+layer2.1
+layer1.0
+layer3.0
+layer1.1
+layer2.0
+layer4.0
+1.bn1
+Test Loss: 1.426 | Acc: 65.100 (6510/10000)
+Epoch:25
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer4.0
+layer2.1
+layer2.0
+1.conv1
+1.bn1
+layer1.0
+layer1.1
+linear
+layer4.1
+layer3.0
+layer3.1
+Test Loss: 1.417 | Acc: 65.760 (6576/10000)
+Epoch:26
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer4.1
+layer1.1
+layer2.1
+layer4.0
+1.bn1
+layer3.0
+linear
+layer2.0
+layer1.0
+1.conv1
+layer3.1
+Test Loss: 1.486 | Acc: 65.010 (6501/10000)
+Epoch:27
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+1.conv1
+layer1.0
+layer2.1
+1.bn1
+layer1.1
+layer2.0
+layer4.0
+layer3.1
+layer4.1
+linear
+Test Loss: 1.491 | Acc: 64.380 (6438/10000)
+Epoch:28
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer2.0
+1.conv1
+linear
+layer3.0
+1.bn1
+layer3.1
+layer4.1
+layer1.0
+layer2.1
+layer1.1
+layer4.0
+Test Loss: 1.525 | Acc: 63.520 (6352/10000)
+Epoch:29
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1.conv1
+layer2.1
+layer1.1
+layer4.1
+layer4.0
+layer2.0
+linear
+1.bn1
+layer3.0
+layer3.1
+layer1.0
+Test Loss: 1.561 | Acc: 62.550 (6255/10000)
+Epoch:30
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+layer3.0
+layer4.0
+layer4.1
+1.bn1
+layer1.0
+layer3.1
+layer2.1
+linear
+layer2.0
+1.conv1
+Test Loss: 1.611 | Acc: 62.550 (6255/10000)
+Epoch:31
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+layer1.1
+layer4.1
+linear
+layer1.0
+layer4.0
+1.bn1
+layer3.0
+layer3.1
+1.conv1
+layer2.0
+Test Loss: 1.623 | Acc: 61.680 (6168/10000)
+Epoch:32
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+layer3.1
+layer4.0
+layer1.1
+layer3.0
+1.conv1
+layer4.1
+linear
+layer1.0
+layer2.0
+1.bn1
+Test Loss: 1.724 | Acc: 59.870 (5987/10000)
+Epoch:33
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+linear
+layer4.0
+layer2.0
+layer4.1
+layer3.0
+layer1.0
+layer3.1
+1.conv1
+layer2.1
+layer1.1
+Test Loss: 1.744 | Acc: 59.860 (5986/10000)
+Epoch:34
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+layer4.1
+layer1.1
+1.bn1
+layer3.0
+layer2.1
+layer1.0
+layer2.0
+layer3.1
+linear
+layer4.0
+Test Loss: 1.750 | Acc: 59.710 (5971/10000)
+Epoch:35
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+1.conv1
+layer1.1
+layer2.1
+layer1.0
+1.bn1
+layer4.1
+linear
+layer4.0
+layer3.0
+layer3.1
+Test Loss: 1.751 | Acc: 59.010 (5901/10000)
+Epoch:36
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+1.conv1
+1.bn1
+layer4.1
+layer3.1
+layer1.1
+layer4.0
+layer2.0
+linear
+layer1.0
+layer2.1
+Test Loss: 1.851 | Acc: 58.180 (5818/10000)
+Epoch:37
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.386 | Acc: 86.772 (43386/50000)
+1
+Train Loss: 0.730 | Acc: 74.918 (37459/50000)
+Train Loss: 0.541 | Acc: 81.442 (40721/50000)
+2
+Train Loss: 0.736 | Acc: 74.962 (37481/50000)
+Train Loss: 0.539 | Acc: 81.346 (40673/50000)
+3
+Train Loss: 0.744 | Acc: 74.616 (37308/50000)
+Train Loss: 0.542 | Acc: 81.322 (40661/50000)
+4
+Train Loss: 0.698 | Acc: 75.714 (37857/50000)
+Train Loss: 0.520 | Acc: 82.018 (41009/50000)
+5
+Train Loss: 0.677 | Acc: 76.708 (38354/50000)
+Train Loss: 0.509 | Acc: 82.312 (41156/50000)
+6
+Train Loss: 0.661 | Acc: 77.118 (38559/50000)
+Train Loss: 0.498 | Acc: 82.848 (41424/50000)
+7
+Train Loss: 0.547 | Acc: 81.204 (40602/50000)
+Train Loss: 0.410 | Acc: 85.856 (42928/50000)
+8
+Train Loss: 0.510 | Acc: 82.462 (41231/50000)
+Train Loss: 0.379 | Acc: 87.042 (43521/50000)
+9
+Train Loss: 0.507 | Acc: 82.416 (41208/50000)
+Train Loss: 0.370 | Acc: 87.398 (43699/50000)
+10
+Train Loss: 0.496 | Acc: 82.838 (41419/50000)
+Train Loss: 0.366 | Acc: 87.490 (43745/50000)
+layer2.0
+linear
+layer1.0
+layer2.1
+layer4.0
+layer1.1
+layer3.0
+1.bn1
+1.conv1
+layer3.1
+layer4.1
+Test Loss: 1.634 | Acc: 53.600 (5360/10000)
+Epoch:38
+0
+Train Loss: 0.446 | Acc: 84.440 (42220/50000)
+Train Loss: 0.319 | Acc: 89.188 (44594/50000)
+1
+Train Loss: 0.400 | Acc: 86.180 (43090/50000)
+Train Loss: 0.285 | Acc: 90.366 (45183/50000)
+2
+Train Loss: 0.410 | Acc: 85.814 (42907/50000)
+Train Loss: 0.287 | Acc: 90.358 (45179/50000)
+3
+Train Loss: 0.401 | Acc: 86.160 (43080/50000)
+Train Loss: 0.286 | Acc: 90.348 (45174/50000)
+4
+Train Loss: 0.399 | Acc: 86.316 (43158/50000)
+Train Loss: 0.281 | Acc: 90.542 (45271/50000)
+5
+Train Loss: 0.290 | Acc: 90.072 (45036/50000)
+Train Loss: 0.219 | Acc: 92.680 (46340/50000)
+6
+Train Loss: 0.288 | Acc: 90.168 (45084/50000)
+Train Loss: 0.216 | Acc: 92.828 (46414/50000)
+7
+Train Loss: 0.230 | Acc: 92.532 (46266/50000)
+Train Loss: 0.185 | Acc: 93.944 (46972/50000)
+8
+Train Loss: 0.223 | Acc: 92.672 (46336/50000)
+Train Loss: 0.183 | Acc: 94.062 (47031/50000)
+9
+Train Loss: 0.221 | Acc: 92.754 (46377/50000)
+Train Loss: 0.183 | Acc: 93.990 (46995/50000)
+10
+Train Loss: 0.219 | Acc: 92.788 (46394/50000)
+Train Loss: 0.180 | Acc: 94.018 (47009/50000)
+layer1.1
+1.bn1
+linear
+1.conv1
+layer2.1
+layer2.0
+layer4.1
+layer1.0
+layer4.0
+layer3.1
+layer3.0
+Test Loss: 1.313 | Acc: 64.740 (6474/10000)
+Epoch:39
+0
+Train Loss: 0.141 | Acc: 95.516 (47758/50000)
+Train Loss: 0.116 | Acc: 96.238 (48119/50000)
+1
+Train Loss: 0.137 | Acc: 95.686 (47843/50000)
+Train Loss: 0.121 | Acc: 96.148 (48074/50000)
+2
+Train Loss: 0.139 | Acc: 95.670 (47835/50000)
+Train Loss: 0.119 | Acc: 96.154 (48077/50000)
+3
+Train Loss: 0.150 | Acc: 95.004 (47502/50000)
+Train Loss: 0.123 | Acc: 95.894 (47947/50000)
+4
+Train Loss: 0.145 | Acc: 95.242 (47621/50000)
+Train Loss: 0.121 | Acc: 95.964 (47982/50000)
+5
+Train Loss: 0.143 | Acc: 95.360 (47680/50000)
+Train Loss: 0.126 | Acc: 95.834 (47917/50000)
+6
+Train Loss: 0.137 | Acc: 95.582 (47791/50000)
+Train Loss: 0.125 | Acc: 95.834 (47917/50000)
+7
+Train Loss: 0.142 | Acc: 95.228 (47614/50000)
+Train Loss: 0.128 | Acc: 95.748 (47874/50000)
+8
+Train Loss: 0.142 | Acc: 95.234 (47617/50000)
+Train Loss: 0.121 | Acc: 96.036 (48018/50000)
+9
+Train Loss: 0.092 | Acc: 97.222 (48611/50000)
+Train Loss: 0.094 | Acc: 96.966 (48483/50000)
+10
+Train Loss: 0.084 | Acc: 97.506 (48753/50000)
+Train Loss: 0.088 | Acc: 97.246 (48623/50000)
+1.bn1
+linear
+layer4.0
+layer3.0
+layer1.1
+layer2.0
+layer3.1
+layer1.0
+1.conv1
+layer2.1
+layer4.1
+Test Loss: 1.695 | Acc: 62.050 (6205/10000)
+Epoch:40
+0
+Train Loss: 0.093 | Acc: 97.038 (48519/50000)
+Train Loss: 0.079 | Acc: 97.496 (48748/50000)
+1
+Train Loss: 0.092 | Acc: 97.100 (48550/50000)
+Train Loss: 0.079 | Acc: 97.438 (48719/50000)
+2
+Train Loss: 0.100 | Acc: 96.786 (48393/50000)
+Train Loss: 0.092 | Acc: 96.914 (48457/50000)
+3
+Train Loss: 0.067 | Acc: 98.040 (49020/50000)
+Train Loss: 0.066 | Acc: 97.996 (48998/50000)
+4
+Train Loss: 0.048 | Acc: 98.772 (49386/50000)
+Train Loss: 0.041 | Acc: 98.918 (49459/50000)
+5
+Train Loss: 0.050 | Acc: 98.606 (49303/50000)
+Train Loss: 0.044 | Acc: 98.788 (49394/50000)
+6
+Train Loss: 0.043 | Acc: 98.932 (49466/50000)
+Train Loss: 0.045 | Acc: 98.710 (49355/50000)
+7
+Train Loss: 0.042 | Acc: 98.976 (49488/50000)
+Train Loss: 0.039 | Acc: 98.968 (49484/50000)
+8
+Train Loss: 0.040 | Acc: 99.064 (49532/50000)
+Train Loss: 0.040 | Acc: 98.890 (49445/50000)
+9
+Train Loss: 0.037 | Acc: 99.112 (49556/50000)
+Train Loss: 0.031 | Acc: 99.272 (49636/50000)
+10
+Train Loss: 0.033 | Acc: 99.296 (49648/50000)
+Train Loss: 0.026 | Acc: 99.418 (49709/50000)
+1.conv1
+linear
+layer3.0
+layer4.0
+1.bn1
+layer1.0
+layer4.1
+layer1.1
+layer2.1
+layer2.0
+layer3.1
+Test Loss: 1.776 | Acc: 63.840 (6384/10000)
+Epoch:41
+0
+Train Loss: 0.041 | Acc: 98.946 (49473/50000)
+Train Loss: 0.027 | Acc: 99.400 (49700/50000)
+1
+Train Loss: 0.040 | Acc: 98.910 (49455/50000)
+Train Loss: 0.026 | Acc: 99.358 (49679/50000)
+2
+Train Loss: 0.043 | Acc: 98.822 (49411/50000)
+Train Loss: 0.031 | Acc: 99.156 (49578/50000)
+3
+Train Loss: 0.022 | Acc: 99.564 (49782/50000)
+Train Loss: 0.013 | Acc: 99.794 (49897/50000)
+4
+Train Loss: 0.009 | Acc: 99.902 (49951/50000)
+Train Loss: 0.003 | Acc: 99.996 (49998/50000)
+5
+Train Loss: 0.009 | Acc: 99.896 (49948/50000)
+Train Loss: 0.003 | Acc: 99.994 (49997/50000)
+6
+Train Loss: 0.007 | Acc: 99.950 (49975/50000)
+Train Loss: 0.003 | Acc: 99.994 (49997/50000)
+7
+Train Loss: 0.007 | Acc: 99.944 (49972/50000)
+Train Loss: 0.003 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.008 | Acc: 99.948 (49974/50000)
+Train Loss: 0.003 | Acc: 99.998 (49999/50000)
+9
+Train Loss: 0.006 | Acc: 99.980 (49990/50000)
+Train Loss: 0.002 | Acc: 99.998 (49999/50000)
+10
+Train Loss: 0.004 | Acc: 99.994 (49997/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1.bn1
+linear
+layer3.0
+layer4.1
+layer2.0
+layer1.0
+layer3.1
+layer2.1
+1.conv1
+layer1.1
+layer4.0
+Test Loss: 1.165 | Acc: 72.640 (7264/10000)
+Epoch:42
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+layer4.1
+layer2.1
+layer4.0
+layer3.0
+layer1.0
+linear
+1.conv1
+layer1.1
+layer2.0
+1.bn1
+Test Loss: 1.118 | Acc: 73.940 (7394/10000)
+Epoch:43
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+layer3.1
+layer4.1
+layer3.0
+layer2.1
+1.bn1
+linear
+1.conv1
+layer1.1
+layer2.0
+layer4.0
+Test Loss: 1.074 | Acc: 74.820 (7482/10000)
+Epoch:44
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+layer1.0
+1.conv1
+layer3.1
+layer4.1
+layer1.1
+layer2.0
+linear
+layer2.1
+1.bn1
+layer3.0
+Test Loss: 1.056 | Acc: 74.170 (7417/10000)
+Epoch:45
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+layer1.0
+layer2.1
+layer3.1
+linear
+layer3.0
+1.conv1
+layer4.1
+1.bn1
+layer2.0
+layer4.0
+Test Loss: 1.030 | Acc: 74.670 (7467/10000)
+Epoch:46
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+layer1.0
+layer4.0
+layer2.1
+layer3.1
+layer4.1
+layer1.1
+layer2.0
+1.bn1
+1.conv1
+layer3.0
+Test Loss: 1.027 | Acc: 74.560 (7456/10000)
+Epoch:47
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+layer1.0
+layer2.0
+layer2.1
+1.bn1
+layer4.0
+layer4.1
+linear
+layer3.0
+1.conv1
+layer3.1
+Test Loss: 1.007 | Acc: 74.530 (7453/10000)
+Epoch:48
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1.bn1
+linear
+layer1.0
+1.conv1
+layer4.1
+layer2.0
+layer3.0
+layer4.0
+layer3.1
+layer1.1
+layer2.1
+Test Loss: 1.020 | Acc: 73.960 (7396/10000)
+Epoch:49
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+layer3.1
+1.conv1
+layer4.0
+linear
+layer4.1
+layer1.0
+layer1.1
+layer2.1
+1.bn1
+layer2.0
+Test Loss: 1.031 | Acc: 73.800 (7380/10000)
+Epoch:50
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer3.0
+layer1.0
+layer3.1
+layer1.1
+1.conv1
+1.bn1
+layer4.1
+layer4.0
+layer2.1
+linear
+layer2.0
+Test Loss: 1.005 | Acc: 74.030 (7403/10000)
+Epoch:51
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer1.1
+layer4.1
+1.bn1
+layer2.1
+linear
+layer3.0
+layer3.1
+layer1.0
+layer4.0
+layer2.0
+1.conv1
+Test Loss: 1.013 | Acc: 73.730 (7373/10000)
+Epoch:52
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer1.0
+1.conv1
+layer4.0
+layer3.0
+layer4.1
+layer2.0
+layer3.1
+linear
+layer1.1
+1.bn1
+layer2.1
+Test Loss: 1.028 | Acc: 73.420 (7342/10000)
+Epoch:53
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer1.0
+layer3.1
+layer1.1
+layer2.0
+layer3.0
+1.conv1
+1.bn1
+layer4.0
+layer2.1
+linear
+layer4.1
+Test Loss: 1.013 | Acc: 73.410 (7341/10000)
+Epoch:54
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1.bn1
+1.conv1
+layer4.1
+layer4.0
+layer3.1
+layer3.0
+layer2.0
+layer1.0
+layer2.1
+linear
+layer1.1
+Test Loss: 1.027 | Acc: 73.100 (7310/10000)
+Epoch:55
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1.conv1
+1.bn1
+layer3.0
+layer4.0
+layer4.1
+layer2.1
+layer2.0
+linear
+layer1.0
+layer1.1
+layer3.1
+Test Loss: 1.039 | Acc: 72.990 (7299/10000)
+Epoch:56
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer1.1
+linear
+layer4.1
+layer1.0
+layer3.1
+1.bn1
+layer4.0
+layer2.1
+layer2.0
+layer3.0
+1.conv1
+Test Loss: 1.022 | Acc: 72.970 (7297/10000)
+Epoch:57
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer4.0
+layer2.1
+linear
+layer3.1
+layer1.1
+layer2.0
+layer1.0
+1.bn1
+1.conv1
+layer4.1
+layer3.0
+Test Loss: 1.044 | Acc: 72.700 (7270/10000)
+Epoch:58
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1.bn1
+layer1.0
+layer4.0
+1.conv1
+layer3.1
+layer2.0
+layer1.1
+layer3.0
+linear
+layer2.1
+layer4.1
+Test Loss: 1.039 | Acc: 72.570 (7257/10000)
+Epoch:59
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1.conv1
+layer2.0
+1.bn1
+layer4.0
+layer1.1
+layer4.1
+layer2.1
+layer3.0
+layer3.1
+layer1.0
+linear
+Test Loss: 1.048 | Acc: 72.420 (7242/10000)
+Epoch:60
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer1.1
+linear
+1.conv1
+layer4.0
+layer3.1
+layer4.1
+layer2.0
+layer3.0
+layer2.1
+layer1.0
+1.bn1
+Test Loss: 1.046 | Acc: 72.420 (7242/10000)
+Epoch:61
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer4.0
+layer2.1
+1.bn1
+layer3.1
+linear
+layer2.0
+1.conv1
+layer4.1
+layer1.1
+layer1.0
+layer3.0
+Test Loss: 1.054 | Acc: 72.340 (7234/10000)
+Epoch:62
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1.conv1
+layer2.1
+layer4.1
+layer4.0
+layer1.1
+linear
+1.bn1
+layer3.0
+layer1.0
+layer3.1
+layer2.0
+Test Loss: 1.048 | Acc: 72.430 (7243/10000)
+Epoch:63
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer2.0
+layer3.0
+layer3.1
+1.conv1
+layer1.0
+linear
+1.bn1
+layer4.0
+layer4.1
+layer2.1
+layer1.1
+Test Loss: 1.064 | Acc: 72.090 (7209/10000)
+Epoch:64
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+linear
+layer3.0
+layer1.1
+layer2.1
+1.bn1
+layer4.0
+1.conv1
+layer4.1
+layer3.1
+layer2.0
+layer1.0
+Test Loss: 1.070 | Acc: 71.970 (7197/10000)
+Epoch:65
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer2.1
+layer4.0
+layer1.0
+linear
+1.bn1
+layer3.0
+1.conv1
+layer4.1
+layer3.1
+layer1.1
+layer2.0
+Test Loss: 1.075 | Acc: 71.890 (7189/10000)
+Epoch:66
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer3.0
+layer1.1
+layer2.0
+layer3.1
+layer4.1
+layer4.0
+layer2.1
+1.conv1
+layer1.0
+linear
+1.bn1
+Test Loss: 1.081 | Acc: 71.510 (7151/10000)
+Epoch:67
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer1.1
+layer3.0
+layer2.0
+1.bn1
+layer1.0
+layer2.1
+linear
+layer3.1
+1.conv1
+layer4.0
+layer4.1
+Test Loss: 1.082 | Acc: 71.660 (7166/10000)
+Epoch:68
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+linear
+layer3.0
+1.bn1
+layer1.1
+layer2.0
+1.conv1
+layer4.0
+layer2.1
+layer4.1
+layer3.1
+layer1.0
+Test Loss: 1.095 | Acc: 71.380 (7138/10000)
+Epoch:69
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer4.1
+1.bn1
+layer3.0
+1.conv1
+linear
+layer2.0
+layer3.1
+layer2.1
+layer1.1
+layer4.0
+layer1.0
+Test Loss: 1.091 | Acc: 71.480 (7148/10000)
+Epoch:70
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer1.0
+layer1.1
+layer3.0
+layer2.1
+linear
+1.conv1
+layer3.1
+layer2.0
+layer4.0
+layer4.1
+1.bn1
+Test Loss: 1.102 | Acc: 71.400 (7140/10000)
+Epoch:71
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer2.0
+1.conv1
+layer4.1
+layer3.0
+layer1.1
+layer2.1
+1.bn1
+layer4.0
+linear
+layer1.0
+layer3.1
+Test Loss: 1.103 | Acc: 71.360 (7136/10000)
+Epoch:72
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer2.0
+layer2.1
+layer1.1
+linear
+layer3.1
+layer1.0
+layer3.0
+1.bn1
+layer4.1
+layer4.0
+1.conv1
+Test Loss: 1.107 | Acc: 71.220 (7122/10000)
+Epoch:73
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+linear
+layer4.0
+layer4.1
+layer1.1
+layer3.1
+1.conv1
+1.bn1
+layer2.0
+layer1.0
+layer3.0
+layer2.1
+Test Loss: 1.108 | Acc: 71.210 (7121/10000)
+Epoch:74
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer3.1
+layer1.0
+layer3.0
+1.conv1
+1.bn1
+layer4.0
+layer2.0
+layer2.1
+linear
+layer4.1
+layer1.1
+Test Loss: 1.110 | Acc: 71.090 (7109/10000)
+Epoch:75
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+linear
+layer2.1
+layer1.0
+layer4.0
+layer1.1
+1.conv1
+layer3.0
+1.bn1
+layer4.1
+layer3.1
+layer2.0
+Test Loss: 1.114 | Acc: 71.070 (7107/10000)
+Epoch:76
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer3.1
+1.bn1
+layer1.0
+layer4.0
+layer1.1
+layer2.1
+layer4.1
+layer3.0
+layer2.0
+linear
+1.conv1
+Test Loss: 1.115 | Acc: 70.910 (7091/10000)
+Epoch:77
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer1.0
+1.conv1
+layer2.1
+layer3.1
+layer3.0
+layer4.1
+linear
+1.bn1
+layer4.0
+layer2.0
+layer1.1
+Test Loss: 1.114 | Acc: 70.900 (7090/10000)
+Epoch:78
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer3.1
+layer2.0
+layer3.0
+layer4.1
+1.conv1
+linear
+layer1.0
+layer2.1
+layer4.0
+layer1.1
+1.bn1
+Test Loss: 1.120 | Acc: 70.760 (7076/10000)
+Epoch:79
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer3.0
+linear
+layer2.1
+layer4.0
+layer3.1
+layer2.0
+1.bn1
+layer1.0
+layer1.1
+layer4.1
+1.conv1
+Test Loss: 1.126 | Acc: 70.710 (7071/10000)
+Epoch:80
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer2.0
+layer3.0
+1.conv1
+layer4.1
+layer2.1
+layer1.0
+layer4.0
+layer3.1
+1.bn1
+linear
+layer1.1
+Test Loss: 1.126 | Acc: 70.680 (7068/10000)
+Epoch:81
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer2.1
+linear
+layer1.0
+layer2.0
+layer3.0
+layer4.1
+layer3.1
+1.bn1
+layer1.1
+1.conv1
+layer4.0
+Test Loss: 1.126 | Acc: 70.640 (7064/10000)
+Epoch:82
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer4.0
+1.bn1
+linear
+layer4.1
+layer3.0
+layer1.1
+layer2.1
+layer1.0
+layer2.0
+1.conv1
+layer3.1
+Test Loss: 1.128 | Acc: 70.580 (7058/10000)
+Epoch:83
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer1.0
+layer3.1
+linear
+layer2.0
+layer4.1
+1.bn1
+layer4.0
+1.conv1
+layer2.1
+layer3.0
+layer1.1
+Test Loss: 1.129 | Acc: 70.570 (7057/10000)
+Epoch:84
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer3.1
+layer4.1
+layer1.1
+layer2.1
+linear
+layer3.0
+layer2.0
+layer1.0
+1.bn1
+layer4.0
+1.conv1
+Test Loss: 1.129 | Acc: 70.500 (7050/10000)
+Epoch:85
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer4.0
+layer1.0
+layer2.1
+layer4.1
+layer3.0
+1.bn1
+layer1.1
+layer2.0
+linear
+1.conv1
+layer3.1
+Test Loss: 1.131 | Acc: 70.470 (7047/10000)
+Epoch:86
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer2.1
+linear
+layer3.0
+layer1.0
+layer4.0
+layer2.0
+1.conv1
+1.bn1
+layer3.1
+layer1.1
+layer4.1
+Test Loss: 1.133 | Acc: 70.450 (7045/10000)
+Epoch:87
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer2.1
+layer3.1
+layer3.0
+layer4.1
+layer2.0
+1.conv1
+1.bn1
+layer1.1
+layer4.0
+layer1.0
+linear
+Test Loss: 1.133 | Acc: 70.390 (7039/10000)
+Epoch:88
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1.conv1
+linear
+layer4.0
+layer2.1
+layer1.0
+layer3.0
+layer1.1
+1.bn1
+layer3.1
+layer4.1
+layer2.0
+Test Loss: 1.134 | Acc: 70.420 (7042/10000)
+Epoch:89
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer4.1
+layer3.1
+layer2.1
+layer1.1
+layer4.0
+layer1.0
+1.bn1
+linear
+layer3.0
+1.conv1
+layer2.0
+Test Loss: 1.134 | Acc: 70.360 (7036/10000)
+Epoch:90
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer2.0
+linear
+layer3.1
+layer4.0
+1.bn1
+layer4.1
+layer1.0
+layer3.0
+1.conv1
+layer2.1
+layer1.1
+Test Loss: 1.135 | Acc: 70.380 (7038/10000)
+Epoch:91
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer1.1
+layer4.0
+layer4.1
+1.bn1
+layer2.0
+layer2.1
+1.conv1
+layer1.0
+layer3.1
+layer3.0
+linear
+Test Loss: 1.135 | Acc: 70.350 (7035/10000)
+Epoch:92
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer1.0
+layer2.0
+layer4.1
+layer1.1
+linear
+1.conv1
+layer2.1
+layer4.0
+layer3.0
+layer3.1
+1.bn1
+Test Loss: 1.134 | Acc: 70.330 (7033/10000)
+Epoch:93
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1.conv1
+layer4.1
+layer3.1
+linear
+layer1.1
+layer1.0
+layer3.0
+layer4.0
+1.bn1
+layer2.1
+layer2.0
+Test Loss: 1.135 | Acc: 70.310 (7031/10000)
+Epoch:94
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1.bn1
+linear
+1.conv1
+layer1.1
+layer3.1
+layer2.1
+layer3.0
+layer1.0
+layer4.0
+layer2.0
+layer4.1
+Test Loss: 1.135 | Acc: 70.310 (7031/10000)
+Epoch:95
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer3.1
+layer3.0
+layer1.0
+layer2.0
+layer4.0
+layer1.1
+linear
+1.conv1
+layer4.1
+layer2.1
+1.bn1
+Test Loss: 1.135 | Acc: 70.310 (7031/10000)
+Epoch:96
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer1.1
+layer2.0
+layer1.0
+layer4.1
+layer3.1
+1.bn1
+layer2.1
+layer3.0
+layer4.0
+linear
+1.conv1
+Test Loss: 1.134 | Acc: 70.310 (7031/10000)
+Epoch:97
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer1.1
+layer3.0
+layer4.1
+layer1.0
+1.bn1
+1.conv1
+layer2.0
+layer4.0
+layer2.1
+linear
+layer3.1
+Test Loss: 1.134 | Acc: 70.290 (7029/10000)
+Epoch:98
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer2.1
+layer4.1
+layer1.1
+layer3.0
+linear
+1.conv1
+layer3.1
+layer4.0
+1.bn1
+layer2.0
+layer1.0
+Test Loss: 1.134 | Acc: 70.290 (7029/10000)
+Epoch:99
+0
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+1
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+2
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+3
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+4
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+5
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+6
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+7
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+8
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+9
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+10
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+Train Loss: 0.002 | Acc: 100.000 (50000/50000)
+layer1.0
+1.conv1
+layer2.0
+layer1.1
+layer3.1
+layer3.0
+1.bn1
+layer4.1
+layer2.1
+layer4.0
+linear
+Test Loss: 1.134 | Acc: 70.290 (7029/10000)
+
+Evaluating on additional CIFAR-10 testset
+Traceback (most recent call last):
+  File "/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/train.py", line 314, in <module>
+    additional_testloader = torch.utils.data.DataLoader(additional_testset, batch_size=100, shuffle=False, num_workers=2)
+  File "/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/train.py", line 173, in test
+    net.eval()
+AttributeError: 'function' object has no attribute 'eval'

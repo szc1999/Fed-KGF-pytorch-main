@@ -1,0 +1,1146 @@
+nohup: 忽略输入
+/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/..
+iid:False, method:avg, seed:16, model:resnet18, variant:None, cifar100:True, onebyone:False,checkpoint:None,teacher:None
+==> Preparing data..
+Files already downloaded and verified
+Files already downloaded and verified
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+500
+==> Building model..
+layer4.1: 4720640
+layer4.0: 3673088
+layer3.1: 1180672
+layer3.0: 919040
+layer2.1: 295424
+layer2.0: 230144
+layer1.0: 73984
+layer1.1: 73984
+linear: 51300
+layer0_: 0
+Epoch:0
+0
+Train Loss: 3.578 | Acc: 39.000 (195/500)
+Train Loss: 1.669 | Acc: 80.000 (400/500)
+Train Loss: 1.384 | Acc: 80.000 (400/500)
+Train Loss: 1.090 | Acc: 80.200 (401/500)
+1
+Train Loss: 6.275 | Acc: 1.800 (9/500)
+Train Loss: 1.857 | Acc: 69.000 (345/500)
+Train Loss: 1.513 | Acc: 79.800 (399/500)
+Train Loss: 1.296 | Acc: 80.000 (400/500)
+2
+Train Loss: 5.612 | Acc: 0.200 (1/500)
+Train Loss: 2.382 | Acc: 43.400 (217/500)
+Train Loss: 1.642 | Acc: 79.200 (396/500)
+Train Loss: 1.456 | Acc: 80.000 (400/500)
+3
+Train Loss: 6.365 | Acc: 0.200 (1/500)
+Train Loss: 3.811 | Acc: 2.000 (10/500)
+Train Loss: 1.850 | Acc: 64.200 (321/500)
+Train Loss: 1.770 | Acc: 80.000 (400/500)
+4
+Train Loss: 7.166 | Acc: 0.200 (1/500)
+Train Loss: 3.987 | Acc: 3.200 (16/500)
+Train Loss: 1.767 | Acc: 79.600 (398/500)
+Train Loss: 1.535 | Acc: 80.000 (400/500)
+5
+Train Loss: 6.753 | Acc: 0.000 (0/500)
+Train Loss: 4.846 | Acc: 0.200 (1/500)
+Train Loss: 3.261 | Acc: 24.200 (121/500)
+Train Loss: 1.587 | Acc: 79.800 (399/500)
+6
+Train Loss: 6.598 | Acc: 0.400 (2/500)
+Train Loss: 4.186 | Acc: 1.200 (6/500)
+Train Loss: 2.386 | Acc: 58.800 (294/500)
+Train Loss: 1.634 | Acc: 80.000 (400/500)
+7
+Train Loss: 7.352 | Acc: 0.400 (2/500)
+Train Loss: 4.304 | Acc: 2.400 (12/500)
+Train Loss: 2.573 | Acc: 41.800 (209/500)
+Train Loss: 1.596 | Acc: 80.000 (400/500)
+8
+Train Loss: 7.443 | Acc: 0.200 (1/500)
+Train Loss: 3.731 | Acc: 11.600 (58/500)
+Train Loss: 1.986 | Acc: 79.600 (398/500)
+Train Loss: 1.911 | Acc: 80.000 (400/500)
+9
+Train Loss: 8.034 | Acc: 0.200 (1/500)
+Train Loss: 4.428 | Acc: 2.400 (12/500)
+Train Loss: 2.159 | Acc: 63.000 (315/500)
+Train Loss: 1.663 | Acc: 80.000 (400/500)
+0.00020352518185973167
+4.551419988274574e-05
+3.519700840115547e-05
+4.0392857044935226e-05
+3.736978396773338e-05
+3.5754870623350143e-05
+3.5049859434366226e-05
+3.558211028575897e-05
+2.418598160147667e-05
+Test Loss: 6.744 | Acc: 1.000 (100/10000)
+Epoch:1
+0
+Train Loss: 7.399 | Acc: 0.200 (1/500)
+Train Loss: 4.439 | Acc: 0.200 (1/500)
+Train Loss: 2.048 | Acc: 55.800 (279/500)
+Train Loss: 1.562 | Acc: 80.000 (400/500)
+1
+Train Loss: 6.768 | Acc: 0.200 (1/500)
+Train Loss: 3.859 | Acc: 1.600 (8/500)
+Train Loss: 1.624 | Acc: 72.400 (362/500)
+Train Loss: 1.470 | Acc: 80.000 (400/500)
+2
+Train Loss: 7.225 | Acc: 0.400 (2/500)
+Train Loss: 4.087 | Acc: 1.400 (7/500)
+Train Loss: 2.206 | Acc: 66.000 (330/500)
+Train Loss: 1.949 | Acc: 80.000 (400/500)
+3
+Train Loss: 6.591 | Acc: 0.200 (1/500)
+Train Loss: 4.542 | Acc: 0.200 (1/500)
+Train Loss: 2.277 | Acc: 39.400 (197/500)
+Train Loss: 1.389 | Acc: 80.000 (400/500)
+4
+Train Loss: 6.576 | Acc: 0.200 (1/500)
+Train Loss: 4.156 | Acc: 0.400 (2/500)
+Train Loss: 2.086 | Acc: 60.200 (301/500)
+Train Loss: 1.624 | Acc: 80.000 (400/500)
+5
+Train Loss: 7.121 | Acc: 0.200 (1/500)
+Train Loss: 3.995 | Acc: 0.800 (4/500)
+Train Loss: 1.944 | Acc: 65.000 (325/500)
+Train Loss: 1.616 | Acc: 80.000 (400/500)
+6
+Train Loss: 6.433 | Acc: 0.200 (1/500)
+Train Loss: 3.864 | Acc: 0.600 (3/500)
+Train Loss: 2.084 | Acc: 73.800 (369/500)
+Train Loss: 1.563 | Acc: 80.000 (400/500)
+7
+Train Loss: 6.488 | Acc: 0.200 (1/500)
+Train Loss: 4.323 | Acc: 0.600 (3/500)
+Train Loss: 2.238 | Acc: 60.400 (302/500)
+Train Loss: 1.711 | Acc: 80.000 (400/500)
+8
+Train Loss: 6.931 | Acc: 0.200 (1/500)
+Train Loss: 4.083 | Acc: 0.600 (3/500)
+Train Loss: 1.940 | Acc: 76.400 (382/500)
+Train Loss: 1.570 | Acc: 80.000 (400/500)
+9
+Train Loss: 7.263 | Acc: 0.200 (1/500)
+Train Loss: 4.303 | Acc: 0.200 (1/500)
+Train Loss: 1.940 | Acc: 62.200 (311/500)
+Train Loss: 1.459 | Acc: 80.000 (400/500)
+0.00017796410247683525
+7.048994302749634e-05
+6.070919334888458e-05
+4.205433651804924e-05
+3.501866012811661e-05
+3.5779085010290146e-05
+3.605801612138748e-05
+3.25632281601429e-05
+2.2356398403644562e-05
+Test Loss: 7.210 | Acc: 1.000 (100/10000)
+Epoch:2
+0
+Train Loss: 7.334 | Acc: 0.200 (1/500)
+Train Loss: 4.248 | Acc: 0.800 (4/500)
+Train Loss: 2.313 | Acc: 44.800 (224/500)
+Train Loss: 2.038 | Acc: 80.000 (400/500)
+1
+Train Loss: 5.560 | Acc: 0.200 (1/500)
+Train Loss: 4.146 | Acc: 0.200 (1/500)
+Train Loss: 2.673 | Acc: 40.200 (201/500)
+Train Loss: 1.638 | Acc: 80.000 (400/500)
+2
+Train Loss: 6.707 | Acc: 0.200 (1/500)
+Train Loss: 3.878 | Acc: 0.600 (3/500)
+Train Loss: 1.712 | Acc: 66.800 (334/500)
+Train Loss: 1.723 | Acc: 80.000 (400/500)
+3
+Train Loss: 5.453 | Acc: 0.200 (1/500)
+Train Loss: 4.144 | Acc: 0.200 (1/500)
+Train Loss: 2.383 | Acc: 37.200 (186/500)
+Train Loss: 1.657 | Acc: 80.000 (400/500)
+4
+Train Loss: 6.751 | Acc: 0.200 (1/500)
+Train Loss: 3.928 | Acc: 2.000 (10/500)
+Train Loss: 1.972 | Acc: 63.200 (316/500)
+Train Loss: 1.914 | Acc: 80.000 (400/500)
+5
+Train Loss: 5.951 | Acc: 0.200 (1/500)
+Train Loss: 4.080 | Acc: 0.200 (1/500)
+Train Loss: 1.973 | Acc: 61.400 (307/500)
+Train Loss: 1.615 | Acc: 80.000 (400/500)
+6
+Train Loss: 5.712 | Acc: 0.200 (1/500)
+Train Loss: 4.247 | Acc: 0.200 (1/500)
+Train Loss: 2.811 | Acc: 39.600 (198/500)
+Train Loss: 1.409 | Acc: 80.000 (400/500)
+7
+Train Loss: 5.892 | Acc: 0.200 (1/500)
+Train Loss: 3.987 | Acc: 1.000 (5/500)
+Train Loss: 2.183 | Acc: 60.800 (304/500)
+Train Loss: 1.784 | Acc: 80.000 (400/500)
+8
+Train Loss: 6.003 | Acc: 0.200 (1/500)
+Train Loss: 4.169 | Acc: 0.600 (3/500)
+Train Loss: 2.416 | Acc: 42.000 (210/500)
+Train Loss: 1.593 | Acc: 80.000 (400/500)
+9
+Train Loss: 5.346 | Acc: 0.200 (1/500)
+Train Loss: 4.027 | Acc: 0.200 (1/500)
+Train Loss: 2.814 | Acc: 37.600 (188/500)
+Train Loss: 1.595 | Acc: 79.800 (399/500)
+0.00010826997458934784
+2.7570873498916626e-05
+2.649705857038498e-05
+2.5498680770397186e-05
+2.3256056010723114e-05
+3.0104070901870728e-05
+2.5709159672260284e-05
+2.4884939193725586e-05
+2.043275162577629e-05
+Test Loss: 6.292 | Acc: 1.170 (117/10000)
+Epoch:3
+0
+Train Loss: 9.554 | Acc: 0.200 (1/500)
+Train Loss: 5.298 | Acc: 0.800 (4/500)
+Train Loss: 2.800 | Acc: 22.200 (111/500)
+Train Loss: 1.590 | Acc: 80.000 (400/500)
+1
+Train Loss: 1.638 | Acc: 80.000 (400/500)
+Train Loss: 1.533 | Acc: 80.000 (400/500)
+Train Loss: 1.398 | Acc: 80.000 (400/500)
+Train Loss: 1.352 | Acc: 80.200 (401/500)
+2
+Train Loss: 13.259 | Acc: 0.200 (1/500)
+Train Loss: 6.847 | Acc: 0.200 (1/500)
+Train Loss: 3.458 | Acc: 4.400 (22/500)
+Train Loss: 2.027 | Acc: 80.000 (400/500)
+3
+Train Loss: 8.222 | Acc: 0.000 (0/500)
+Train Loss: 5.134 | Acc: 0.000 (0/500)
+Train Loss: 2.615 | Acc: 20.200 (101/500)
+Train Loss: 1.598 | Acc: 80.000 (400/500)
+4
+Train Loss: 10.535 | Acc: 0.200 (1/500)
+Train Loss: 5.683 | Acc: 1.400 (7/500)
+Train Loss: 3.156 | Acc: 20.400 (102/500)
+Train Loss: 1.550 | Acc: 80.000 (400/500)
+5
+Train Loss: 9.049 | Acc: 0.200 (1/500)
+Train Loss: 4.755 | Acc: 0.600 (3/500)
+Train Loss: 2.137 | Acc: 42.800 (214/500)
+Train Loss: 1.692 | Acc: 80.000 (400/500)
+6
+Train Loss: 8.915 | Acc: 0.200 (1/500)
+Train Loss: 5.052 | Acc: 0.400 (2/500)
+Train Loss: 3.346 | Acc: 2.400 (12/500)
+Train Loss: 1.960 | Acc: 79.800 (399/500)
+7
+Train Loss: 7.988 | Acc: 0.200 (1/500)
+Train Loss: 5.024 | Acc: 0.200 (1/500)
+Train Loss: 3.342 | Acc: 17.000 (85/500)
+Train Loss: 1.581 | Acc: 80.000 (400/500)
+8
+Train Loss: 9.726 | Acc: 0.000 (0/500)
+Train Loss: 5.248 | Acc: 2.000 (10/500)
+Train Loss: 3.029 | Acc: 21.600 (108/500)
+Train Loss: 1.822 | Acc: 80.000 (400/500)
+9
+Train Loss: 9.955 | Acc: 0.600 (3/500)
+Train Loss: 4.665 | Acc: 5.200 (26/500)
+Train Loss: 1.895 | Acc: 62.800 (314/500)
+Train Loss: 1.367 | Acc: 80.000 (400/500)
+0.00014633499085903168
+4.716496914625168e-05
+4.355795681476593e-05
+4.623830318450928e-05
+4.616193473339081e-05
+3.651203587651253e-05
+3.422703593969345e-05
+3.3628661185503006e-05
+2.1913088858127594e-05
+Test Loss: 8.318 | Acc: 1.000 (100/10000)
+Epoch:4
+0
+Train Loss: 5.584 | Acc: 0.200 (1/500)
+Train Loss: 4.417 | Acc: 0.200 (1/500)
+Train Loss: 3.595 | Acc: 0.200 (1/500)
+Train Loss: 2.650 | Acc: 2.400 (12/500)
+1
+Train Loss: 6.871 | Acc: 0.000 (0/500)
+Train Loss: 5.212 | Acc: 0.000 (0/500)
+Train Loss: 4.099 | Acc: 0.000 (0/500)
+Train Loss: 3.137 | Acc: 32.000 (160/500)
+2
+Train Loss: 7.004 | Acc: 0.200 (1/500)
+Train Loss: 5.041 | Acc: 0.200 (1/500)
+Train Loss: 3.846 | Acc: 0.400 (2/500)
+Train Loss: 2.699 | Acc: 40.800 (204/500)
+3
+Train Loss: 6.343 | Acc: 0.000 (0/500)
+Train Loss: 4.715 | Acc: 0.000 (0/500)
+Train Loss: 3.711 | Acc: 0.000 (0/500)
+Train Loss: 2.592 | Acc: 39.400 (197/500)
+4
+Train Loss: 6.338 | Acc: 0.200 (1/500)
+Train Loss: 4.889 | Acc: 0.200 (1/500)
+Train Loss: 3.945 | Acc: 0.200 (1/500)
+Train Loss: 2.638 | Acc: 15.400 (77/500)
+5
+Train Loss: 6.926 | Acc: 0.200 (1/500)
+Train Loss: 4.989 | Acc: 0.200 (1/500)
+Train Loss: 3.493 | Acc: 0.200 (1/500)
+Train Loss: 2.004 | Acc: 59.600 (298/500)
+6
+Train Loss: 8.710 | Acc: 0.400 (2/500)
+Train Loss: 5.012 | Acc: 0.400 (2/500)
+Train Loss: 3.359 | Acc: 3.600 (18/500)
+Train Loss: 1.916 | Acc: 68.600 (343/500)
+7
+Train Loss: 7.067 | Acc: 0.000 (0/500)
+Train Loss: 4.613 | Acc: 0.000 (0/500)
+Train Loss: 3.092 | Acc: 0.800 (4/500)
+Train Loss: 1.600 | Acc: 80.000 (400/500)
+8
+Train Loss: 7.085 | Acc: 0.200 (1/500)
+Train Loss: 5.060 | Acc: 0.200 (1/500)
+Train Loss: 4.094 | Acc: 0.200 (1/500)
+Train Loss: 3.087 | Acc: 20.200 (101/500)
+9
+Train Loss: 6.177 | Acc: 0.000 (0/500)
+Train Loss: 4.753 | Acc: 0.000 (0/500)
+Train Loss: 3.886 | Acc: 0.400 (2/500)
+Train Loss: 2.892 | Acc: 7.800 (39/500)
+0.0001830272376537323
+6.200699135661125e-05
+5.559530109167099e-05
+4.390208050608635e-05
+4.0904153138399124e-05
+4.387274384498596e-05
+4.304107278585434e-05
+3.049522638320923e-05
+2.1389219909906387e-05
+Test Loss: 6.650 | Acc: 1.000 (100/10000)
+Epoch:5
+0
+Train Loss: 5.781 | Acc: 0.200 (1/500)
+Train Loss: 3.063 | Acc: 16.400 (82/500)
+Train Loss: 1.598 | Acc: 80.000 (400/500)
+Train Loss: 1.689 | Acc: 80.000 (400/500)
+1
+Train Loss: 5.965 | Acc: 0.200 (1/500)
+Train Loss: 3.061 | Acc: 18.200 (91/500)
+Train Loss: 1.550 | Acc: 79.200 (396/500)
+Train Loss: 1.517 | Acc: 80.000 (400/500)
+2
+Train Loss: 6.621 | Acc: 0.400 (2/500)
+Train Loss: 4.107 | Acc: 0.200 (1/500)
+Train Loss: 2.629 | Acc: 58.600 (293/500)
+Train Loss: 1.590 | Acc: 80.000 (400/500)
+3
+Train Loss: 6.251 | Acc: 0.200 (1/500)
+Train Loss: 4.403 | Acc: 0.200 (1/500)
+Train Loss: 3.626 | Acc: 0.200 (1/500)
+Train Loss: 1.879 | Acc: 78.200 (391/500)
+4
+Train Loss: 6.170 | Acc: 0.200 (1/500)
+Train Loss: 3.195 | Acc: 19.000 (95/500)
+Train Loss: 1.789 | Acc: 80.000 (400/500)
+Train Loss: 1.607 | Acc: 80.000 (400/500)
+5
+Train Loss: 6.370 | Acc: 0.200 (1/500)
+Train Loss: 4.436 | Acc: 0.200 (1/500)
+Train Loss: 3.006 | Acc: 20.200 (101/500)
+Train Loss: 1.654 | Acc: 80.000 (400/500)
+6
+Train Loss: 6.253 | Acc: 0.200 (1/500)
+Train Loss: 4.674 | Acc: 0.200 (1/500)
+Train Loss: 3.883 | Acc: 0.400 (2/500)
+Train Loss: 2.220 | Acc: 57.800 (289/500)
+7
+Train Loss: 6.099 | Acc: 0.400 (2/500)
+Train Loss: 4.324 | Acc: 0.200 (1/500)
+Train Loss: 3.152 | Acc: 19.200 (96/500)
+Train Loss: 1.997 | Acc: 80.000 (400/500)
+8
+Train Loss: 6.840 | Acc: 0.200 (1/500)
+Train Loss: 3.876 | Acc: 1.000 (5/500)
+Train Loss: 2.186 | Acc: 63.600 (318/500)
+Train Loss: 1.572 | Acc: 80.000 (400/500)
+9
+Train Loss: 5.696 | Acc: 0.200 (1/500)
+Train Loss: 4.429 | Acc: 0.200 (1/500)
+Train Loss: 3.566 | Acc: 0.400 (2/500)
+Train Loss: 2.024 | Acc: 74.000 (370/500)
+0.00017210794612765312
+5.767308175563812e-05
+5.420716479420662e-05
+4.894472658634186e-05
+4.7554727643728256e-05
+4.398869350552559e-05
+3.7727877497673035e-05
+3.0508264899253845e-05
+2.2977124899625778e-05
+Test Loss: 5.300 | Acc: 1.000 (100/10000)
+Epoch:6
+0
+Train Loss: 6.600 | Acc: 0.200 (1/500)
+Train Loss: 4.477 | Acc: 0.200 (1/500)
+Train Loss: 3.525 | Acc: 18.400 (92/500)
+Train Loss: 2.338 | Acc: 80.000 (400/500)
+1
+Train Loss: 3.056 | Acc: 4.800 (24/500)
+Train Loss: 1.610 | Acc: 78.800 (394/500)
+Train Loss: 1.471 | Acc: 80.000 (400/500)
+Train Loss: 1.434 | Acc: 80.000 (400/500)
+2
+Train Loss: 6.168 | Acc: 0.200 (1/500)
+Train Loss: 3.265 | Acc: 18.000 (90/500)
+Train Loss: 1.618 | Acc: 80.000 (400/500)
+Train Loss: 1.641 | Acc: 80.000 (400/500)
+3
+Train Loss: 5.935 | Acc: 0.400 (2/500)
+Train Loss: 3.589 | Acc: 2.200 (11/500)
+Train Loss: 2.050 | Acc: 80.000 (400/500)
+Train Loss: 1.554 | Acc: 80.000 (400/500)
+4
+Train Loss: 6.785 | Acc: 0.200 (1/500)
+Train Loss: 4.514 | Acc: 0.200 (1/500)
+Train Loss: 3.163 | Acc: 20.800 (104/500)
+Train Loss: 1.975 | Acc: 80.000 (400/500)
+5
+Train Loss: 6.530 | Acc: 0.200 (1/500)
+Train Loss: 4.334 | Acc: 0.400 (2/500)
+Train Loss: 2.998 | Acc: 40.200 (201/500)
+Train Loss: 1.778 | Acc: 80.000 (400/500)
+6
+Train Loss: 6.412 | Acc: 0.200 (1/500)
+Train Loss: 4.406 | Acc: 0.200 (1/500)
+Train Loss: 3.109 | Acc: 40.000 (200/500)
+Train Loss: 1.881 | Acc: 80.000 (400/500)
+7
+Train Loss: 6.951 | Acc: 0.200 (1/500)
+Train Loss: 4.517 | Acc: 0.400 (2/500)
+Train Loss: 3.033 | Acc: 37.600 (188/500)
+Train Loss: 1.731 | Acc: 80.000 (400/500)
+8
+Train Loss: 6.134 | Acc: 0.400 (2/500)
+Train Loss: 2.870 | Acc: 23.200 (116/500)
+Train Loss: 1.662 | Acc: 80.000 (400/500)
+Train Loss: 1.619 | Acc: 80.000 (400/500)
+9
+Train Loss: 6.564 | Acc: 0.200 (1/500)
+Train Loss: 4.413 | Acc: 0.200 (1/500)
+Train Loss: 3.108 | Acc: 22.400 (112/500)
+Train Loss: 1.913 | Acc: 80.000 (400/500)
+0.00014304602518677711
+4.820432513952255e-05
+4.245806485414505e-05
+4.674308001995087e-05
+3.897305577993393e-05
+3.9223115891218185e-05
+3.2011885195970535e-05
+2.5196000933647156e-05
+2.4586915969848633e-05
+Test Loss: 5.879 | Acc: 1.000 (100/10000)
+Epoch:7
+0
+Train Loss: 6.889 | Acc: 0.200 (1/500)
+Train Loss: 4.492 | Acc: 0.200 (1/500)
+Train Loss: 3.251 | Acc: 16.800 (84/500)
+Train Loss: 2.219 | Acc: 80.000 (400/500)
+1
+Train Loss: 5.843 | Acc: 0.200 (1/500)
+Train Loss: 4.488 | Acc: 0.200 (1/500)
+Train Loss: 3.627 | Acc: 1.000 (5/500)
+Train Loss: 2.432 | Acc: 67.200 (336/500)
+2
+Train Loss: 7.002 | Acc: 0.000 (0/500)
+Train Loss: 4.722 | Acc: 0.000 (0/500)
+Train Loss: 3.305 | Acc: 0.600 (3/500)
+Train Loss: 1.830 | Acc: 80.000 (400/500)
+3
+Train Loss: 6.637 | Acc: 0.200 (1/500)
+Train Loss: 3.892 | Acc: 0.200 (1/500)
+Train Loss: 2.262 | Acc: 61.400 (307/500)
+Train Loss: 1.582 | Acc: 80.000 (400/500)
+4
+Train Loss: 5.905 | Acc: 0.200 (1/500)
+Train Loss: 3.242 | Acc: 6.400 (32/500)
+Train Loss: 1.774 | Acc: 80.000 (400/500)
+Train Loss: 1.548 | Acc: 80.000 (400/500)
+5
+Train Loss: 6.549 | Acc: 0.000 (0/500)
+Train Loss: 3.495 | Acc: 0.200 (1/500)
+Train Loss: 1.837 | Acc: 80.000 (400/500)
+Train Loss: 1.543 | Acc: 80.000 (400/500)
+6
+Train Loss: 6.001 | Acc: 0.200 (1/500)
+Train Loss: 4.554 | Acc: 0.200 (1/500)
+Train Loss: 3.696 | Acc: 0.400 (2/500)
+Train Loss: 2.111 | Acc: 59.200 (296/500)
+7
+Train Loss: 6.250 | Acc: 0.200 (1/500)
+Train Loss: 4.535 | Acc: 0.200 (1/500)
+Train Loss: 3.416 | Acc: 0.600 (3/500)
+Train Loss: 1.768 | Acc: 65.400 (327/500)
+8
+Train Loss: 6.708 | Acc: 0.200 (1/500)
+Train Loss: 4.574 | Acc: 0.200 (1/500)
+Train Loss: 3.477 | Acc: 1.000 (5/500)
+Train Loss: 1.865 | Acc: 80.000 (400/500)
+9
+Train Loss: 6.355 | Acc: 0.200 (1/500)
+Train Loss: 4.502 | Acc: 0.200 (1/500)
+Train Loss: 3.665 | Acc: 0.400 (2/500)
+Train Loss: 2.323 | Acc: 65.000 (325/500)
+0.00012619001790881157
+3.428710624575615e-05
+3.148801624774933e-05
+3.206031396985054e-05
+2.8213951736688614e-05
+2.3940112441778183e-05
+2.456922084093094e-05
+2.3927073925733566e-05
+2.3280270397663116e-05
+Test Loss: 5.126 | Acc: 1.000 (100/10000)
+Epoch:8
+0
+Train Loss: 6.512 | Acc: 0.000 (0/500)
+Train Loss: 3.548 | Acc: 0.000 (0/500)
+Train Loss: 1.858 | Acc: 78.800 (394/500)
+Train Loss: 1.747 | Acc: 80.000 (400/500)
+1
+Train Loss: 7.873 | Acc: 0.200 (1/500)
+Train Loss: 4.724 | Acc: 0.200 (1/500)
+Train Loss: 3.630 | Acc: 0.800 (4/500)
+Train Loss: 2.008 | Acc: 80.000 (400/500)
+2
+Train Loss: 7.656 | Acc: 0.200 (1/500)
+Train Loss: 3.429 | Acc: 0.600 (3/500)
+Train Loss: 1.744 | Acc: 80.000 (400/500)
+Train Loss: 1.417 | Acc: 80.000 (400/500)
+3
+Train Loss: 3.290 | Acc: 0.200 (1/500)
+Train Loss: 1.596 | Acc: 79.200 (396/500)
+Train Loss: 1.487 | Acc: 80.000 (400/500)
+Train Loss: 1.421 | Acc: 80.000 (400/500)
+4
+Train Loss: 7.425 | Acc: 0.200 (1/500)
+Train Loss: 4.536 | Acc: 0.200 (1/500)
+Train Loss: 3.373 | Acc: 1.400 (7/500)
+Train Loss: 1.872 | Acc: 80.000 (400/500)
+5
+Train Loss: 7.284 | Acc: 0.200 (1/500)
+Train Loss: 4.655 | Acc: 0.200 (1/500)
+Train Loss: 3.382 | Acc: 2.800 (14/500)
+Train Loss: 1.897 | Acc: 80.000 (400/500)
+6
+Train Loss: 7.735 | Acc: 0.200 (1/500)
+Train Loss: 3.571 | Acc: 0.400 (2/500)
+Train Loss: 2.073 | Acc: 63.800 (319/500)
+Train Loss: 1.586 | Acc: 80.000 (400/500)
+7
+Train Loss: 7.667 | Acc: 0.000 (0/500)
+Train Loss: 4.140 | Acc: 0.000 (0/500)
+Train Loss: 2.466 | Acc: 52.600 (263/500)
+Train Loss: 1.596 | Acc: 80.000 (400/500)
+8
+Train Loss: 7.959 | Acc: 0.200 (1/500)
+Train Loss: 4.805 | Acc: 0.200 (1/500)
+Train Loss: 3.901 | Acc: 1.400 (7/500)
+Train Loss: 2.592 | Acc: 43.600 (218/500)
+9
+Train Loss: 4.620 | Acc: 0.000 (0/500)
+Train Loss: 2.152 | Acc: 41.600 (208/500)
+Train Loss: 1.485 | Acc: 80.000 (400/500)
+Train Loss: 1.521 | Acc: 80.000 (400/500)
+0.00020300643518567085
+7.245643064379692e-05
+4.8605259507894516e-05
+4.4792890548706055e-05
+3.803009167313576e-05
+3.538886085152626e-05
+3.841938450932503e-05
+3.525335341691971e-05
+2.1359883248806e-05
+Test Loss: 6.787 | Acc: 1.000 (100/10000)
+Epoch:9
+0
+Train Loss: 5.675 | Acc: 0.200 (1/500)
+Train Loss: 4.685 | Acc: 0.200 (1/500)
+Train Loss: 4.393 | Acc: 0.200 (1/500)
+Train Loss: 4.036 | Acc: 0.200 (1/500)
+1
+Train Loss: 7.227 | Acc: 0.200 (1/500)
+Train Loss: 5.026 | Acc: 0.200 (1/500)
+Train Loss: 4.359 | Acc: 0.200 (1/500)
+Train Loss: 3.945 | Acc: 0.200 (1/500)
+2
+Train Loss: 7.551 | Acc: 0.200 (1/500)
+Train Loss: 5.023 | Acc: 0.200 (1/500)
+Train Loss: 4.247 | Acc: 0.200 (1/500)
+Train Loss: 3.714 | Acc: 1.200 (6/500)
+3
+Train Loss: 5.296 | Acc: 0.200 (1/500)
+Train Loss: 4.050 | Acc: 0.200 (1/500)
+Train Loss: 3.298 | Acc: 0.200 (1/500)
+Train Loss: 2.232 | Acc: 18.200 (91/500)
+4
+Train Loss: 5.452 | Acc: 0.200 (1/500)
+Train Loss: 4.596 | Acc: 0.200 (1/500)
+Train Loss: 4.193 | Acc: 0.200 (1/500)
+Train Loss: 3.699 | Acc: 0.200 (1/500)
+5
+Train Loss: 5.395 | Acc: 0.200 (1/500)
+Train Loss: 4.736 | Acc: 0.200 (1/500)
+Train Loss: 4.331 | Acc: 0.200 (1/500)
+Train Loss: 4.029 | Acc: 0.200 (1/500)
+6
+Train Loss: 6.914 | Acc: 0.200 (1/500)
+Train Loss: 4.679 | Acc: 0.200 (1/500)
+Train Loss: 3.977 | Acc: 0.200 (1/500)
+Train Loss: 3.358 | Acc: 1.200 (6/500)
+7
+Train Loss: 5.569 | Acc: 0.000 (0/500)
+Train Loss: 4.146 | Acc: 0.200 (1/500)
+Train Loss: 3.207 | Acc: 1.200 (6/500)
+Train Loss: 2.062 | Acc: 60.000 (300/500)
+8
+Train Loss: 6.254 | Acc: 0.200 (1/500)
+Train Loss: 4.809 | Acc: 0.200 (1/500)
+Train Loss: 4.271 | Acc: 0.200 (1/500)
+Train Loss: 3.832 | Acc: 0.400 (2/500)
+9
+Train Loss: 5.625 | Acc: 0.000 (0/500)
+Train Loss: 4.620 | Acc: 0.000 (0/500)
+Train Loss: 4.216 | Acc: 0.000 (0/500)
+Train Loss: 3.810 | Acc: 0.000 (0/500)
+0.00016298890113830566
+5.933130159974098e-05
+5.011400207877159e-05
+4.739593714475632e-05
+4.346761852502823e-05
+4.227692261338234e-05
+3.656698390841484e-05
+3.260886296629906e-05
+2.1101906895637512e-05
+Test Loss: 4.848 | Acc: 1.000 (100/10000)
+Epoch:10
+0
+Train Loss: 4.605 | Acc: 0.200 (1/500)
+Train Loss: 4.031 | Acc: 0.400 (2/500)
+Train Loss: 3.157 | Acc: 0.600 (3/500)
+Train Loss: 1.947 | Acc: 58.000 (290/500)
+1
+Train Loss: 4.754 | Acc: 0.200 (1/500)
+Train Loss: 4.103 | Acc: 0.400 (2/500)
+Train Loss: 3.443 | Acc: 2.200 (11/500)
+Train Loss: 2.460 | Acc: 44.800 (224/500)
+2
+Train Loss: 4.753 | Acc: 0.400 (2/500)
+Train Loss: 4.350 | Acc: 0.800 (4/500)
+Train Loss: 3.846 | Acc: 1.800 (9/500)
+Train Loss: 2.946 | Acc: 4.200 (21/500)
+3
+Train Loss: 4.845 | Acc: 0.200 (1/500)
+Train Loss: 4.510 | Acc: 0.200 (1/500)
+Train Loss: 4.185 | Acc: 0.800 (4/500)
+Train Loss: 3.773 | Acc: 1.200 (6/500)
+4
+Train Loss: 4.299 | Acc: 0.200 (1/500)
+Train Loss: 3.794 | Acc: 0.400 (2/500)
+Train Loss: 3.101 | Acc: 1.200 (6/500)
+Train Loss: 2.157 | Acc: 20.000 (100/500)
+5
+Train Loss: 4.958 | Acc: 0.200 (1/500)
+Train Loss: 4.591 | Acc: 0.200 (1/500)
+Train Loss: 4.060 | Acc: 0.800 (4/500)
+Train Loss: 3.491 | Acc: 2.200 (11/500)
+6
+Train Loss: 4.816 | Acc: 0.200 (1/500)
+Train Loss: 4.526 | Acc: 0.200 (1/500)
+Train Loss: 4.187 | Acc: 0.200 (1/500)
+Train Loss: 3.718 | Acc: 0.200 (1/500)
+7
+Train Loss: 4.725 | Acc: 0.200 (1/500)
+Train Loss: 4.520 | Acc: 0.200 (1/500)
+Train Loss: 4.241 | Acc: 0.600 (3/500)
+Train Loss: 3.896 | Acc: 1.200 (6/500)
+8
+Train Loss: 4.846 | Acc: 0.200 (1/500)
+Train Loss: 4.543 | Acc: 0.200 (1/500)
+Train Loss: 4.227 | Acc: 0.400 (2/500)
+Train Loss: 3.829 | Acc: 0.600 (3/500)
+9
+Train Loss: 4.723 | Acc: 0.200 (1/500)
+Train Loss: 4.555 | Acc: 0.200 (1/500)
+Train Loss: 4.309 | Acc: 0.400 (2/500)
+Train Loss: 4.004 | Acc: 0.400 (2/500)
+0.0001606559380888939
+5.754223093390465e-05
+5.212100222706795e-05
+5.3132884204387665e-05
+5.7167839258909225e-05
+4.0650367736816406e-05
+3.950390964746475e-05
+3.403192386031151e-05
+2.187909558415413e-05
+Test Loss: 4.684 | Acc: 1.040 (104/10000)
+Epoch:11
+0
+Train Loss: 4.804 | Acc: 0.200 (1/500)
+Train Loss: 4.226 | Acc: 0.200 (1/500)
+Train Loss: 3.581 | Acc: 0.400 (2/500)
+Train Loss: 2.606 | Acc: 38.200 (191/500)
+1
+Train Loss: 4.732 | Acc: 0.200 (1/500)
+Train Loss: 4.498 | Acc: 0.200 (1/500)
+Train Loss: 4.186 | Acc: 0.200 (1/500)
+Train Loss: 3.744 | Acc: 0.200 (1/500)
+2
+Train Loss: 4.541 | Acc: 0.200 (1/500)
+Train Loss: 3.615 | Acc: 0.600 (3/500)
+Train Loss: 2.057 | Acc: 56.000 (280/500)
+Train Loss: 1.521 | Acc: 80.000 (400/500)
+3
+Train Loss: 4.596 | Acc: 0.200 (1/500)
+Train Loss: 3.964 | Acc: 0.400 (2/500)
+Train Loss: 3.047 | Acc: 3.000 (15/500)
+Train Loss: 1.907 | Acc: 78.000 (390/500)
+4
+Train Loss: 4.767 | Acc: 0.200 (1/500)
+Train Loss: 4.542 | Acc: 0.200 (1/500)
+Train Loss: 4.218 | Acc: 0.200 (1/500)
+Train Loss: 3.795 | Acc: 0.400 (2/500)
+5
+Train Loss: 4.726 | Acc: 0.400 (2/500)
+Train Loss: 4.267 | Acc: 0.800 (4/500)
+Train Loss: 3.716 | Acc: 1.800 (9/500)
+Train Loss: 2.863 | Acc: 17.600 (88/500)
+6
+Train Loss: 4.770 | Acc: 0.200 (1/500)
+Train Loss: 4.179 | Acc: 0.400 (2/500)
+Train Loss: 3.299 | Acc: 1.400 (7/500)
+Train Loss: 2.195 | Acc: 28.400 (142/500)
+7
+Train Loss: 4.697 | Acc: 0.400 (2/500)
+Train Loss: 4.110 | Acc: 0.800 (4/500)
+Train Loss: 3.206 | Acc: 2.800 (14/500)
+Train Loss: 2.092 | Acc: 56.800 (284/500)
+8
+Train Loss: 4.703 | Acc: 0.200 (1/500)
+Train Loss: 4.126 | Acc: 0.200 (1/500)
+Train Loss: 3.203 | Acc: 1.600 (8/500)
+Train Loss: 1.980 | Acc: 59.200 (296/500)
+9
+Train Loss: 4.752 | Acc: 0.000 (0/500)
+Train Loss: 4.481 | Acc: 0.000 (0/500)
+Train Loss: 4.153 | Acc: 0.400 (2/500)
+Train Loss: 3.730 | Acc: 1.400 (7/500)
+0.00014660507440567017
+4.8241112381219864e-05
+4.474492743611336e-05
+4.4016167521476746e-05
+4.7794077545404434e-05
+4.49097715318203e-05
+3.698794171214104e-05
+3.7697143852710724e-05
+2.1379906684160233e-05
+Test Loss: 4.754 | Acc: 1.020 (102/10000)
+Epoch:12
+0
+Train Loss: 4.724 | Acc: 0.200 (1/500)
+Train Loss: 4.258 | Acc: 0.200 (1/500)
+Train Loss: 3.681 | Acc: 1.000 (5/500)
+Train Loss: 2.567 | Acc: 19.600 (98/500)
+1
+Train Loss: 4.682 | Acc: 0.200 (1/500)
+Train Loss: 4.098 | Acc: 1.400 (7/500)
+Train Loss: 3.273 | Acc: 7.600 (38/500)
+Train Loss: 2.034 | Acc: 59.200 (296/500)
+2
+Train Loss: 4.675 | Acc: 0.200 (1/500)
+Train Loss: 3.599 | Acc: 0.400 (2/500)
+Train Loss: 1.944 | Acc: 66.600 (333/500)
+Train Loss: 1.655 | Acc: 80.000 (400/500)
+3
+Train Loss: 4.611 | Acc: 0.200 (1/500)
+Train Loss: 3.906 | Acc: 0.200 (1/500)
+Train Loss: 2.575 | Acc: 18.200 (91/500)
+Train Loss: 1.584 | Acc: 80.000 (400/500)
+4
+Train Loss: 4.697 | Acc: 0.200 (1/500)
+Train Loss: 4.157 | Acc: 0.200 (1/500)
+Train Loss: 3.545 | Acc: 17.600 (88/500)
+Train Loss: 2.663 | Acc: 77.600 (388/500)
+5
+Train Loss: 4.734 | Acc: 0.200 (1/500)
+Train Loss: 4.108 | Acc: 0.200 (1/500)
+Train Loss: 3.372 | Acc: 0.400 (2/500)
+Train Loss: 2.250 | Acc: 60.600 (303/500)
+6
+Train Loss: 4.752 | Acc: 0.200 (1/500)
+Train Loss: 4.449 | Acc: 0.200 (1/500)
+Train Loss: 4.037 | Acc: 1.000 (5/500)
+Train Loss: 3.428 | Acc: 2.200 (11/500)
+7
+Train Loss: 4.790 | Acc: 0.200 (1/500)
+Train Loss: 4.481 | Acc: 0.200 (1/500)
+Train Loss: 4.084 | Acc: 0.400 (2/500)
+Train Loss: 3.398 | Acc: 2.000 (10/500)
+8
+Train Loss: 4.765 | Acc: 0.200 (1/500)
+Train Loss: 3.986 | Acc: 0.200 (1/500)
+Train Loss: 3.001 | Acc: 17.400 (87/500)
+Train Loss: 1.857 | Acc: 80.000 (400/500)
+9
+Train Loss: 4.762 | Acc: 0.200 (1/500)
+Train Loss: 4.361 | Acc: 0.200 (1/500)
+Train Loss: 3.862 | Acc: 0.200 (1/500)
+Train Loss: 2.934 | Acc: 13.800 (69/500)
+0.00014603976160287857
+5.218014121055603e-05
+6.146589294075966e-05
+5.016988143324852e-05
+5.084509029984474e-05
+4.324037581682205e-05
+3.956025466322899e-05
+3.195786848664284e-05
+2.4778302758932114e-05
+Test Loss: 5.202 | Acc: 0.920 (92/10000)
+Epoch:13
+0
+Train Loss: 4.895 | Acc: 0.200 (1/500)
+Train Loss: 3.889 | Acc: 0.000 (0/500)
+Train Loss: 2.838 | Acc: 38.400 (192/500)
+Train Loss: 1.711 | Acc: 80.000 (400/500)
+1
+Train Loss: 4.798 | Acc: 0.200 (1/500)
+Train Loss: 3.448 | Acc: 1.000 (5/500)
+Train Loss: 1.860 | Acc: 80.000 (400/500)
+Train Loss: 1.572 | Acc: 80.000 (400/500)
+2
+Train Loss: 5.224 | Acc: 0.200 (1/500)
+Train Loss: 4.178 | Acc: 0.200 (1/500)
+Train Loss: 3.310 | Acc: 16.200 (81/500)
+Train Loss: 2.239 | Acc: 79.200 (396/500)
+3
+Train Loss: 5.073 | Acc: 0.400 (2/500)
+Train Loss: 3.979 | Acc: 1.000 (5/500)
+Train Loss: 3.167 | Acc: 19.600 (98/500)
+Train Loss: 2.112 | Acc: 80.000 (400/500)
+4
+Train Loss: 4.971 | Acc: 0.000 (0/500)
+Train Loss: 4.045 | Acc: 0.800 (4/500)
+Train Loss: 3.137 | Acc: 17.200 (86/500)
+Train Loss: 2.017 | Acc: 79.000 (395/500)
+5
+Train Loss: 5.050 | Acc: 0.200 (1/500)
+Train Loss: 4.300 | Acc: 0.400 (2/500)
+Train Loss: 3.614 | Acc: 1.800 (9/500)
+Train Loss: 2.596 | Acc: 75.200 (376/500)
+6
+Train Loss: 5.061 | Acc: 0.400 (2/500)
+Train Loss: 4.020 | Acc: 0.400 (2/500)
+Train Loss: 3.100 | Acc: 19.400 (97/500)
+Train Loss: 1.952 | Acc: 78.600 (393/500)
+7
+Train Loss: 5.177 | Acc: 0.200 (1/500)
+Train Loss: 3.689 | Acc: 0.200 (1/500)
+Train Loss: 2.533 | Acc: 69.800 (349/500)
+Train Loss: 1.526 | Acc: 79.200 (396/500)
+8
+Train Loss: 5.117 | Acc: 0.000 (0/500)
+Train Loss: 4.433 | Acc: 0.200 (1/500)
+Train Loss: 3.776 | Acc: 0.400 (2/500)
+Train Loss: 2.797 | Acc: 56.200 (281/500)
+9
+Train Loss: 3.355 | Acc: 0.000 (0/500)
+Train Loss: 2.284 | Acc: 58.600 (293/500)
+Train Loss: 1.575 | Acc: 80.000 (400/500)
+Train Loss: 1.586 | Acc: 80.000 (400/500)
+0.00014608725905418396
+6.520422175526619e-05
+4.71179373562336e-05
+5.133310332894325e-05
+4.652980715036392e-05
+4.6543311327695847e-05
+3.9068982005119324e-05
+3.832019865512848e-05
+1.993030309677124e-05
+Test Loss: 7.867 | Acc: 1.000 (100/10000)
+Epoch:14
+0
+Train Loss: 6.809 | Acc: 0.200 (1/500)
+Train Loss: 4.381 | Acc: 0.200 (1/500)
+Train Loss: 3.051 | Acc: 2.000 (10/500)
+Train Loss: 1.774 | Acc: 71.200 (356/500)
+1
+Train Loss: 7.415 | Acc: 0.400 (2/500)
+Train Loss: 4.551 | Acc: 0.400 (2/500)
+Train Loss: 3.044 | Acc: 1.400 (7/500)
+Train Loss: 1.575 | Acc: 80.000 (400/500)
+2
+Train Loss: 6.979 | Acc: 0.200 (1/500)
+Train Loss: 4.679 | Acc: 0.200 (1/500)
+Train Loss: 3.818 | Acc: 0.400 (2/500)
+Train Loss: 2.654 | Acc: 20.000 (100/500)
+3
+Train Loss: 6.867 | Acc: 0.200 (1/500)
+Train Loss: 4.596 | Acc: 0.200 (1/500)
+Train Loss: 3.710 | Acc: 0.400 (2/500)
+Train Loss: 2.229 | Acc: 41.000 (205/500)
+4
+Train Loss: 7.818 | Acc: 0.200 (1/500)
+Train Loss: 5.174 | Acc: 0.200 (1/500)
+Train Loss: 4.027 | Acc: 0.200 (1/500)
+Train Loss: 2.952 | Acc: 19.000 (95/500)
+5
+Train Loss: 6.984 | Acc: 0.200 (1/500)
+Train Loss: 4.570 | Acc: 0.200 (1/500)
+Train Loss: 3.539 | Acc: 0.400 (2/500)
+Train Loss: 2.237 | Acc: 41.800 (209/500)
+6
+Train Loss: 7.202 | Acc: 0.200 (1/500)
+Train Loss: 4.482 | Acc: 0.200 (1/500)
+Train Loss: 2.968 | Acc: 2.400 (12/500)
+Train Loss: 1.703 | Acc: 80.000 (400/500)
+7
+Train Loss: 7.214 | Acc: 0.200 (1/500)
+Train Loss: 5.029 | Acc: 0.200 (1/500)
+Train Loss: 4.174 | Acc: 0.200 (1/500)
+Train Loss: 3.469 | Acc: 1.400 (7/500)
+8
+Train Loss: 6.606 | Acc: 0.200 (1/500)
+Train Loss: 4.364 | Acc: 0.200 (1/500)
+Train Loss: 3.312 | Acc: 0.200 (1/500)
+Train Loss: 2.048 | Acc: 47.400 (237/500)
+9
+Train Loss: 4.760 | Acc: 0.200 (1/500)
+Train Loss: 2.994 | Acc: 0.400 (2/500)
+Train Loss: 2.017 | Acc: 60.600 (303/500)
+Train Loss: 1.509 | Acc: 80.000 (400/500)
+0.00013811280950903893
+5.2123796194791794e-05
+5.34839928150177e-05
+5.158688873052597e-05
+4.2605213820934296e-05
+4.210229963064194e-05
+3.6049168556928635e-05
+2.7529895305633545e-05
+2.1713320165872574e-05
+Test Loss: 6.726 | Acc: 1.000 (100/10000)
+Epoch:15
+0
+Train Loss: 7.290 | Acc: 0.400 (2/500)
+Train Loss: 4.800 | Acc: 0.400 (2/500)
+Train Loss: 3.236 | Acc: 0.400 (2/500)
+Train Loss: 1.851 | Acc: 61.400 (307/500)
+1
+Train Loss: 7.022 | Acc: 0.200 (1/500)
+Train Loss: 5.279 | Acc: 0.200 (1/500)
+Train Loss: 4.459 | Acc: 0.200 (1/500)
+Train Loss: 4.050 | Acc: 0.200 (1/500)
+2
+Train Loss: 6.307 | Acc: 0.200 (1/500)
+Train Loss: 4.380 | Acc: 0.200 (1/500)
+Train Loss: 3.385 | Acc: 1.000 (5/500)
+Train Loss: 2.426 | Acc: 40.400 (202/500)
+3
+Train Loss: 6.940 | Acc: 0.200 (1/500)
+Train Loss: 4.464 | Acc: 0.200 (1/500)
+Train Loss: 3.172 | Acc: 0.800 (4/500)
+Train Loss: 1.870 | Acc: 63.400 (317/500)
+4
+Train Loss: 6.743 | Acc: 0.200 (1/500)
+Train Loss: 4.781 | Acc: 0.200 (1/500)
+Train Loss: 3.864 | Acc: 0.200 (1/500)
+Train Loss: 2.506 | Acc: 29.000 (145/500)
+5
+Train Loss: 6.927 | Acc: 0.200 (1/500)
+Train Loss: 4.563 | Acc: 0.200 (1/500)
+Train Loss: 3.065 | Acc: 0.400 (2/500)
+Train Loss: 1.813 | Acc: 80.000 (400/500)
+6
+Train Loss: 6.559 | Acc: 0.200 (1/500)
+Train Loss: 4.314 | Acc: 0.200 (1/500)
+Train Loss: 2.984 | Acc: 2.800 (14/500)
+Train Loss: 1.900 | Acc: 75.800 (379/500)
+7
+Train Loss: 6.721 | Acc: 0.200 (1/500)
+Train Loss: 5.168 | Acc: 0.200 (1/500)
+Train Loss: 4.416 | Acc: 0.200 (1/500)
+Train Loss: 4.035 | Acc: 0.200 (1/500)
+8
+Train Loss: 6.450 | Acc: 0.200 (1/500)
+Train Loss: 4.304 | Acc: 0.200 (1/500)
+Train Loss: 3.121 | Acc: 1.200 (6/500)
+Train Loss: 1.800 | Acc: 80.000 (400/500)
+9
+Train Loss: 6.823 | Acc: 0.200 (1/500)
+Train Loss: 5.043 | Acc: 0.200 (1/500)
+Train Loss: 4.340 | Acc: 0.200 (1/500)
+Train Loss: 3.963 | Acc: 0.400 (2/500)
+0.00016653398051857948
+5.7998113334178925e-05
+5.131028592586517e-05
+5.332520231604576e-05
+5.4088886827230453e-05
+4.1774939745664597e-05
+4.36101108789444e-05
+3.2905954867601395e-05
+2.0473729819059372e-05
+Test Loss: 4.753 | Acc: 1.000 (100/10000)
+Epoch:16
+0
+Train Loss: 4.164 | Acc: 0.200 (1/500)
+Train Loss: 3.523 | Acc: 0.200 (1/500)
+Train Loss: 2.848 | Acc: 2.600 (13/500)
+Train Loss: 2.024 | Acc: 64.000 (320/500)
+1
+Train Loss: 4.753 | Acc: 0.200 (1/500)
+Train Loss: 4.363 | Acc: 0.200 (1/500)
+Train Loss: 3.893 | Acc: 0.600 (3/500)
+Train Loss: 2.934 | Acc: 10.800 (54/500)
+2
+Train Loss: 4.704 | Acc: 0.200 (1/500)
+Train Loss: 4.192 | Acc: 0.200 (1/500)
+Train Loss: 3.565 | Acc: 1.000 (5/500)
+Train Loss: 2.652 | Acc: 21.200 (106/500)
+3
+Train Loss: 4.851 | Acc: 0.200 (1/500)
+Train Loss: 4.624 | Acc: 0.200 (1/500)
+Train Loss: 4.341 | Acc: 0.200 (1/500)
+Train Loss: 3.985 | Acc: 1.200 (6/500)
+4
+Train Loss: 4.530 | Acc: 0.200 (1/500)
+Train Loss: 3.837 | Acc: 0.200 (1/500)
+Train Loss: 3.017 | Acc: 5.200 (26/500)
+Train Loss: 1.938 | Acc: 80.000 (400/500)
+5
+Train Loss: 4.843 | Acc: 0.200 (1/500)
+Train Loss: 4.277 | Acc: 0.200 (1/500)
+Train Loss: 3.648 | Acc: 3.600 (18/500)
+Train Loss: 2.801 | Acc: 24.200 (121/500)
+6
+Train Loss: 4.809 | Acc: 0.000 (0/500)
+Train Loss: 4.583 | Acc: 0.200 (1/500)
+Train Loss: 4.351 | Acc: 0.200 (1/500)
+Train Loss: 4.058 | Acc: 0.200 (1/500)
+7
+Train Loss: 4.674 | Acc: 0.400 (2/500)
+Train Loss: 4.231 | Acc: 0.600 (3/500)
+Train Loss: 3.669 | Acc: 4.200 (21/500)
+Train Loss: 2.663 | Acc: 26.200 (131/500)
+8
+Train Loss: 4.692 | Acc: 0.200 (1/500)
+Traceback (most recent call last):
+  File "/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/train.py", line 283, in <module>
+    terminate, local_dict= Local_update(global_dict, c, args.local_ep)#client进行本地更新,teacher,
+  File "/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/train.py", line 219, in Local_update
+    loss.backward()
+  File "/home/jndx/anaconda3/lib/python3.9/site-packages/torch/_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/jndx/anaconda3/lib/python3.9/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: CUDA out of memory. Tried to allocate 66.00 MiB (GPU 0; 11.77 GiB total capacity; 8.89 GiB already allocated; 64.31 MiB free; 9.93 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

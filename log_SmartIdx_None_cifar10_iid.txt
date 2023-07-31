@@ -1,0 +1,31 @@
+nohup: 忽略输入
+/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/..
+iid:True, method:COMGATE, seed:16, model:resnet18, variant:None, cifar100:False, onebyone:False,checkpoint:None
+==> Preparing data..
+Files already downloaded and verified
+Files already downloaded and verified
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+5000
+==> Building model..
+Traceback (most recent call last):
+  File "/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/train_old.py", line 100, in <module>
+    net = nn.Sequential(
+  File "/home/jndx/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 927, in to
+    return self._apply(convert)
+  File "/home/jndx/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 579, in _apply
+    module._apply(fn)
+  File "/home/jndx/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 625, in _apply
+    self._buffers[key] = fn(buf)
+  File "/home/jndx/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 925, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.

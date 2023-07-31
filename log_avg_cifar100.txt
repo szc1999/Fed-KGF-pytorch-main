@@ -1,0 +1,4604 @@
+nohup: 忽略输入
+/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/..
+method:avg, seed:2, model:resnet18, cifar100:True, onebyone:False,
+==> Preparing data..
+Files already downloaded and verified
+Files already downloaded and verified
+==> Building model..
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (linear): Linear(in_features=512, out_features=100, bias=True)
+)
+layer4.0: 3673088
+1.conv1: 3133440
+layer4.1: 2360320
+layer3.0: 919040
+layer3.1: 590336
+layer2.0: 230144
+layer2.1: 147712
+layer1.0: 73984
+linear: 51300
+layer1.1: 36992
+1.bn1: 1920
+Epoch:0
+0
+Train Loss: 3.684 | Acc: 13.574
+Train Loss: 2.856 | Acc: 27.684
+1
+Train Loss: 3.669 | Acc: 13.636
+Train Loss: 2.849 | Acc: 27.760
+2
+Train Loss: 3.676 | Acc: 13.696
+Train Loss: 2.862 | Acc: 27.520
+3
+Train Loss: 3.678 | Acc: 13.412
+Train Loss: 2.860 | Acc: 27.664
+4
+Train Loss: 3.676 | Acc: 13.522
+Train Loss: 2.863 | Acc: 27.384
+5
+Train Loss: 3.672 | Acc: 13.814
+Train Loss: 2.830 | Acc: 27.970
+6
+Train Loss: 3.678 | Acc: 13.550
+Train Loss: 2.860 | Acc: 27.408
+7
+Train Loss: 3.665 | Acc: 13.796
+Train Loss: 2.831 | Acc: 28.090
+8
+Train Loss: 3.664 | Acc: 13.870
+Train Loss: 2.844 | Acc: 27.790
+9
+Train Loss: 3.664 | Acc: 13.936
+Train Loss: 2.826 | Acc: 27.944
+10
+Train Loss: 3.673 | Acc: 13.564
+Train Loss: 2.857 | Acc: 27.676
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 5.157 | Acc: 2.710 (271/10000)
+Epoch:1
+0
+Train Loss: 2.626 | Acc: 31.916
+Train Loss: 2.149 | Acc: 42.038
+1
+Train Loss: 2.635 | Acc: 31.870
+Train Loss: 2.152 | Acc: 42.172
+2
+Train Loss: 2.632 | Acc: 31.828
+Train Loss: 2.149 | Acc: 42.080
+3
+Train Loss: 2.635 | Acc: 31.792
+Train Loss: 2.146 | Acc: 42.030
+4
+Train Loss: 2.633 | Acc: 31.842
+Train Loss: 2.143 | Acc: 42.352
+5
+Train Loss: 2.631 | Acc: 31.928
+Train Loss: 2.149 | Acc: 41.936
+6
+Train Loss: 2.632 | Acc: 31.808
+Train Loss: 2.149 | Acc: 41.918
+7
+Train Loss: 2.635 | Acc: 31.732
+Train Loss: 2.146 | Acc: 42.242
+8
+Train Loss: 2.630 | Acc: 31.866
+Train Loss: 2.150 | Acc: 42.336
+9
+Train Loss: 2.637 | Acc: 31.718
+Train Loss: 2.151 | Acc: 42.178
+10
+Train Loss: 2.638 | Acc: 31.778
+Train Loss: 2.148 | Acc: 42.072
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 2.155 | Acc: 42.870 (4287/10000)
+Epoch:2
+0
+Train Loss: 1.862 | Acc: 48.522
+Train Loss: 1.666 | Acc: 53.246
+1
+Train Loss: 1.868 | Acc: 48.468
+Train Loss: 1.665 | Acc: 53.258
+2
+Train Loss: 1.864 | Acc: 48.604
+Train Loss: 1.659 | Acc: 53.464
+3
+Train Loss: 1.862 | Acc: 48.564
+Train Loss: 1.663 | Acc: 53.356
+4
+Train Loss: 1.863 | Acc: 48.510
+Train Loss: 1.665 | Acc: 53.174
+5
+Train Loss: 1.862 | Acc: 48.460
+Train Loss: 1.664 | Acc: 53.226
+6
+Train Loss: 1.861 | Acc: 48.624
+Train Loss: 1.663 | Acc: 53.208
+7
+Train Loss: 1.864 | Acc: 48.520
+Train Loss: 1.665 | Acc: 53.514
+8
+Train Loss: 1.864 | Acc: 48.680
+Train Loss: 1.667 | Acc: 53.220
+9
+Train Loss: 1.865 | Acc: 48.554
+Train Loss: 1.666 | Acc: 53.112
+10
+Train Loss: 1.863 | Acc: 48.388
+Train Loss: 1.664 | Acc: 53.400
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.685 | Acc: 53.930 (5393/10000)
+Epoch:3
+0
+Train Loss: 1.480 | Acc: 57.912
+Train Loss: 1.368 | Acc: 60.742
+1
+Train Loss: 1.474 | Acc: 57.878
+Train Loss: 1.360 | Acc: 60.964
+2
+Train Loss: 1.483 | Acc: 57.774
+Train Loss: 1.360 | Acc: 60.954
+3
+Train Loss: 1.479 | Acc: 57.834
+Train Loss: 1.365 | Acc: 60.844
+4
+Train Loss: 1.479 | Acc: 57.688
+Train Loss: 1.363 | Acc: 60.900
+5
+Train Loss: 1.477 | Acc: 58.078
+Train Loss: 1.365 | Acc: 60.822
+6
+Train Loss: 1.477 | Acc: 58.082
+Train Loss: 1.364 | Acc: 60.994
+7
+Train Loss: 1.477 | Acc: 57.842
+Train Loss: 1.364 | Acc: 60.820
+8
+Train Loss: 1.481 | Acc: 57.704
+Train Loss: 1.367 | Acc: 60.708
+9
+Train Loss: 1.482 | Acc: 57.898
+Train Loss: 1.363 | Acc: 60.854
+10
+Train Loss: 1.480 | Acc: 57.782
+Train Loss: 1.364 | Acc: 60.748
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.504 | Acc: 58.380 (5838/10000)
+Epoch:4
+0
+Train Loss: 1.219 | Acc: 64.834
+Train Loss: 1.148 | Acc: 66.528
+1
+Train Loss: 1.221 | Acc: 64.596
+Train Loss: 1.148 | Acc: 66.490
+2
+Train Loss: 1.221 | Acc: 64.454
+Train Loss: 1.148 | Acc: 66.544
+3
+Train Loss: 1.218 | Acc: 64.584
+Train Loss: 1.146 | Acc: 66.670
+4
+Train Loss: 1.221 | Acc: 64.422
+Train Loss: 1.145 | Acc: 66.556
+5
+Train Loss: 1.221 | Acc: 64.622
+Train Loss: 1.149 | Acc: 66.506
+6
+Train Loss: 1.227 | Acc: 64.318
+Train Loss: 1.143 | Acc: 66.780
+7
+Train Loss: 1.220 | Acc: 64.538
+Train Loss: 1.148 | Acc: 66.374
+8
+Train Loss: 1.223 | Acc: 64.366
+Train Loss: 1.146 | Acc: 66.548
+9
+Train Loss: 1.219 | Acc: 64.462
+Train Loss: 1.150 | Acc: 66.452
+10
+Train Loss: 1.218 | Acc: 64.792
+Train Loss: 1.154 | Acc: 66.440
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.424 | Acc: 61.060 (6106/10000)
+Epoch:5
+0
+Train Loss: 1.020 | Acc: 70.008
+Train Loss: 0.976 | Acc: 71.104
+1
+Train Loss: 1.022 | Acc: 69.848
+Train Loss: 0.973 | Acc: 71.050
+2
+Train Loss: 1.022 | Acc: 69.818
+Train Loss: 0.977 | Acc: 70.964
+3
+Train Loss: 1.024 | Acc: 69.782
+Train Loss: 0.981 | Acc: 70.968
+4
+Train Loss: 1.025 | Acc: 69.798
+Train Loss: 0.975 | Acc: 71.134
+5
+Train Loss: 1.022 | Acc: 69.738
+Train Loss: 0.981 | Acc: 71.000
+6
+Train Loss: 1.025 | Acc: 69.796
+Train Loss: 0.973 | Acc: 71.152
+7
+Train Loss: 1.026 | Acc: 69.748
+Train Loss: 0.974 | Acc: 71.172
+8
+Train Loss: 1.027 | Acc: 69.878
+Train Loss: 0.978 | Acc: 71.078
+9
+Train Loss: 1.028 | Acc: 69.666
+Train Loss: 0.978 | Acc: 71.142
+10
+Train Loss: 1.024 | Acc: 69.712
+Train Loss: 0.981 | Acc: 70.956
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.347 | Acc: 63.350 (6335/10000)
+Epoch:6
+0
+Train Loss: 0.865 | Acc: 74.264
+Train Loss: 0.838 | Acc: 74.810
+1
+Train Loss: 0.864 | Acc: 74.150
+Train Loss: 0.838 | Acc: 74.790
+2
+Train Loss: 0.864 | Acc: 74.200
+Train Loss: 0.839 | Acc: 75.028
+3
+Train Loss: 0.866 | Acc: 74.098
+Train Loss: 0.835 | Acc: 74.842
+4
+Train Loss: 0.870 | Acc: 74.090
+Train Loss: 0.830 | Acc: 75.278
+5
+Train Loss: 0.871 | Acc: 74.010
+Train Loss: 0.834 | Acc: 75.022
+6
+Train Loss: 0.864 | Acc: 74.088
+Train Loss: 0.838 | Acc: 74.882
+7
+Train Loss: 0.866 | Acc: 74.228
+Train Loss: 0.834 | Acc: 74.886
+8
+Train Loss: 0.861 | Acc: 74.268
+Train Loss: 0.837 | Acc: 74.784
+9
+Train Loss: 0.861 | Acc: 74.276
+Train Loss: 0.831 | Acc: 75.138
+10
+Train Loss: 0.868 | Acc: 74.340
+Train Loss: 0.834 | Acc: 75.034
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.305 | Acc: 64.660 (6466/10000)
+Epoch:7
+0
+Train Loss: 0.730 | Acc: 78.022
+Train Loss: 0.708 | Acc: 78.446
+1
+Train Loss: 0.730 | Acc: 77.908
+Train Loss: 0.712 | Acc: 78.326
+2
+Train Loss: 0.726 | Acc: 78.052
+Train Loss: 0.708 | Acc: 78.582
+3
+Train Loss: 0.725 | Acc: 78.122
+Train Loss: 0.713 | Acc: 78.606
+4
+Train Loss: 0.729 | Acc: 78.124
+Train Loss: 0.710 | Acc: 78.502
+5
+Train Loss: 0.731 | Acc: 78.090
+Train Loss: 0.712 | Acc: 78.406
+6
+Train Loss: 0.724 | Acc: 78.242
+Train Loss: 0.717 | Acc: 78.312
+7
+Train Loss: 0.727 | Acc: 78.060
+Train Loss: 0.708 | Acc: 78.538
+8
+Train Loss: 0.725 | Acc: 78.170
+Train Loss: 0.712 | Acc: 78.328
+9
+Train Loss: 0.729 | Acc: 77.962
+Train Loss: 0.715 | Acc: 78.382
+10
+Train Loss: 0.728 | Acc: 78.092
+Train Loss: 0.712 | Acc: 78.352
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.294 | Acc: 66.200 (6620/10000)
+Epoch:8
+0
+Train Loss: 0.605 | Acc: 81.778
+Train Loss: 0.595 | Acc: 81.866
+1
+Train Loss: 0.602 | Acc: 81.838
+Train Loss: 0.603 | Acc: 81.600
+2
+Train Loss: 0.604 | Acc: 81.926
+Train Loss: 0.602 | Acc: 81.718
+3
+Train Loss: 0.606 | Acc: 81.682
+Train Loss: 0.596 | Acc: 81.924
+4
+Train Loss: 0.598 | Acc: 81.976
+Train Loss: 0.598 | Acc: 81.802
+5
+Train Loss: 0.604 | Acc: 81.798
+Train Loss: 0.598 | Acc: 81.742
+6
+Train Loss: 0.604 | Acc: 81.696
+Train Loss: 0.602 | Acc: 81.622
+7
+Train Loss: 0.606 | Acc: 81.614
+Train Loss: 0.599 | Acc: 81.832
+8
+Train Loss: 0.603 | Acc: 81.888
+Train Loss: 0.600 | Acc: 81.774
+9
+Train Loss: 0.605 | Acc: 81.706
+Train Loss: 0.602 | Acc: 81.652
+10
+Train Loss: 0.606 | Acc: 81.582
+Train Loss: 0.603 | Acc: 81.588
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.275 | Acc: 66.970 (6697/10000)
+Epoch:9
+0
+Train Loss: 0.491 | Acc: 85.106
+Train Loss: 0.508 | Acc: 84.388
+1
+Train Loss: 0.493 | Acc: 85.184
+Train Loss: 0.507 | Acc: 84.376
+2
+Train Loss: 0.492 | Acc: 85.098
+Train Loss: 0.501 | Acc: 84.784
+3
+Train Loss: 0.492 | Acc: 85.194
+Train Loss: 0.502 | Acc: 84.594
+4
+Train Loss: 0.494 | Acc: 85.060
+Train Loss: 0.505 | Acc: 84.414
+5
+Train Loss: 0.489 | Acc: 85.208
+Train Loss: 0.505 | Acc: 84.496
+6
+Train Loss: 0.489 | Acc: 85.284
+Train Loss: 0.507 | Acc: 84.540
+7
+Train Loss: 0.496 | Acc: 84.868
+Train Loss: 0.504 | Acc: 84.574
+8
+Train Loss: 0.493 | Acc: 85.016
+Train Loss: 0.508 | Acc: 84.526
+9
+Train Loss: 0.494 | Acc: 85.078
+Train Loss: 0.502 | Acc: 84.598
+10
+Train Loss: 0.496 | Acc: 85.076
+Train Loss: 0.507 | Acc: 84.524
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.297 | Acc: 67.320 (6732/10000)
+Epoch:10
+0
+Train Loss: 0.395 | Acc: 88.262
+Train Loss: 0.429 | Acc: 86.832
+1
+Train Loss: 0.402 | Acc: 88.062
+Train Loss: 0.418 | Acc: 87.258
+2
+Train Loss: 0.392 | Acc: 88.202
+Train Loss: 0.417 | Acc: 87.318
+3
+Train Loss: 0.395 | Acc: 88.294
+Train Loss: 0.419 | Acc: 87.164
+4
+Train Loss: 0.397 | Acc: 88.252
+Train Loss: 0.421 | Acc: 87.020
+5
+Train Loss: 0.394 | Acc: 88.274
+Train Loss: 0.418 | Acc: 87.300
+6
+Train Loss: 0.398 | Acc: 88.072
+Train Loss: 0.423 | Acc: 86.978
+7
+Train Loss: 0.396 | Acc: 88.232
+Train Loss: 0.422 | Acc: 87.144
+8
+Train Loss: 0.396 | Acc: 88.190
+Train Loss: 0.421 | Acc: 87.086
+9
+Train Loss: 0.397 | Acc: 88.114
+Train Loss: 0.424 | Acc: 87.104
+10
+Train Loss: 0.396 | Acc: 88.178
+Train Loss: 0.421 | Acc: 87.108
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.296 | Acc: 67.750 (6775/10000)
+Epoch:11
+0
+Train Loss: 0.307 | Acc: 91.166
+Train Loss: 0.346 | Acc: 89.724
+1
+Train Loss: 0.318 | Acc: 90.698
+Train Loss: 0.351 | Acc: 89.470
+2
+Train Loss: 0.311 | Acc: 90.986
+Train Loss: 0.350 | Acc: 89.438
+3
+Train Loss: 0.308 | Acc: 91.098
+Train Loss: 0.352 | Acc: 89.280
+4
+Train Loss: 0.308 | Acc: 91.016
+Train Loss: 0.353 | Acc: 89.214
+5
+Train Loss: 0.317 | Acc: 90.748
+Train Loss: 0.349 | Acc: 89.500
+6
+Train Loss: 0.312 | Acc: 90.868
+Train Loss: 0.354 | Acc: 89.194
+7
+Train Loss: 0.313 | Acc: 90.864
+Train Loss: 0.348 | Acc: 89.446
+8
+Train Loss: 0.310 | Acc: 90.980
+Train Loss: 0.350 | Acc: 89.462
+9
+Train Loss: 0.310 | Acc: 90.974
+Train Loss: 0.350 | Acc: 89.698
+10
+Train Loss: 0.322 | Acc: 90.452
+Train Loss: 0.354 | Acc: 89.298
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.295 | Acc: 68.190 (6819/10000)
+Epoch:12
+0
+Train Loss: 0.246 | Acc: 93.158
+Train Loss: 0.297 | Acc: 90.994
+1
+Train Loss: 0.243 | Acc: 93.202
+Train Loss: 0.292 | Acc: 91.478
+2
+Train Loss: 0.241 | Acc: 93.448
+Train Loss: 0.290 | Acc: 91.330
+3
+Train Loss: 0.241 | Acc: 93.394
+Train Loss: 0.289 | Acc: 91.488
+4
+Train Loss: 0.241 | Acc: 93.274
+Train Loss: 0.290 | Acc: 91.288
+5
+Train Loss: 0.241 | Acc: 93.306
+Train Loss: 0.289 | Acc: 91.356
+6
+Train Loss: 0.245 | Acc: 93.234
+Train Loss: 0.285 | Acc: 91.612
+7
+Train Loss: 0.245 | Acc: 93.138
+Train Loss: 0.290 | Acc: 91.210
+8
+Train Loss: 0.241 | Acc: 93.380
+Train Loss: 0.297 | Acc: 91.044
+9
+Train Loss: 0.249 | Acc: 92.934
+Train Loss: 0.293 | Acc: 91.208
+10
+Train Loss: 0.240 | Acc: 93.270
+Train Loss: 0.292 | Acc: 91.254
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.295 | Acc: 68.930 (6893/10000)
+Epoch:13
+0
+Train Loss: 0.184 | Acc: 95.288
+Train Loss: 0.244 | Acc: 92.860
+1
+Train Loss: 0.184 | Acc: 95.208
+Train Loss: 0.234 | Acc: 93.246
+2
+Train Loss: 0.185 | Acc: 95.194
+Train Loss: 0.237 | Acc: 93.102
+3
+Train Loss: 0.186 | Acc: 95.048
+Train Loss: 0.235 | Acc: 93.312
+4
+Train Loss: 0.186 | Acc: 95.074
+Train Loss: 0.236 | Acc: 93.158
+5
+Train Loss: 0.187 | Acc: 95.032
+Train Loss: 0.237 | Acc: 93.132
+6
+Train Loss: 0.185 | Acc: 95.080
+Train Loss: 0.240 | Acc: 93.010
+7
+Train Loss: 0.185 | Acc: 95.214
+Train Loss: 0.239 | Acc: 93.014
+8
+Train Loss: 0.187 | Acc: 95.076
+Train Loss: 0.236 | Acc: 93.140
+9
+Train Loss: 0.182 | Acc: 95.146
+Train Loss: 0.240 | Acc: 93.004
+10
+Train Loss: 0.184 | Acc: 95.104
+Train Loss: 0.234 | Acc: 93.362
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.294 | Acc: 69.390 (6939/10000)
+Epoch:14
+0
+Train Loss: 0.142 | Acc: 96.590
+Train Loss: 0.201 | Acc: 94.286
+1
+Train Loss: 0.139 | Acc: 96.690
+Train Loss: 0.190 | Acc: 94.776
+2
+Train Loss: 0.139 | Acc: 96.624
+Train Loss: 0.194 | Acc: 94.592
+3
+Train Loss: 0.138 | Acc: 96.734
+Train Loss: 0.196 | Acc: 94.482
+4
+Train Loss: 0.141 | Acc: 96.560
+Train Loss: 0.201 | Acc: 94.438
+5
+Train Loss: 0.139 | Acc: 96.628
+Train Loss: 0.195 | Acc: 94.552
+6
+Train Loss: 0.140 | Acc: 96.594
+Train Loss: 0.199 | Acc: 94.400
+7
+Train Loss: 0.141 | Acc: 96.628
+Train Loss: 0.199 | Acc: 94.378
+8
+Train Loss: 0.141 | Acc: 96.630
+Train Loss: 0.191 | Acc: 94.672
+9
+Train Loss: 0.141 | Acc: 96.634
+Train Loss: 0.199 | Acc: 94.462
+10
+Train Loss: 0.144 | Acc: 96.354
+Train Loss: 0.198 | Acc: 94.492
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.298 | Acc: 69.860 (6986/10000)
+Epoch:15
+0
+Train Loss: 0.106 | Acc: 97.668
+Train Loss: 0.159 | Acc: 95.884
+1
+Train Loss: 0.104 | Acc: 97.642
+Train Loss: 0.154 | Acc: 95.970
+2
+Train Loss: 0.104 | Acc: 97.732
+Train Loss: 0.157 | Acc: 95.884
+3
+Train Loss: 0.110 | Acc: 97.452
+Train Loss: 0.163 | Acc: 95.684
+4
+Train Loss: 0.107 | Acc: 97.588
+Train Loss: 0.160 | Acc: 95.770
+5
+Train Loss: 0.107 | Acc: 97.584
+Train Loss: 0.160 | Acc: 95.800
+6
+Train Loss: 0.105 | Acc: 97.740
+Train Loss: 0.162 | Acc: 95.650
+7
+Train Loss: 0.108 | Acc: 97.596
+Train Loss: 0.160 | Acc: 95.742
+8
+Train Loss: 0.103 | Acc: 97.772
+Train Loss: 0.158 | Acc: 95.750
+9
+Train Loss: 0.106 | Acc: 97.600
+Train Loss: 0.158 | Acc: 95.764
+10
+Train Loss: 0.104 | Acc: 97.734
+Train Loss: 0.153 | Acc: 95.998
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.327 | Acc: 69.830 (6983/10000)
+Epoch:16
+0
+Train Loss: 0.084 | Acc: 98.226
+Train Loss: 0.135 | Acc: 96.584
+1
+Train Loss: 0.080 | Acc: 98.452
+Train Loss: 0.128 | Acc: 96.830
+2
+Train Loss: 0.079 | Acc: 98.458
+Train Loss: 0.129 | Acc: 96.846
+3
+Train Loss: 0.083 | Acc: 98.346
+Train Loss: 0.135 | Acc: 96.672
+4
+Train Loss: 0.080 | Acc: 98.442
+Train Loss: 0.124 | Acc: 96.828
+5
+Train Loss: 0.078 | Acc: 98.458
+Train Loss: 0.127 | Acc: 96.800
+6
+Train Loss: 0.082 | Acc: 98.396
+Train Loss: 0.136 | Acc: 96.504
+7
+Train Loss: 0.078 | Acc: 98.498
+Train Loss: 0.125 | Acc: 96.962
+8
+Train Loss: 0.084 | Acc: 98.278
+Train Loss: 0.135 | Acc: 96.632
+9
+Train Loss: 0.082 | Acc: 98.368
+Train Loss: 0.121 | Acc: 97.178
+10
+Train Loss: 0.079 | Acc: 98.502
+Train Loss: 0.127 | Acc: 96.902
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.308 | Acc: 70.280 (7028/10000)
+Epoch:17
+0
+Train Loss: 0.059 | Acc: 99.010
+Train Loss: 0.091 | Acc: 98.122
+1
+Train Loss: 0.060 | Acc: 98.964
+Train Loss: 0.093 | Acc: 98.040
+2
+Train Loss: 0.060 | Acc: 98.898
+Train Loss: 0.098 | Acc: 97.786
+3
+Train Loss: 0.060 | Acc: 98.988
+Train Loss: 0.093 | Acc: 97.972
+4
+Train Loss: 0.063 | Acc: 98.860
+Train Loss: 0.103 | Acc: 97.642
+5
+Train Loss: 0.060 | Acc: 98.974
+Train Loss: 0.097 | Acc: 97.858
+6
+Train Loss: 0.058 | Acc: 99.054
+Train Loss: 0.104 | Acc: 97.534
+7
+Train Loss: 0.059 | Acc: 99.006
+Train Loss: 0.102 | Acc: 97.640
+8
+Train Loss: 0.062 | Acc: 98.892
+Train Loss: 0.102 | Acc: 97.696
+9
+Train Loss: 0.062 | Acc: 98.944
+Train Loss: 0.104 | Acc: 97.556
+10
+Train Loss: 0.060 | Acc: 98.990
+Train Loss: 0.091 | Acc: 98.150
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.281 | Acc: 70.880 (7088/10000)
+Epoch:18
+0
+Train Loss: 0.041 | Acc: 99.452
+Train Loss: 0.074 | Acc: 98.570
+1
+Train Loss: 0.042 | Acc: 99.450
+Train Loss: 0.074 | Acc: 98.552
+2
+Train Loss: 0.044 | Acc: 99.414
+Train Loss: 0.074 | Acc: 98.600
+3
+Train Loss: 0.044 | Acc: 99.358
+Train Loss: 0.071 | Acc: 98.664
+4
+Train Loss: 0.045 | Acc: 99.340
+Train Loss: 0.082 | Acc: 98.332
+5
+Train Loss: 0.042 | Acc: 99.466
+Train Loss: 0.070 | Acc: 98.650
+6
+Train Loss: 0.047 | Acc: 99.292
+Train Loss: 0.077 | Acc: 98.506
+7
+Train Loss: 0.045 | Acc: 99.380
+Train Loss: 0.067 | Acc: 98.798
+8
+Train Loss: 0.045 | Acc: 99.372
+Train Loss: 0.075 | Acc: 98.572
+9
+Train Loss: 0.044 | Acc: 99.370
+Train Loss: 0.069 | Acc: 98.694
+10
+Train Loss: 0.043 | Acc: 99.408
+Train Loss: 0.067 | Acc: 98.786
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.248 | Acc: 71.440 (7144/10000)
+Epoch:19
+0
+Train Loss: 0.035 | Acc: 99.562
+Train Loss: 0.053 | Acc: 99.146
+1
+Train Loss: 0.030 | Acc: 99.684
+Train Loss: 0.062 | Acc: 98.920
+2
+Train Loss: 0.035 | Acc: 99.560
+Train Loss: 0.059 | Acc: 99.048
+3
+Train Loss: 0.033 | Acc: 99.600
+Train Loss: 0.064 | Acc: 98.850
+4
+Train Loss: 0.030 | Acc: 99.724
+Train Loss: 0.063 | Acc: 98.878
+5
+Train Loss: 0.033 | Acc: 99.604
+Train Loss: 0.059 | Acc: 99.024
+6
+Train Loss: 0.031 | Acc: 99.676
+Train Loss: 0.045 | Acc: 99.364
+7
+Train Loss: 0.034 | Acc: 99.580
+Train Loss: 0.060 | Acc: 99.006
+8
+Train Loss: 0.037 | Acc: 99.558
+Train Loss: 0.061 | Acc: 98.932
+9
+Train Loss: 0.030 | Acc: 99.702
+Train Loss: 0.049 | Acc: 99.250
+10
+Train Loss: 0.033 | Acc: 99.600
+Train Loss: 0.056 | Acc: 99.140
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.218 | Acc: 72.190 (7219/10000)
+Epoch:20
+0
+Train Loss: 0.025 | Acc: 99.770
+Train Loss: 0.041 | Acc: 99.480
+1
+Train Loss: 0.024 | Acc: 99.782
+Train Loss: 0.042 | Acc: 99.456
+2
+Train Loss: 0.023 | Acc: 99.820
+Train Loss: 0.034 | Acc: 99.682
+3
+Train Loss: 0.024 | Acc: 99.768
+Train Loss: 0.036 | Acc: 99.590
+4
+Train Loss: 0.029 | Acc: 99.686
+Train Loss: 0.042 | Acc: 99.456
+5
+Train Loss: 0.025 | Acc: 99.768
+Train Loss: 0.040 | Acc: 99.472
+6
+Train Loss: 0.024 | Acc: 99.808
+Train Loss: 0.036 | Acc: 99.578
+7
+Train Loss: 0.025 | Acc: 99.746
+Train Loss: 0.038 | Acc: 99.558
+8
+Train Loss: 0.026 | Acc: 99.768
+Train Loss: 0.040 | Acc: 99.534
+9
+Train Loss: 0.026 | Acc: 99.716
+Train Loss: 0.042 | Acc: 99.448
+10
+Train Loss: 0.025 | Acc: 99.746
+Train Loss: 0.043 | Acc: 99.414
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.192 | Acc: 72.130 (7213/10000)
+Epoch:21
+0
+Train Loss: 0.020 | Acc: 99.852
+Train Loss: 0.029 | Acc: 99.720
+1
+Train Loss: 0.018 | Acc: 99.894
+Train Loss: 0.029 | Acc: 99.700
+2
+Train Loss: 0.018 | Acc: 99.892
+Train Loss: 0.025 | Acc: 99.786
+3
+Train Loss: 0.020 | Acc: 99.838
+Train Loss: 0.029 | Acc: 99.680
+4
+Train Loss: 0.020 | Acc: 99.816
+Train Loss: 0.030 | Acc: 99.680
+5
+Train Loss: 0.017 | Acc: 99.900
+Train Loss: 0.024 | Acc: 99.816
+6
+Train Loss: 0.019 | Acc: 99.852
+Train Loss: 0.026 | Acc: 99.782
+7
+Train Loss: 0.023 | Acc: 99.766
+Train Loss: 0.031 | Acc: 99.684
+8
+Train Loss: 0.018 | Acc: 99.874
+Train Loss: 0.028 | Acc: 99.778
+9
+Train Loss: 0.019 | Acc: 99.878
+Train Loss: 0.027 | Acc: 99.738
+10
+Train Loss: 0.019 | Acc: 99.864
+Train Loss: 0.040 | Acc: 99.488
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.161 | Acc: 72.670 (7267/10000)
+Epoch:22
+0
+Train Loss: 0.016 | Acc: 99.890
+Train Loss: 0.020 | Acc: 99.892
+1
+Train Loss: 0.015 | Acc: 99.912
+Train Loss: 0.025 | Acc: 99.774
+2
+Train Loss: 0.014 | Acc: 99.928
+Train Loss: 0.016 | Acc: 99.928
+3
+Train Loss: 0.020 | Acc: 99.822
+Train Loss: 0.029 | Acc: 99.722
+4
+Train Loss: 0.016 | Acc: 99.894
+Train Loss: 0.025 | Acc: 99.764
+5
+Train Loss: 0.015 | Acc: 99.906
+Train Loss: 0.020 | Acc: 99.886
+6
+Train Loss: 0.014 | Acc: 99.928
+Train Loss: 0.017 | Acc: 99.916
+7
+Train Loss: 0.015 | Acc: 99.914
+Train Loss: 0.021 | Acc: 99.846
+8
+Train Loss: 0.014 | Acc: 99.940
+Train Loss: 0.017 | Acc: 99.890
+9
+Train Loss: 0.014 | Acc: 99.928
+Train Loss: 0.021 | Acc: 99.876
+10
+Train Loss: 0.015 | Acc: 99.916
+Train Loss: 0.018 | Acc: 99.906
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.147 | Acc: 72.880 (7288/10000)
+Epoch:23
+0
+Train Loss: 0.012 | Acc: 99.942
+Train Loss: 0.021 | Acc: 99.800
+1
+Train Loss: 0.013 | Acc: 99.936
+Train Loss: 0.017 | Acc: 99.900
+2
+Train Loss: 0.013 | Acc: 99.914
+Train Loss: 0.018 | Acc: 99.910
+3
+Train Loss: 0.012 | Acc: 99.932
+Train Loss: 0.018 | Acc: 99.896
+4
+Train Loss: 0.018 | Acc: 99.814
+Train Loss: 0.026 | Acc: 99.820
+5
+Train Loss: 0.012 | Acc: 99.928
+Train Loss: 0.015 | Acc: 99.936
+6
+Train Loss: 0.011 | Acc: 99.962
+Train Loss: 0.015 | Acc: 99.952
+7
+Train Loss: 0.013 | Acc: 99.940
+Train Loss: 0.014 | Acc: 99.926
+8
+Train Loss: 0.014 | Acc: 99.908
+Train Loss: 0.018 | Acc: 99.908
+9
+Train Loss: 0.012 | Acc: 99.946
+Train Loss: 0.019 | Acc: 99.876
+10
+Train Loss: 0.012 | Acc: 99.944
+Train Loss: 0.017 | Acc: 99.888
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.121 | Acc: 73.030 (7303/10000)
+Epoch:24
+0
+Train Loss: 0.011 | Acc: 99.958
+Train Loss: 0.016 | Acc: 99.900
+1
+Train Loss: 0.013 | Acc: 99.928
+Train Loss: 0.014 | Acc: 99.950
+2
+Train Loss: 0.010 | Acc: 99.968
+Train Loss: 0.012 | Acc: 99.966
+3
+Train Loss: 0.011 | Acc: 99.962
+Train Loss: 0.013 | Acc: 99.950
+4
+Train Loss: 0.010 | Acc: 99.982
+Train Loss: 0.013 | Acc: 99.960
+5
+Train Loss: 0.011 | Acc: 99.956
+Train Loss: 0.015 | Acc: 99.944
+6
+Train Loss: 0.011 | Acc: 99.946
+Train Loss: 0.014 | Acc: 99.938
+7
+Train Loss: 0.010 | Acc: 99.976
+Train Loss: 0.011 | Acc: 99.966
+8
+Train Loss: 0.010 | Acc: 99.974
+Train Loss: 0.013 | Acc: 99.948
+9
+Train Loss: 0.010 | Acc: 99.978
+Train Loss: 0.012 | Acc: 99.966
+10
+Train Loss: 0.012 | Acc: 99.942
+Train Loss: 0.016 | Acc: 99.916
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.099 | Acc: 73.410 (7341/10000)
+Epoch:25
+0
+Train Loss: 0.010 | Acc: 99.970
+Train Loss: 0.012 | Acc: 99.966
+1
+Train Loss: 0.011 | Acc: 99.952
+Train Loss: 0.014 | Acc: 99.950
+2
+Train Loss: 0.010 | Acc: 99.968
+Train Loss: 0.011 | Acc: 99.964
+3
+Train Loss: 0.012 | Acc: 99.944
+Train Loss: 0.015 | Acc: 99.914
+4
+Train Loss: 0.010 | Acc: 99.964
+Train Loss: 0.012 | Acc: 99.960
+5
+Train Loss: 0.009 | Acc: 99.970
+Train Loss: 0.012 | Acc: 99.966
+6
+Train Loss: 0.010 | Acc: 99.956
+Train Loss: 0.013 | Acc: 99.956
+7
+Train Loss: 0.009 | Acc: 99.974
+Train Loss: 0.018 | Acc: 99.878
+8
+Train Loss: 0.010 | Acc: 99.968
+Train Loss: 0.011 | Acc: 99.974
+9
+Train Loss: 0.010 | Acc: 99.948
+Train Loss: 0.052 | Acc: 99.182
+10
+Train Loss: 0.010 | Acc: 99.972
+Train Loss: 0.012 | Acc: 99.966
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.076 | Acc: 73.630 (7363/10000)
+Epoch:26
+0
+Train Loss: 0.010 | Acc: 99.968
+Train Loss: 0.020 | Acc: 99.808
+1
+Train Loss: 0.009 | Acc: 99.986
+Train Loss: 0.012 | Acc: 99.966
+2
+Train Loss: 0.009 | Acc: 99.984
+Train Loss: 0.011 | Acc: 99.962
+3
+Train Loss: 0.010 | Acc: 99.976
+Train Loss: 0.011 | Acc: 99.960
+4
+Train Loss: 0.009 | Acc: 99.978
+Train Loss: 0.011 | Acc: 99.976
+5
+Train Loss: 0.009 | Acc: 99.980
+Train Loss: 0.011 | Acc: 99.980
+6
+Train Loss: 0.009 | Acc: 99.980
+Train Loss: 0.011 | Acc: 99.964
+7
+Train Loss: 0.010 | Acc: 99.966
+Train Loss: 0.018 | Acc: 99.898
+8
+Train Loss: 0.009 | Acc: 99.976
+Train Loss: 0.011 | Acc: 99.974
+9
+Train Loss: 0.012 | Acc: 99.980
+Train Loss: 0.014 | Acc: 99.958
+10
+Train Loss: 0.009 | Acc: 99.978
+Train Loss: 0.013 | Acc: 99.954
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.081 | Acc: 73.440 (7344/10000)
+Epoch:27
+0
+Train Loss: 0.010 | Acc: 99.982
+Train Loss: 0.012 | Acc: 99.968
+1
+Train Loss: 0.009 | Acc: 99.976
+Train Loss: 0.012 | Acc: 99.964
+2
+Train Loss: 0.009 | Acc: 99.974
+Train Loss: 0.027 | Acc: 99.800
+3
+Train Loss: 0.009 | Acc: 99.980
+Train Loss: 0.013 | Acc: 99.952
+4
+Train Loss: 0.010 | Acc: 99.980
+Train Loss: 0.012 | Acc: 99.966
+5
+Train Loss: 0.009 | Acc: 99.980
+Train Loss: 0.013 | Acc: 99.952
+6
+Train Loss: 0.019 | Acc: 99.806
+Train Loss: 0.186 | Acc: 95.598
+7
+Train Loss: 0.011 | Acc: 99.968
+Train Loss: 0.014 | Acc: 99.944
+8
+Train Loss: 0.009 | Acc: 99.974
+Train Loss: 0.065 | Acc: 98.766
+9
+Train Loss: 0.009 | Acc: 99.980
+Train Loss: 0.011 | Acc: 99.978
+10
+Train Loss: 0.010 | Acc: 99.974
+Train Loss: 0.015 | Acc: 99.908
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.060 | Acc: 73.560 (7356/10000)
+Epoch:28
+0
+Train Loss: 0.010 | Acc: 99.980
+Train Loss: 0.023 | Acc: 99.756
+1
+Train Loss: 0.010 | Acc: 99.982
+Train Loss: 0.102 | Acc: 97.848
+2
+Train Loss: 0.076 | Acc: 98.582
+Train Loss: 0.240 | Acc: 93.794
+3
+Train Loss: 0.010 | Acc: 99.984
+Train Loss: 0.011 | Acc: 99.968
+4
+Train Loss: 0.010 | Acc: 99.982
+Train Loss: 0.012 | Acc: 99.940
+5
+Train Loss: 0.014 | Acc: 99.950
+Train Loss: 0.076 | Acc: 98.458
+6
+Train Loss: 0.101 | Acc: 97.922
+Train Loss: 0.241 | Acc: 93.760
+7
+Train Loss: 0.010 | Acc: 99.978
+Train Loss: 0.011 | Acc: 99.972
+8
+Train Loss: 0.032 | Acc: 99.788
+Train Loss: 0.209 | Acc: 94.754
+9
+Train Loss: 0.011 | Acc: 99.962
+Train Loss: 0.075 | Acc: 98.458
+10
+Train Loss: 0.063 | Acc: 98.980
+Train Loss: 0.236 | Acc: 93.926
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.080 | Acc: 73.270 (7327/10000)
+Epoch:29
+0
+Train Loss: 0.019 | Acc: 99.936
+Train Loss: 0.102 | Acc: 97.880
+1
+Train Loss: 0.037 | Acc: 99.678
+Train Loss: 0.200 | Acc: 95.072
+2
+Train Loss: 0.126 | Acc: 97.364
+Train Loss: 0.234 | Acc: 93.856
+3
+Train Loss: 0.015 | Acc: 99.966
+Train Loss: 0.018 | Acc: 99.928
+4
+Train Loss: 0.019 | Acc: 99.896
+Train Loss: 0.144 | Acc: 96.686
+5
+Train Loss: 0.035 | Acc: 99.754
+Train Loss: 0.181 | Acc: 95.664
+6
+Train Loss: 0.082 | Acc: 98.550
+Train Loss: 0.228 | Acc: 94.052
+7
+Train Loss: 0.016 | Acc: 99.934
+Train Loss: 0.161 | Acc: 96.332
+8
+Train Loss: 0.099 | Acc: 98.148
+Train Loss: 0.228 | Acc: 94.060
+9
+Train Loss: 0.065 | Acc: 99.026
+Train Loss: 0.221 | Acc: 94.370
+10
+Train Loss: 0.059 | Acc: 99.152
+Train Loss: 0.218 | Acc: 94.358
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.130 | Acc: 72.550 (7255/10000)
+Epoch:30
+0
+Train Loss: 0.052 | Acc: 99.332
+Train Loss: 0.176 | Acc: 95.748
+1
+Train Loss: 0.037 | Acc: 99.678
+Train Loss: 0.149 | Acc: 96.554
+2
+Train Loss: 0.063 | Acc: 99.116
+Train Loss: 0.185 | Acc: 95.370
+3
+Train Loss: 0.022 | Acc: 99.920
+Train Loss: 0.057 | Acc: 99.120
+4
+Train Loss: 0.043 | Acc: 99.542
+Train Loss: 0.168 | Acc: 95.962
+5
+Train Loss: 0.051 | Acc: 99.342
+Train Loss: 0.179 | Acc: 95.648
+6
+Train Loss: 0.044 | Acc: 99.528
+Train Loss: 0.163 | Acc: 96.158
+7
+Train Loss: 0.033 | Acc: 99.754
+Train Loss: 0.145 | Acc: 96.710
+8
+Train Loss: 0.047 | Acc: 99.440
+Train Loss: 0.172 | Acc: 95.874
+9
+Train Loss: 0.052 | Acc: 99.370
+Train Loss: 0.177 | Acc: 95.738
+10
+Train Loss: 0.059 | Acc: 99.194
+Train Loss: 0.183 | Acc: 95.516
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.130 | Acc: 72.770 (7277/10000)
+Epoch:31
+0
+Train Loss: 0.033 | Acc: 99.680
+Train Loss: 0.117 | Acc: 97.524
+1
+Train Loss: 0.029 | Acc: 99.750
+Train Loss: 0.116 | Acc: 97.504
+2
+Train Loss: 0.038 | Acc: 99.540
+Train Loss: 0.134 | Acc: 97.022
+3
+Train Loss: 0.033 | Acc: 99.686
+Train Loss: 0.118 | Acc: 97.504
+4
+Train Loss: 0.030 | Acc: 99.750
+Train Loss: 0.108 | Acc: 97.674
+5
+Train Loss: 0.029 | Acc: 99.772
+Train Loss: 0.074 | Acc: 98.702
+6
+Train Loss: 0.024 | Acc: 99.834
+Train Loss: 0.059 | Acc: 99.010
+7
+Train Loss: 0.042 | Acc: 99.486
+Train Loss: 0.144 | Acc: 96.672
+8
+Train Loss: 0.026 | Acc: 99.830
+Train Loss: 0.084 | Acc: 98.404
+9
+Train Loss: 0.027 | Acc: 99.804
+Train Loss: 0.084 | Acc: 98.402
+10
+Train Loss: 0.045 | Acc: 99.476
+Train Loss: 0.143 | Acc: 96.580
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.146 | Acc: 72.470 (7247/10000)
+Epoch:32
+0
+Train Loss: 0.025 | Acc: 99.790
+Train Loss: 0.106 | Acc: 97.726
+1
+Train Loss: 0.019 | Acc: 99.886
+Train Loss: 0.038 | Acc: 99.500
+2
+Train Loss: 0.025 | Acc: 99.754
+Train Loss: 0.098 | Acc: 97.884
+3
+Train Loss: 0.022 | Acc: 99.822
+Train Loss: 0.038 | Acc: 99.522
+4
+Train Loss: 0.026 | Acc: 99.740
+Train Loss: 0.086 | Acc: 98.336
+5
+Train Loss: 0.018 | Acc: 99.920
+Train Loss: 0.028 | Acc: 99.656
+6
+Train Loss: 0.024 | Acc: 99.786
+Train Loss: 0.094 | Acc: 98.046
+7
+Train Loss: 0.022 | Acc: 99.816
+Train Loss: 0.060 | Acc: 98.978
+8
+Train Loss: 0.018 | Acc: 99.912
+Train Loss: 0.052 | Acc: 99.150
+9
+Train Loss: 0.021 | Acc: 99.844
+Train Loss: 0.068 | Acc: 98.766
+10
+Train Loss: 0.019 | Acc: 99.874
+Train Loss: 0.030 | Acc: 99.698
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.132 | Acc: 73.200 (7320/10000)
+Epoch:33
+0
+Train Loss: 0.017 | Acc: 99.864
+Train Loss: 0.030 | Acc: 99.654
+1
+Train Loss: 0.011 | Acc: 99.956
+Train Loss: 0.012 | Acc: 99.956
+2
+Train Loss: 0.014 | Acc: 99.912
+Train Loss: 0.021 | Acc: 99.792
+3
+Train Loss: 0.012 | Acc: 99.952
+Train Loss: 0.023 | Acc: 99.740
+4
+Train Loss: 0.013 | Acc: 99.942
+Train Loss: 0.016 | Acc: 99.892
+5
+Train Loss: 0.011 | Acc: 99.948
+Train Loss: 0.014 | Acc: 99.894
+6
+Train Loss: 0.016 | Acc: 99.904
+Train Loss: 0.022 | Acc: 99.788
+7
+Train Loss: 0.016 | Acc: 99.890
+Train Loss: 0.032 | Acc: 99.610
+8
+Train Loss: 0.017 | Acc: 99.840
+Train Loss: 0.032 | Acc: 99.612
+9
+Train Loss: 0.013 | Acc: 99.924
+Train Loss: 0.015 | Acc: 99.906
+10
+Train Loss: 0.011 | Acc: 99.960
+Train Loss: 0.011 | Acc: 99.934
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.093 | Acc: 74.070 (7407/10000)
+Epoch:34
+0
+Train Loss: 0.008 | Acc: 99.972
+Train Loss: 0.007 | Acc: 99.976
+1
+Train Loss: 0.009 | Acc: 99.930
+Train Loss: 0.012 | Acc: 99.926
+2
+Train Loss: 0.009 | Acc: 99.922
+Train Loss: 0.020 | Acc: 99.798
+3
+Train Loss: 0.008 | Acc: 99.968
+Train Loss: 0.009 | Acc: 99.946
+4
+Train Loss: 0.008 | Acc: 99.940
+Train Loss: 0.019 | Acc: 99.796
+5
+Train Loss: 0.007 | Acc: 99.962
+Train Loss: 0.009 | Acc: 99.960
+6
+Train Loss: 0.009 | Acc: 99.940
+Train Loss: 0.009 | Acc: 99.956
+7
+Train Loss: 0.007 | Acc: 99.978
+Train Loss: 0.015 | Acc: 99.840
+8
+Train Loss: 0.010 | Acc: 99.920
+Train Loss: 0.024 | Acc: 99.756
+9
+Train Loss: 0.007 | Acc: 99.972
+Train Loss: 0.008 | Acc: 99.958
+10
+Train Loss: 0.008 | Acc: 99.950
+Train Loss: 0.010 | Acc: 99.936
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.055 | Acc: 74.270 (7427/10000)
+Epoch:35
+0
+Train Loss: 0.007 | Acc: 99.964
+Train Loss: 0.007 | Acc: 99.972
+1
+Train Loss: 0.006 | Acc: 99.972
+Train Loss: 0.007 | Acc: 99.972
+2
+Train Loss: 0.006 | Acc: 99.962
+Train Loss: 0.008 | Acc: 99.948
+3
+Train Loss: 0.006 | Acc: 99.972
+Train Loss: 0.007 | Acc: 99.974
+4
+Train Loss: 0.007 | Acc: 99.962
+Train Loss: 0.007 | Acc: 99.970
+5
+Train Loss: 0.007 | Acc: 99.956
+Train Loss: 0.008 | Acc: 99.964
+6
+Train Loss: 0.007 | Acc: 99.968
+Train Loss: 0.008 | Acc: 99.964
+7
+Train Loss: 0.007 | Acc: 99.970
+Train Loss: 0.010 | Acc: 99.942
+8
+Train Loss: 0.006 | Acc: 99.968
+Train Loss: 0.008 | Acc: 99.958
+9
+Train Loss: 0.009 | Acc: 99.898
+Train Loss: 0.016 | Acc: 99.862
+10
+Train Loss: 0.006 | Acc: 99.980
+Train Loss: 0.009 | Acc: 99.944
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.040 | Acc: 74.780 (7478/10000)
+Epoch:36
+0
+Train Loss: 0.006 | Acc: 99.974
+Train Loss: 0.007 | Acc: 99.980
+1
+Train Loss: 0.007 | Acc: 99.958
+Train Loss: 0.007 | Acc: 99.974
+2
+Train Loss: 0.006 | Acc: 99.978
+Train Loss: 0.006 | Acc: 99.968
+3
+Train Loss: 0.005 | Acc: 99.986
+Train Loss: 0.006 | Acc: 99.970
+4
+Train Loss: 0.006 | Acc: 99.974
+Train Loss: 0.006 | Acc: 99.976
+5
+Train Loss: 0.006 | Acc: 99.970
+Train Loss: 0.006 | Acc: 99.978
+6
+Train Loss: 0.005 | Acc: 99.978
+Train Loss: 0.006 | Acc: 99.984
+7
+Train Loss: 0.006 | Acc: 99.970
+Train Loss: 0.007 | Acc: 99.972
+8
+Train Loss: 0.006 | Acc: 99.978
+Train Loss: 0.006 | Acc: 99.974
+9
+Train Loss: 0.006 | Acc: 99.978
+Train Loss: 0.007 | Acc: 99.982
+10
+Train Loss: 0.006 | Acc: 99.974
+Train Loss: 0.007 | Acc: 99.970
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.025 | Acc: 74.690 (7469/10000)
+Epoch:37
+0
+Train Loss: 0.006 | Acc: 99.978
+Train Loss: 0.006 | Acc: 99.978
+1
+Train Loss: 0.006 | Acc: 99.978
+Train Loss: 0.007 | Acc: 99.972
+2
+Train Loss: 0.006 | Acc: 99.980
+Train Loss: 0.008 | Acc: 99.962
+3
+Train Loss: 0.006 | Acc: 99.986
+Train Loss: 0.007 | Acc: 99.978
+4
+Train Loss: 0.005 | Acc: 99.994
+Train Loss: 0.006 | Acc: 99.992
+5
+Train Loss: 0.006 | Acc: 99.982
+Train Loss: 0.007 | Acc: 99.970
+6
+Train Loss: 0.006 | Acc: 99.988
+Train Loss: 0.007 | Acc: 99.976
+7
+Train Loss: 0.006 | Acc: 99.984
+Train Loss: 0.007 | Acc: 99.986
+8
+Train Loss: 0.006 | Acc: 99.988
+Train Loss: 0.006 | Acc: 99.976
+9
+Train Loss: 0.006 | Acc: 99.990
+Train Loss: 0.006 | Acc: 99.986
+10
+Train Loss: 0.006 | Acc: 99.976
+Train Loss: 0.007 | Acc: 99.974
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.020 | Acc: 74.700 (7470/10000)
+Epoch:38
+0
+Train Loss: 0.006 | Acc: 99.984
+Train Loss: 0.007 | Acc: 99.982
+1
+Train Loss: 0.006 | Acc: 99.992
+Train Loss: 0.007 | Acc: 99.980
+2
+Train Loss: 0.006 | Acc: 99.992
+Train Loss: 0.007 | Acc: 99.984
+3
+Train Loss: 0.006 | Acc: 99.990
+Train Loss: 0.006 | Acc: 99.984
+4
+Train Loss: 0.006 | Acc: 99.992
+Train Loss: 0.006 | Acc: 99.986
+5
+Train Loss: 0.006 | Acc: 99.982
+Train Loss: 0.006 | Acc: 99.986
+6
+Train Loss: 0.006 | Acc: 99.980
+Train Loss: 0.007 | Acc: 99.984
+7
+Train Loss: 0.006 | Acc: 99.994
+Train Loss: 0.006 | Acc: 99.990
+8
+Train Loss: 0.006 | Acc: 99.984
+Train Loss: 0.006 | Acc: 99.990
+9
+Train Loss: 0.006 | Acc: 99.986
+Train Loss: 0.006 | Acc: 99.992
+10
+Train Loss: 0.006 | Acc: 99.996
+Train Loss: 0.006 | Acc: 99.996
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.017 | Acc: 74.770 (7477/10000)
+Epoch:39
+0
+Train Loss: 0.006 | Acc: 99.990
+Train Loss: 0.007 | Acc: 99.988
+1
+Train Loss: 0.006 | Acc: 99.988
+Train Loss: 0.007 | Acc: 99.982
+2
+Train Loss: 0.006 | Acc: 99.994
+Train Loss: 0.007 | Acc: 99.990
+3
+Train Loss: 0.006 | Acc: 99.996
+Train Loss: 0.007 | Acc: 99.986
+4
+Train Loss: 0.006 | Acc: 99.992
+Train Loss: 0.007 | Acc: 99.984
+5
+Train Loss: 0.006 | Acc: 99.996
+Train Loss: 0.007 | Acc: 99.990
+6
+Train Loss: 0.006 | Acc: 99.996
+Train Loss: 0.006 | Acc: 99.992
+7
+Train Loss: 0.006 | Acc: 99.990
+Train Loss: 0.007 | Acc: 99.986
+8
+Train Loss: 0.006 | Acc: 99.994
+Train Loss: 0.006 | Acc: 99.988
+9
+Train Loss: 0.006 | Acc: 99.994
+Train Loss: 0.007 | Acc: 99.984
+10
+Train Loss: 0.006 | Acc: 99.990
+Train Loss: 0.007 | Acc: 99.984
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.015 | Acc: 74.760 (7476/10000)
+Epoch:40
+0
+Train Loss: 0.006 | Acc: 99.996
+Train Loss: 0.007 | Acc: 99.992
+1
+Train Loss: 0.006 | Acc: 99.996
+Train Loss: 0.007 | Acc: 99.996
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.007 | Acc: 99.992
+3
+Train Loss: 0.006 | Acc: 99.986
+Train Loss: 0.008 | Acc: 99.982
+4
+Train Loss: 0.006 | Acc: 99.990
+Train Loss: 0.007 | Acc: 99.994
+5
+Train Loss: 0.006 | Acc: 99.988
+Train Loss: 0.007 | Acc: 99.990
+6
+Train Loss: 0.006 | Acc: 99.994
+Train Loss: 0.007 | Acc: 99.990
+7
+Train Loss: 0.006 | Acc: 99.994
+Train Loss: 0.007 | Acc: 99.992
+8
+Train Loss: 0.006 | Acc: 99.996
+Train Loss: 0.007 | Acc: 99.996
+9
+Train Loss: 0.006 | Acc: 99.988
+Train Loss: 0.007 | Acc: 99.988
+10
+Train Loss: 0.006 | Acc: 99.998
+Train Loss: 0.007 | Acc: 99.994
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.013 | Acc: 74.740 (7474/10000)
+Epoch:41
+0
+Train Loss: 0.006 | Acc: 99.998
+Train Loss: 0.007 | Acc: 99.998
+1
+Train Loss: 0.007 | Acc: 99.990
+Train Loss: 0.064 | Acc: 98.926
+2
+Train Loss: 0.006 | Acc: 99.998
+Train Loss: 0.007 | Acc: 99.990
+3
+Train Loss: 0.006 | Acc: 99.998
+Train Loss: 0.007 | Acc: 99.990
+4
+Train Loss: 0.007 | Acc: 99.994
+Train Loss: 0.008 | Acc: 99.984
+5
+Train Loss: 0.007 | Acc: 99.998
+Train Loss: 0.008 | Acc: 99.992
+6
+Train Loss: 0.006 | Acc: 99.998
+Train Loss: 0.007 | Acc: 99.990
+7
+Train Loss: 0.006 | Acc: 99.990
+Train Loss: 0.007 | Acc: 99.984
+8
+Train Loss: 0.007 | Acc: 99.996
+Train Loss: 0.007 | Acc: 99.992
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.007 | Acc: 99.992
+10
+Train Loss: 0.007 | Acc: 99.994
+Train Loss: 0.009 | Acc: 99.972
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.014 | Acc: 74.910 (7491/10000)
+Epoch:42
+0
+Train Loss: 0.007 | Acc: 99.994
+Train Loss: 0.036 | Acc: 99.460
+1
+Train Loss: 0.123 | Acc: 97.702
+Train Loss: 0.201 | Acc: 95.562
+2
+Train Loss: 0.007 | Acc: 99.994
+Train Loss: 0.008 | Acc: 99.986
+3
+Train Loss: 0.008 | Acc: 99.984
+Train Loss: 0.033 | Acc: 99.612
+4
+Train Loss: 0.007 | Acc: 99.988
+Train Loss: 0.012 | Acc: 99.974
+5
+Train Loss: 0.007 | Acc: 99.990
+Train Loss: 0.017 | Acc: 99.838
+6
+Train Loss: 0.007 | Acc: 99.990
+Train Loss: 0.054 | Acc: 99.072
+7
+Train Loss: 0.007 | Acc: 99.992
+Train Loss: 0.010 | Acc: 99.968
+8
+Train Loss: 0.007 | Acc: 99.996
+Train Loss: 0.008 | Acc: 99.988
+9
+Train Loss: 0.007 | Acc: 99.994
+Train Loss: 0.008 | Acc: 99.992
+10
+Train Loss: 0.007 | Acc: 99.990
+Train Loss: 0.008 | Acc: 99.982
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.021 | Acc: 74.470 (7447/10000)
+Epoch:43
+0
+Train Loss: 0.114 | Acc: 97.888
+Train Loss: 0.198 | Acc: 95.552
+1
+Train Loss: 0.123 | Acc: 97.758
+Train Loss: 0.201 | Acc: 95.498
+2
+Train Loss: 0.008 | Acc: 99.990
+Train Loss: 0.008 | Acc: 99.984
+3
+Train Loss: 0.118 | Acc: 97.846
+Train Loss: 0.197 | Acc: 95.714
+4
+Train Loss: 0.008 | Acc: 99.994
+Train Loss: 0.008 | Acc: 99.990
+5
+Train Loss: 0.078 | Acc: 98.736
+Train Loss: 0.193 | Acc: 95.878
+6
+Train Loss: 0.018 | Acc: 99.960
+Train Loss: 0.072 | Acc: 98.930
+7
+Train Loss: 0.008 | Acc: 99.998
+Train Loss: 0.008 | Acc: 99.988
+8
+Train Loss: 0.007 | Acc: 99.994
+Train Loss: 0.008 | Acc: 99.992
+9
+Train Loss: 0.008 | Acc: 99.998
+Train Loss: 0.008 | Acc: 99.996
+10
+Train Loss: 0.008 | Acc: 99.988
+Train Loss: 0.015 | Acc: 99.930
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.028 | Acc: 74.690 (7469/10000)
+Epoch:44
+0
+Train Loss: 0.025 | Acc: 99.832
+Train Loss: 0.150 | Acc: 97.080
+1
+Train Loss: 0.119 | Acc: 97.666
+Train Loss: 0.183 | Acc: 95.934
+2
+Train Loss: 0.009 | Acc: 99.972
+Train Loss: 0.113 | Acc: 97.948
+3
+Train Loss: 0.090 | Acc: 98.534
+Train Loss: 0.182 | Acc: 95.978
+4
+Train Loss: 0.008 | Acc: 99.998
+Train Loss: 0.008 | Acc: 99.980
+5
+Train Loss: 0.079 | Acc: 98.746
+Train Loss: 0.178 | Acc: 96.172
+6
+Train Loss: 0.065 | Acc: 99.160
+Train Loss: 0.177 | Acc: 96.250
+7
+Train Loss: 0.008 | Acc: 99.996
+Train Loss: 0.008 | Acc: 99.982
+8
+Train Loss: 0.009 | Acc: 99.952
+Train Loss: 0.077 | Acc: 98.776
+9
+Train Loss: 0.026 | Acc: 99.672
+Train Loss: 0.159 | Acc: 96.848
+10
+Train Loss: 0.026 | Acc: 99.794
+Train Loss: 0.159 | Acc: 96.744
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.056 | Acc: 74.060 (7406/10000)
+Epoch:45
+0
+Train Loss: 0.065 | Acc: 99.068
+Train Loss: 0.155 | Acc: 96.756
+1
+Train Loss: 0.063 | Acc: 99.074
+Train Loss: 0.156 | Acc: 96.614
+2
+Train Loss: 0.073 | Acc: 98.928
+Train Loss: 0.159 | Acc: 96.656
+3
+Train Loss: 0.022 | Acc: 99.894
+Train Loss: 0.092 | Acc: 98.340
+4
+Train Loss: 0.026 | Acc: 99.730
+Train Loss: 0.130 | Acc: 97.486
+5
+Train Loss: 0.062 | Acc: 99.124
+Train Loss: 0.155 | Acc: 96.682
+6
+Train Loss: 0.031 | Acc: 99.722
+Train Loss: 0.136 | Acc: 97.256
+7
+Train Loss: 0.012 | Acc: 99.962
+Train Loss: 0.067 | Acc: 98.976
+8
+Train Loss: 0.051 | Acc: 99.294
+Train Loss: 0.147 | Acc: 96.996
+9
+Train Loss: 0.070 | Acc: 98.880
+Train Loss: 0.154 | Acc: 96.750
+10
+Train Loss: 0.053 | Acc: 99.228
+Train Loss: 0.152 | Acc: 96.818
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.114 | Acc: 73.250 (7325/10000)
+Epoch:46
+0
+Train Loss: 0.025 | Acc: 99.818
+Train Loss: 0.097 | Acc: 98.164
+1
+Train Loss: 0.038 | Acc: 99.494
+Train Loss: 0.121 | Acc: 97.620
+2
+Train Loss: 0.034 | Acc: 99.602
+Train Loss: 0.119 | Acc: 97.598
+3
+Train Loss: 0.044 | Acc: 99.360
+Train Loss: 0.126 | Acc: 97.450
+4
+Train Loss: 0.023 | Acc: 99.782
+Train Loss: 0.108 | Acc: 97.872
+5
+Train Loss: 0.035 | Acc: 99.558
+Train Loss: 0.119 | Acc: 97.684
+6
+Train Loss: 0.029 | Acc: 99.740
+Train Loss: 0.108 | Acc: 97.930
+7
+Train Loss: 0.030 | Acc: 99.706
+Train Loss: 0.112 | Acc: 97.816
+8
+Train Loss: 0.034 | Acc: 99.612
+Train Loss: 0.119 | Acc: 97.598
+9
+Train Loss: 0.031 | Acc: 99.684
+Train Loss: 0.117 | Acc: 97.614
+10
+Train Loss: 0.030 | Acc: 99.670
+Train Loss: 0.112 | Acc: 97.774
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.108 | Acc: 73.790 (7379/10000)
+Epoch:47
+0
+Train Loss: 0.018 | Acc: 99.832
+Train Loss: 0.064 | Acc: 98.930
+1
+Train Loss: 0.019 | Acc: 99.806
+Train Loss: 0.084 | Acc: 98.452
+2
+Train Loss: 0.019 | Acc: 99.838
+Train Loss: 0.076 | Acc: 98.614
+3
+Train Loss: 0.013 | Acc: 99.936
+Train Loss: 0.020 | Acc: 99.784
+4
+Train Loss: 0.026 | Acc: 99.698
+Train Loss: 0.084 | Acc: 98.468
+5
+Train Loss: 0.013 | Acc: 99.946
+Train Loss: 0.018 | Acc: 99.830
+6
+Train Loss: 0.014 | Acc: 99.934
+Train Loss: 0.029 | Acc: 99.604
+7
+Train Loss: 0.017 | Acc: 99.896
+Train Loss: 0.067 | Acc: 98.798
+8
+Train Loss: 0.013 | Acc: 99.936
+Train Loss: 0.044 | Acc: 99.268
+9
+Train Loss: 0.016 | Acc: 99.866
+Train Loss: 0.055 | Acc: 99.088
+10
+Train Loss: 0.022 | Acc: 99.756
+Train Loss: 0.078 | Acc: 98.574
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.106 | Acc: 74.160 (7416/10000)
+Epoch:48
+0
+Train Loss: 0.013 | Acc: 99.876
+Train Loss: 0.038 | Acc: 99.454
+1
+Train Loss: 0.008 | Acc: 99.974
+Train Loss: 0.008 | Acc: 99.940
+2
+Train Loss: 0.010 | Acc: 99.942
+Train Loss: 0.011 | Acc: 99.910
+3
+Train Loss: 0.009 | Acc: 99.930
+Train Loss: 0.027 | Acc: 99.664
+4
+Train Loss: 0.008 | Acc: 99.980
+Train Loss: 0.007 | Acc: 99.956
+5
+Train Loss: 0.007 | Acc: 99.988
+Train Loss: 0.010 | Acc: 99.926
+6
+Train Loss: 0.009 | Acc: 99.974
+Train Loss: 0.008 | Acc: 99.960
+7
+Train Loss: 0.009 | Acc: 99.960
+Train Loss: 0.010 | Acc: 99.912
+8
+Train Loss: 0.012 | Acc: 99.904
+Train Loss: 0.018 | Acc: 99.818
+9
+Train Loss: 0.012 | Acc: 99.912
+Train Loss: 0.050 | Acc: 99.228
+10
+Train Loss: 0.009 | Acc: 99.974
+Train Loss: 0.008 | Acc: 99.966
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.050 | Acc: 74.800 (7480/10000)
+Epoch:49
+0
+Train Loss: 0.007 | Acc: 99.954
+Train Loss: 0.012 | Acc: 99.878
+1
+Train Loss: 0.005 | Acc: 99.978
+Train Loss: 0.006 | Acc: 99.976
+2
+Train Loss: 0.005 | Acc: 99.976
+Train Loss: 0.007 | Acc: 99.954
+3
+Train Loss: 0.009 | Acc: 99.910
+Train Loss: 0.012 | Acc: 99.916
+4
+Train Loss: 0.005 | Acc: 99.978
+Train Loss: 0.006 | Acc: 99.964
+5
+Train Loss: 0.005 | Acc: 99.970
+Train Loss: 0.006 | Acc: 99.966
+6
+Train Loss: 0.005 | Acc: 99.982
+Train Loss: 0.005 | Acc: 99.974
+7
+Train Loss: 0.005 | Acc: 99.980
+Train Loss: 0.006 | Acc: 99.958
+8
+Train Loss: 0.006 | Acc: 99.950
+Train Loss: 0.010 | Acc: 99.934
+9
+Train Loss: 0.006 | Acc: 99.976
+Train Loss: 0.006 | Acc: 99.968
+10
+Train Loss: 0.005 | Acc: 99.972
+Train Loss: 0.006 | Acc: 99.970
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.023 | Acc: 75.050 (7505/10000)
+Epoch:50
+0
+Train Loss: 0.004 | Acc: 99.978
+Train Loss: 0.005 | Acc: 99.972
+1
+Train Loss: 0.005 | Acc: 99.974
+Train Loss: 0.005 | Acc: 99.966
+2
+Train Loss: 0.004 | Acc: 99.970
+Train Loss: 0.005 | Acc: 99.974
+3
+Train Loss: 0.005 | Acc: 99.970
+Train Loss: 0.005 | Acc: 99.968
+4
+Train Loss: 0.004 | Acc: 99.976
+Train Loss: 0.005 | Acc: 99.982
+5
+Train Loss: 0.004 | Acc: 99.986
+Train Loss: 0.005 | Acc: 99.982
+6
+Train Loss: 0.005 | Acc: 99.970
+Train Loss: 0.005 | Acc: 99.980
+7
+Train Loss: 0.004 | Acc: 99.974
+Train Loss: 0.005 | Acc: 99.976
+8
+Train Loss: 0.004 | Acc: 99.980
+Train Loss: 0.005 | Acc: 99.968
+9
+Train Loss: 0.004 | Acc: 99.978
+Train Loss: 0.004 | Acc: 99.986
+10
+Train Loss: 0.009 | Acc: 99.884
+Train Loss: 0.020 | Acc: 99.774
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.016 | Acc: 75.070 (7507/10000)
+Epoch:51
+0
+Train Loss: 0.004 | Acc: 99.980
+Train Loss: 0.005 | Acc: 99.986
+1
+Train Loss: 0.005 | Acc: 99.976
+Train Loss: 0.005 | Acc: 99.988
+2
+Train Loss: 0.004 | Acc: 99.988
+Train Loss: 0.004 | Acc: 99.986
+3
+Train Loss: 0.004 | Acc: 99.988
+Train Loss: 0.004 | Acc: 99.994
+4
+Train Loss: 0.004 | Acc: 99.984
+Train Loss: 0.004 | Acc: 99.992
+5
+Train Loss: 0.004 | Acc: 99.992
+Train Loss: 0.004 | Acc: 99.980
+6
+Train Loss: 0.004 | Acc: 99.982
+Train Loss: 0.005 | Acc: 99.980
+7
+Train Loss: 0.004 | Acc: 99.984
+Train Loss: 0.004 | Acc: 99.988
+8
+Train Loss: 0.004 | Acc: 99.982
+Train Loss: 0.005 | Acc: 99.984
+9
+Train Loss: 0.004 | Acc: 99.984
+Train Loss: 0.004 | Acc: 99.992
+10
+Train Loss: 0.005 | Acc: 99.986
+Train Loss: 0.004 | Acc: 99.988
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.009 | Acc: 75.310 (7531/10000)
+Epoch:52
+0
+Train Loss: 0.004 | Acc: 99.998
+Train Loss: 0.004 | Acc: 99.990
+1
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.004 | Acc: 99.990
+2
+Train Loss: 0.004 | Acc: 99.994
+Train Loss: 0.004 | Acc: 99.996
+3
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.004 | Acc: 99.994
+4
+Train Loss: 0.004 | Acc: 99.994
+Train Loss: 0.004 | Acc: 99.996
+5
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.004 | Acc: 99.996
+6
+Train Loss: 0.004 | Acc: 99.996
+Train Loss: 0.004 | Acc: 99.994
+7
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.004 | Acc: 100.000
+8
+Train Loss: 0.004 | Acc: 99.988
+Train Loss: 0.005 | Acc: 99.984
+9
+Train Loss: 0.004 | Acc: 99.992
+Train Loss: 0.004 | Acc: 99.996
+10
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.004 | Acc: 99.994
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.007 | Acc: 75.350 (7535/10000)
+Epoch:53
+0
+Train Loss: 0.004 | Acc: 99.996
+Train Loss: 0.005 | Acc: 99.988
+1
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.004 | Acc: 100.000
+2
+Train Loss: 0.004 | Acc: 99.994
+Train Loss: 0.004 | Acc: 99.998
+3
+Train Loss: 0.004 | Acc: 99.998
+Train Loss: 0.004 | Acc: 99.994
+4
+Train Loss: 0.004 | Acc: 99.996
+Train Loss: 0.004 | Acc: 99.998
+5
+Train Loss: 0.004 | Acc: 99.998
+Train Loss: 0.004 | Acc: 99.996
+6
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.005 | Acc: 99.988
+7
+Train Loss: 0.004 | Acc: 99.996
+Train Loss: 0.005 | Acc: 99.990
+8
+Train Loss: 0.004 | Acc: 99.992
+Train Loss: 0.005 | Acc: 99.990
+9
+Train Loss: 0.004 | Acc: 99.996
+Train Loss: 0.004 | Acc: 99.994
+10
+Train Loss: 0.004 | Acc: 99.998
+Train Loss: 0.005 | Acc: 99.992
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.009 | Acc: 75.250 (7525/10000)
+Epoch:54
+0
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.004 | Acc: 99.998
+1
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.004 | Acc: 99.998
+2
+Train Loss: 0.004 | Acc: 99.996
+Train Loss: 0.005 | Acc: 99.992
+3
+Train Loss: 0.004 | Acc: 99.996
+Train Loss: 0.005 | Acc: 99.996
+4
+Train Loss: 0.004 | Acc: 99.994
+Train Loss: 0.005 | Acc: 99.990
+5
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.004 | Acc: 100.000
+6
+Train Loss: 0.004 | Acc: 99.996
+Train Loss: 0.005 | Acc: 99.996
+7
+Train Loss: 0.004 | Acc: 99.998
+Train Loss: 0.005 | Acc: 99.994
+8
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.004 | Acc: 100.000
+9
+Train Loss: 0.004 | Acc: 99.996
+Train Loss: 0.005 | Acc: 99.992
+10
+Train Loss: 0.004 | Acc: 99.992
+Train Loss: 0.005 | Acc: 99.994
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.009 | Acc: 75.200 (7520/10000)
+Epoch:55
+0
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.005 | Acc: 99.994
+1
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.005 | Acc: 99.996
+2
+Train Loss: 0.004 | Acc: 99.998
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+4
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.004 | Acc: 99.998
+Train Loss: 0.005 | Acc: 99.992
+6
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.005 | Acc: 99.998
+7
+Train Loss: 0.004 | Acc: 99.998
+Train Loss: 0.005 | Acc: 99.998
+8
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 99.996
+Train Loss: 0.005 | Acc: 99.998
+10
+Train Loss: 0.004 | Acc: 100.000
+Train Loss: 0.005 | Acc: 99.998
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.008 | Acc: 75.260 (7526/10000)
+Epoch:56
+0
+Train Loss: 0.005 | Acc: 99.996
+Train Loss: 0.005 | Acc: 99.998
+1
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.005 | Acc: 99.996
+2
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.005 | Acc: 99.992
+3
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.005 | Acc: 99.992
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 99.996
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 99.992
+6
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.005 | Acc: 99.992
+7
+Train Loss: 0.005 | Acc: 99.996
+Train Loss: 0.005 | Acc: 99.990
+8
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 99.998
+10
+Train Loss: 0.005 | Acc: 99.996
+Train Loss: 0.005 | Acc: 99.996
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.009 | Acc: 75.290 (7529/10000)
+Epoch:57
+0
+Train Loss: 0.005 | Acc: 99.996
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 99.996
+Train Loss: 0.005 | Acc: 99.998
+2
+Train Loss: 0.005 | Acc: 99.994
+Train Loss: 0.006 | Acc: 99.990
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 99.996
+4
+Train Loss: 0.005 | Acc: 99.996
+Train Loss: 0.005 | Acc: 99.996
+5
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.005 | Acc: 99.998
+7
+Train Loss: 0.005 | Acc: 99.992
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.005 | Acc: 99.994
+9
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.005 | Acc: 99.996
+10
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.011 | Acc: 75.110 (7511/10000)
+Epoch:58
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 99.994
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.994
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.996
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 99.994
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 99.996
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.013 | Acc: 75.150 (7515/10000)
+Epoch:59
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.992
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.996
+4
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.006 | Acc: 99.994
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.992
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 99.996
+Train Loss: 0.005 | Acc: 99.998
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.015 | Acc: 75.170 (7517/10000)
+Epoch:60
+0
+Train Loss: 0.005 | Acc: 99.996
+Train Loss: 0.006 | Acc: 99.994
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.998
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 99.996
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.016 | Acc: 75.160 (7516/10000)
+Epoch:61
+0
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.006 | Acc: 99.996
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.006 | Acc: 99.998
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.998
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.996
+10
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.018 | Acc: 75.080 (7508/10000)
+Epoch:62
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.006 | Acc: 99.998
+6
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.006 | Acc: 99.998
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.998
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.998
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.021 | Acc: 75.260 (7526/10000)
+Epoch:63
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.996
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.996
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.023 | Acc: 75.150 (7515/10000)
+Epoch:64
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.996
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.998
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.998
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 99.998
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.024 | Acc: 75.290 (7529/10000)
+Epoch:65
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.026 | Acc: 75.250 (7525/10000)
+Epoch:66
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.998
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.029 | Acc: 75.190 (7519/10000)
+Epoch:67
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 99.998
+Train Loss: 0.006 | Acc: 99.996
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.031 | Acc: 75.120 (7512/10000)
+Epoch:68
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.992
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.998
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.994
+8
+Train Loss: 0.006 | Acc: 99.998
+Train Loss: 0.006 | Acc: 99.996
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.033 | Acc: 75.160 (7516/10000)
+Epoch:69
+0
+Train Loss: 0.006 | Acc: 99.994
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 99.996
+Train Loss: 0.006 | Acc: 99.994
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 99.998
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.996
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.998
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.994
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.035 | Acc: 75.200 (7520/10000)
+Epoch:70
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.998
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.996
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.994
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 99.998
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.036 | Acc: 75.200 (7520/10000)
+Epoch:71
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.038 | Acc: 75.150 (7515/10000)
+Epoch:72
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 99.998
+Train Loss: 0.006 | Acc: 99.998
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.039 | Acc: 75.070 (7507/10000)
+Epoch:73
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 99.998
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.041 | Acc: 75.110 (7511/10000)
+Epoch:74
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.041 | Acc: 75.090 (7509/10000)
+Epoch:75
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 99.998
+Train Loss: 0.006 | Acc: 99.998
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.043 | Acc: 75.090 (7509/10000)
+Epoch:76
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.044 | Acc: 75.140 (7514/10000)
+Epoch:77
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.045 | Acc: 75.080 (7508/10000)
+Epoch:78
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.046 | Acc: 75.010 (7501/10000)
+Epoch:79
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.046 | Acc: 75.100 (7510/10000)
+Epoch:80
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.047 | Acc: 75.040 (7504/10000)
+Epoch:81
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.048 | Acc: 75.040 (7504/10000)
+Epoch:82
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.048 | Acc: 75.020 (7502/10000)
+Epoch:83
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.048 | Acc: 75.170 (7517/10000)
+Epoch:84
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.049 | Acc: 75.020 (7502/10000)
+Epoch:85
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+5
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.050 | Acc: 75.120 (7512/10000)
+Epoch:86
+0
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.050 | Acc: 75.110 (7511/10000)
+Epoch:87
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+10
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.050 | Acc: 75.100 (7510/10000)
+Epoch:88
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.050 | Acc: 75.060 (7506/10000)
+Epoch:89
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.006 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.051 | Acc: 75.030 (7503/10000)
+Epoch:90
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.051 | Acc: 75.110 (7511/10000)
+Epoch:91
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.006 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.051 | Acc: 75.070 (7507/10000)
+Epoch:92
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.051 | Acc: 75.090 (7509/10000)
+Epoch:93
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.051 | Acc: 75.070 (7507/10000)
+Epoch:94
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.051 | Acc: 75.090 (7509/10000)
+Epoch:95
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.051 | Acc: 75.080 (7508/10000)
+Epoch:96
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.051 | Acc: 75.040 (7504/10000)
+Epoch:97
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.051 | Acc: 75.140 (7514/10000)
+Epoch:98
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.051 | Acc: 75.060 (7506/10000)
+Epoch:99
+0
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+1
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+2
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+3
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+4
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+5
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+6
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+7
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+8
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+9
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+10
+Train Loss: 0.005 | Acc: 100.000
+Train Loss: 0.005 | Acc: 100.000
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+dict_size:44919112 bytes
+Test Loss: 1.051 | Acc: 75.110 (7511/10000)
+
+Evaluating on corrupted CIFAR-10 testset
+corruption type: brightness
+Test Loss: 6.239 | Acc: 0.500 (50/10000)
+Traceback (most recent call last):
+  File "/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/train.py", line 291, in <module>
+    corrupt_testset = CorruptedCIFAR(root=args.corrupt_data, corruption_type=c_type, transform=transform_test)
+ValueError: too many values to unpack (expected 2)

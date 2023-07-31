@@ -1,0 +1,5871 @@
+nohup: 忽略输入
+/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/../models/layers/monoconv.py:54: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  'mono_exponent', torch.tensor(#mono_exponent被注册为模型的一部分，但不会作为可训练的参数进行优化，生成的m个滤波器都在这。
+/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/..
+method:slice, seed:16, model:resnet18, variant:mono, cifar100:False, onebyone:True,checkpoint,resnet18_mono_seed16_cifar10_onebyone.pthteacher:None
+==> Preparing data..
+Files already downloaded and verified
+Files already downloaded and verified
+==> Building model..
+MonomialResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (layer1): Sequential(
+    (0): MonomialBasicBlock(
+      (conv1): ShieldMonomialConv2d(
+        64, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, num_terms=5, range=(1, 10), fanout_factor=4, mono_bias=False, 1x1_conv=True
+        (gn): GroupNorm(16, 64, eps=1e-05, affine=True)
+        (act): ReLU(inplace=True)
+        (onebyone): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): ShieldMonomialConv2d(
+        64, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, num_terms=5, range=(1, 10), fanout_factor=4, mono_bias=False, 1x1_conv=True
+        (gn): GroupNorm(16, 64, eps=1e-05, affine=True)
+        (act): ReLU(inplace=True)
+        (onebyone): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+    (1): MonomialBasicBlock(
+      (conv1): ShieldMonomialConv2d(
+        64, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, num_terms=5, range=(1, 10), fanout_factor=4, mono_bias=False, 1x1_conv=True
+        (gn): GroupNorm(16, 64, eps=1e-05, affine=True)
+        (act): ReLU(inplace=True)
+        (onebyone): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): ShieldMonomialConv2d(
+        64, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, num_terms=5, range=(1, 10), fanout_factor=4, mono_bias=False, 1x1_conv=True
+        (gn): GroupNorm(16, 64, eps=1e-05, affine=True)
+        (act): ReLU(inplace=True)
+        (onebyone): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer2): Sequential(
+    (0): MonomialBasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): ShieldMonomialConv2d(
+        128, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, num_terms=5, range=(1, 10), fanout_factor=8, mono_bias=False, 1x1_conv=True
+        (gn): GroupNorm(16, 128, eps=1e-05, affine=True)
+        (act): ReLU(inplace=True)
+        (onebyone): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): MonomialBasicBlock(
+      (conv1): ShieldMonomialConv2d(
+        128, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, num_terms=5, range=(1, 10), fanout_factor=8, mono_bias=False, 1x1_conv=True
+        (gn): GroupNorm(16, 128, eps=1e-05, affine=True)
+        (act): ReLU(inplace=True)
+        (onebyone): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): ShieldMonomialConv2d(
+        128, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, num_terms=5, range=(1, 10), fanout_factor=8, mono_bias=False, 1x1_conv=True
+        (gn): GroupNorm(16, 128, eps=1e-05, affine=True)
+        (act): ReLU(inplace=True)
+        (onebyone): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer3): Sequential(
+    (0): MonomialBasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): ShieldMonomialConv2d(
+        256, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, num_terms=5, range=(1, 10), fanout_factor=16, mono_bias=False, 1x1_conv=True
+        (gn): GroupNorm(16, 256, eps=1e-05, affine=True)
+        (act): ReLU(inplace=True)
+        (onebyone): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): MonomialBasicBlock(
+      (conv1): ShieldMonomialConv2d(
+        256, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, num_terms=5, range=(1, 10), fanout_factor=16, mono_bias=False, 1x1_conv=True
+        (gn): GroupNorm(16, 256, eps=1e-05, affine=True)
+        (act): ReLU(inplace=True)
+        (onebyone): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): ShieldMonomialConv2d(
+        256, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, num_terms=5, range=(1, 10), fanout_factor=16, mono_bias=False, 1x1_conv=True
+        (gn): GroupNorm(16, 256, eps=1e-05, affine=True)
+        (act): ReLU(inplace=True)
+        (onebyone): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (layer4): Sequential(
+    (0): MonomialBasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): ShieldMonomialConv2d(
+        512, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, num_terms=5, range=(1, 10), fanout_factor=32, mono_bias=False, 1x1_conv=True
+        (gn): GroupNorm(16, 512, eps=1e-05, affine=True)
+        (act): ReLU(inplace=True)
+        (onebyone): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): MonomialBasicBlock(
+      (conv1): ShieldMonomialConv2d(
+        512, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, num_terms=5, range=(1, 10), fanout_factor=32, mono_bias=False, 1x1_conv=True
+        (gn): GroupNorm(16, 512, eps=1e-05, affine=True)
+        (act): ReLU(inplace=True)
+        (onebyone): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv2): ShieldMonomialConv2d(
+        512, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False, num_terms=5, range=(1, 10), fanout_factor=32, mono_bias=False, 1x1_conv=True
+        (gn): GroupNorm(16, 512, eps=1e-05, affine=True)
+        (act): ReLU(inplace=True)
+        (onebyone): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      )
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (shortcut): Sequential()
+    )
+  )
+  (linear): Linear(in_features=512, out_features=10, bias=True)
+)
+layer4.0: 1650688
+1.conv1: 488320
+layer3.0: 432128
+layer4.1: 337920
+layer2.0: 117760
+layer3.1: 103424
+layer2.1: 35328
+layer1.0: 27136
+layer1.1: 13568
+linear: 5130
+1.bn1: 1920
+Epoch:0
+0
+Train Loss: 1.262 | Acc: 54.202 (27101/50000)
+Train Loss: 1.124 | Acc: 59.266 (29633/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 1.234 | Acc: 55.292 (27646/50000)
+Train Loss: 1.085 | Acc: 61.242 (30621/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 1.172 | Acc: 57.540 (28770/50000)
+Train Loss: 1.007 | Acc: 64.034 (32017/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 1.115 | Acc: 59.984 (29992/50000)
+Train Loss: 0.945 | Acc: 66.590 (33295/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 1.089 | Acc: 61.004 (30502/50000)
+Train Loss: 0.929 | Acc: 66.902 (33451/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 1.036 | Acc: 63.128 (31564/50000)
+Train Loss: 0.881 | Acc: 69.078 (34539/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 1.003 | Acc: 64.452 (32226/50000)
+Train Loss: 0.846 | Acc: 69.946 (34973/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.962 | Acc: 65.946 (32973/50000)
+Train Loss: 0.806 | Acc: 71.848 (35924/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.905 | Acc: 67.932 (33966/50000)
+Train Loss: 0.765 | Acc: 73.252 (36626/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.880 | Acc: 68.974 (34487/50000)
+Train Loss: 0.738 | Acc: 74.320 (37160/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.872 | Acc: 69.338 (34669/50000)
+Train Loss: 0.734 | Acc: 74.488 (37244/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 1.215 | Acc: 57.050 (5705/10000)
+Epoch:1
+0
+Train Loss: 0.871 | Acc: 69.288 (34644/50000)
+Train Loss: 0.732 | Acc: 74.754 (37377/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.838 | Acc: 70.608 (35304/50000)
+Train Loss: 0.703 | Acc: 75.490 (37745/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.778 | Acc: 72.680 (36340/50000)
+Train Loss: 0.655 | Acc: 77.218 (38609/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.725 | Acc: 74.732 (37366/50000)
+Train Loss: 0.624 | Acc: 78.458 (39229/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.720 | Acc: 74.950 (37475/50000)
+Train Loss: 0.615 | Acc: 78.834 (39417/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.691 | Acc: 75.866 (37933/50000)
+Train Loss: 0.597 | Acc: 79.318 (39659/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.666 | Acc: 76.854 (38427/50000)
+Train Loss: 0.580 | Acc: 79.976 (39988/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.646 | Acc: 77.586 (38793/50000)
+Train Loss: 0.562 | Acc: 80.680 (40340/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.620 | Acc: 78.424 (39212/50000)
+Train Loss: 0.548 | Acc: 80.998 (40499/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.607 | Acc: 78.920 (39460/50000)
+Train Loss: 0.538 | Acc: 81.440 (40720/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.604 | Acc: 79.102 (39551/50000)
+Train Loss: 0.537 | Acc: 81.468 (40734/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.945 | Acc: 68.050 (6805/10000)
+Epoch:2
+0
+Train Loss: 0.602 | Acc: 79.000 (39500/50000)
+Train Loss: 0.536 | Acc: 81.448 (40724/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.589 | Acc: 79.620 (39810/50000)
+Train Loss: 0.528 | Acc: 81.740 (40870/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.559 | Acc: 80.724 (40362/50000)
+Train Loss: 0.503 | Acc: 82.800 (41400/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.536 | Acc: 81.364 (40682/50000)
+Train Loss: 0.486 | Acc: 83.188 (41594/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.534 | Acc: 81.564 (40782/50000)
+Train Loss: 0.480 | Acc: 83.502 (41751/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.521 | Acc: 81.762 (40881/50000)
+Train Loss: 0.472 | Acc: 83.798 (41899/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.505 | Acc: 82.552 (41276/50000)
+Train Loss: 0.459 | Acc: 84.112 (42056/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.493 | Acc: 82.918 (41459/50000)
+Train Loss: 0.450 | Acc: 84.432 (42216/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.483 | Acc: 83.352 (41676/50000)
+Train Loss: 0.439 | Acc: 84.940 (42470/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.476 | Acc: 83.618 (41809/50000)
+Train Loss: 0.438 | Acc: 84.946 (42473/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.475 | Acc: 83.464 (41732/50000)
+Train Loss: 0.434 | Acc: 84.964 (42482/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.840 | Acc: 72.330 (7233/10000)
+Epoch:3
+0
+Train Loss: 0.475 | Acc: 83.466 (41733/50000)
+Train Loss: 0.435 | Acc: 85.048 (42524/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.468 | Acc: 83.650 (41825/50000)
+Train Loss: 0.432 | Acc: 85.126 (42563/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.449 | Acc: 84.616 (42308/50000)
+Train Loss: 0.414 | Acc: 85.836 (42918/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.438 | Acc: 84.938 (42469/50000)
+Train Loss: 0.405 | Acc: 86.158 (43079/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.434 | Acc: 85.070 (42535/50000)
+Train Loss: 0.397 | Acc: 86.250 (43125/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.422 | Acc: 85.396 (42698/50000)
+Train Loss: 0.393 | Acc: 86.406 (43203/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.417 | Acc: 85.530 (42765/50000)
+Train Loss: 0.386 | Acc: 86.820 (43410/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.411 | Acc: 85.714 (42857/50000)
+Train Loss: 0.382 | Acc: 86.804 (43402/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.399 | Acc: 86.234 (43117/50000)
+Train Loss: 0.374 | Acc: 87.084 (43542/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.397 | Acc: 86.322 (43161/50000)
+Train Loss: 0.371 | Acc: 87.112 (43556/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.398 | Acc: 86.226 (43113/50000)
+Train Loss: 0.373 | Acc: 87.244 (43622/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.606 | Acc: 79.410 (7941/10000)
+Epoch:4
+0
+Train Loss: 0.395 | Acc: 86.154 (43077/50000)
+Train Loss: 0.369 | Acc: 87.434 (43717/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.390 | Acc: 86.540 (43270/50000)
+Train Loss: 0.368 | Acc: 87.280 (43640/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.381 | Acc: 86.742 (43371/50000)
+Train Loss: 0.355 | Acc: 87.784 (43892/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.368 | Acc: 87.140 (43570/50000)
+Train Loss: 0.346 | Acc: 88.040 (44020/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.366 | Acc: 87.224 (43612/50000)
+Train Loss: 0.347 | Acc: 87.948 (43974/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.363 | Acc: 87.484 (43742/50000)
+Train Loss: 0.339 | Acc: 88.186 (44093/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.354 | Acc: 87.764 (43882/50000)
+Train Loss: 0.335 | Acc: 88.440 (44220/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.350 | Acc: 87.792 (43896/50000)
+Train Loss: 0.328 | Acc: 88.430 (44215/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.351 | Acc: 87.788 (43894/50000)
+Train Loss: 0.328 | Acc: 88.524 (44262/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.343 | Acc: 88.204 (44102/50000)
+Train Loss: 0.326 | Acc: 88.606 (44303/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.342 | Acc: 88.170 (44085/50000)
+Train Loss: 0.328 | Acc: 88.718 (44359/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.589 | Acc: 79.980 (7998/10000)
+Epoch:5
+0
+Train Loss: 0.344 | Acc: 88.100 (44050/50000)
+Train Loss: 0.322 | Acc: 88.914 (44457/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.338 | Acc: 88.290 (44145/50000)
+Train Loss: 0.319 | Acc: 89.044 (44522/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.333 | Acc: 88.368 (44184/50000)
+Train Loss: 0.317 | Acc: 88.942 (44471/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.324 | Acc: 88.886 (44443/50000)
+Train Loss: 0.303 | Acc: 89.472 (44736/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.324 | Acc: 88.776 (44388/50000)
+Train Loss: 0.307 | Acc: 89.240 (44620/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.316 | Acc: 89.066 (44533/50000)
+Train Loss: 0.301 | Acc: 89.458 (44729/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.311 | Acc: 89.212 (44606/50000)
+Train Loss: 0.298 | Acc: 89.622 (44811/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.313 | Acc: 89.024 (44512/50000)
+Train Loss: 0.296 | Acc: 89.438 (44719/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.303 | Acc: 89.538 (44769/50000)
+Train Loss: 0.292 | Acc: 89.910 (44955/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.304 | Acc: 89.412 (44706/50000)
+Train Loss: 0.289 | Acc: 89.980 (44990/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.302 | Acc: 89.486 (44743/50000)
+Train Loss: 0.290 | Acc: 89.878 (44939/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.565 | Acc: 81.400 (8140/10000)
+Epoch:6
+0
+Train Loss: 0.304 | Acc: 89.466 (44733/50000)
+Train Loss: 0.289 | Acc: 89.946 (44973/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.300 | Acc: 89.712 (44856/50000)
+Train Loss: 0.287 | Acc: 90.024 (45012/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.292 | Acc: 89.862 (44931/50000)
+Train Loss: 0.279 | Acc: 90.394 (45197/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.290 | Acc: 89.912 (44956/50000)
+Train Loss: 0.273 | Acc: 90.602 (45301/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.286 | Acc: 90.094 (45047/50000)
+Train Loss: 0.273 | Acc: 90.460 (45230/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.285 | Acc: 90.060 (45030/50000)
+Train Loss: 0.268 | Acc: 90.510 (45255/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.282 | Acc: 90.130 (45065/50000)
+Train Loss: 0.267 | Acc: 90.790 (45395/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.274 | Acc: 90.610 (45305/50000)
+Train Loss: 0.264 | Acc: 90.748 (45374/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.271 | Acc: 90.558 (45279/50000)
+Train Loss: 0.265 | Acc: 90.720 (45360/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.271 | Acc: 90.626 (45313/50000)
+Train Loss: 0.265 | Acc: 90.740 (45370/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.272 | Acc: 90.418 (45209/50000)
+Train Loss: 0.268 | Acc: 90.640 (45320/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.593 | Acc: 80.880 (8088/10000)
+Epoch:7
+0
+Train Loss: 0.274 | Acc: 90.450 (45225/50000)
+Train Loss: 0.260 | Acc: 90.952 (45476/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.265 | Acc: 90.798 (45399/50000)
+Train Loss: 0.259 | Acc: 90.976 (45488/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.263 | Acc: 90.850 (45425/50000)
+Train Loss: 0.257 | Acc: 91.078 (45539/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.258 | Acc: 90.962 (45481/50000)
+Train Loss: 0.253 | Acc: 91.154 (45577/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.257 | Acc: 91.084 (45542/50000)
+Train Loss: 0.248 | Acc: 91.322 (45661/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.255 | Acc: 91.028 (45514/50000)
+Train Loss: 0.245 | Acc: 91.506 (45753/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.251 | Acc: 91.074 (45537/50000)
+Train Loss: 0.242 | Acc: 91.600 (45800/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.249 | Acc: 91.348 (45674/50000)
+Train Loss: 0.240 | Acc: 91.828 (45914/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.247 | Acc: 91.478 (45739/50000)
+Train Loss: 0.243 | Acc: 91.554 (45777/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.244 | Acc: 91.474 (45737/50000)
+Train Loss: 0.238 | Acc: 91.652 (45826/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.246 | Acc: 91.492 (45746/50000)
+Train Loss: 0.238 | Acc: 91.720 (45860/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.580 | Acc: 82.290 (8229/10000)
+Epoch:8
+0
+Train Loss: 0.244 | Acc: 91.490 (45745/50000)
+Train Loss: 0.235 | Acc: 91.908 (45954/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.243 | Acc: 91.558 (45779/50000)
+Train Loss: 0.239 | Acc: 91.556 (45778/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.235 | Acc: 91.776 (45888/50000)
+Train Loss: 0.231 | Acc: 91.872 (45936/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.234 | Acc: 91.812 (45906/50000)
+Train Loss: 0.227 | Acc: 92.044 (46022/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.234 | Acc: 91.832 (45916/50000)
+Train Loss: 0.227 | Acc: 92.114 (46057/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.229 | Acc: 92.010 (46005/50000)
+Train Loss: 0.227 | Acc: 92.094 (46047/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.229 | Acc: 91.890 (45945/50000)
+Train Loss: 0.220 | Acc: 92.348 (46174/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.229 | Acc: 91.996 (45998/50000)
+Train Loss: 0.219 | Acc: 92.338 (46169/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.231 | Acc: 91.938 (45969/50000)
+Train Loss: 0.220 | Acc: 92.408 (46204/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.225 | Acc: 92.134 (46067/50000)
+Train Loss: 0.217 | Acc: 92.332 (46166/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.224 | Acc: 92.252 (46126/50000)
+Train Loss: 0.221 | Acc: 92.204 (46102/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.491 | Acc: 84.540 (8454/10000)
+Epoch:9
+0
+Train Loss: 0.222 | Acc: 92.232 (46116/50000)
+Train Loss: 0.216 | Acc: 92.418 (46209/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.224 | Acc: 92.148 (46074/50000)
+Train Loss: 0.219 | Acc: 92.282 (46141/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.215 | Acc: 92.538 (46269/50000)
+Train Loss: 0.213 | Acc: 92.508 (46254/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.212 | Acc: 92.498 (46249/50000)
+Train Loss: 0.212 | Acc: 92.572 (46286/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.214 | Acc: 92.436 (46218/50000)
+Train Loss: 0.207 | Acc: 92.770 (46385/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.210 | Acc: 92.608 (46304/50000)
+Train Loss: 0.212 | Acc: 92.586 (46293/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.206 | Acc: 92.708 (46354/50000)
+Train Loss: 0.209 | Acc: 92.552 (46276/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.208 | Acc: 92.806 (46403/50000)
+Train Loss: 0.205 | Acc: 92.880 (46440/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.206 | Acc: 92.614 (46307/50000)
+Train Loss: 0.203 | Acc: 93.020 (46510/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.205 | Acc: 92.848 (46424/50000)
+Train Loss: 0.206 | Acc: 92.738 (46369/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.209 | Acc: 92.566 (46283/50000)
+Train Loss: 0.199 | Acc: 92.934 (46467/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.478 | Acc: 85.180 (8518/10000)
+Epoch:10
+0
+Train Loss: 0.205 | Acc: 92.794 (46397/50000)
+Train Loss: 0.207 | Acc: 92.780 (46390/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.202 | Acc: 92.970 (46485/50000)
+Train Loss: 0.200 | Acc: 93.004 (46502/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.203 | Acc: 92.864 (46432/50000)
+Train Loss: 0.197 | Acc: 93.130 (46565/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.199 | Acc: 93.072 (46536/50000)
+Train Loss: 0.196 | Acc: 93.032 (46516/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.196 | Acc: 93.082 (46541/50000)
+Train Loss: 0.198 | Acc: 93.092 (46546/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.194 | Acc: 93.062 (46531/50000)
+Train Loss: 0.193 | Acc: 93.152 (46576/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.195 | Acc: 93.164 (46582/50000)
+Train Loss: 0.193 | Acc: 93.192 (46596/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.191 | Acc: 93.286 (46643/50000)
+Train Loss: 0.189 | Acc: 93.462 (46731/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.188 | Acc: 93.384 (46692/50000)
+Train Loss: 0.188 | Acc: 93.422 (46711/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.190 | Acc: 93.290 (46645/50000)
+Train Loss: 0.188 | Acc: 93.476 (46738/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.189 | Acc: 93.348 (46674/50000)
+Train Loss: 0.187 | Acc: 93.382 (46691/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.601 | Acc: 82.600 (8260/10000)
+Epoch:11
+0
+Train Loss: 0.191 | Acc: 93.306 (46653/50000)
+Train Loss: 0.187 | Acc: 93.498 (46749/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.187 | Acc: 93.340 (46670/50000)
+Train Loss: 0.186 | Acc: 93.436 (46718/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.186 | Acc: 93.434 (46717/50000)
+Train Loss: 0.185 | Acc: 93.480 (46740/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.180 | Acc: 93.670 (46835/50000)
+Train Loss: 0.189 | Acc: 93.364 (46682/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.184 | Acc: 93.486 (46743/50000)
+Train Loss: 0.180 | Acc: 93.712 (46856/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.183 | Acc: 93.668 (46834/50000)
+Train Loss: 0.183 | Acc: 93.632 (46816/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.182 | Acc: 93.628 (46814/50000)
+Train Loss: 0.181 | Acc: 93.582 (46791/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.174 | Acc: 93.886 (46943/50000)
+Train Loss: 0.178 | Acc: 93.798 (46899/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.181 | Acc: 93.556 (46778/50000)
+Train Loss: 0.180 | Acc: 93.662 (46831/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.175 | Acc: 93.738 (46869/50000)
+Train Loss: 0.175 | Acc: 93.878 (46939/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.178 | Acc: 93.660 (46830/50000)
+Train Loss: 0.176 | Acc: 93.630 (46815/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.427 | Acc: 87.020 (8702/10000)
+Epoch:12
+0
+Train Loss: 0.172 | Acc: 93.990 (46995/50000)
+Train Loss: 0.177 | Acc: 93.814 (46907/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.173 | Acc: 93.898 (46949/50000)
+Train Loss: 0.173 | Acc: 93.788 (46894/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.167 | Acc: 94.162 (47081/50000)
+Train Loss: 0.171 | Acc: 93.888 (46944/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.167 | Acc: 94.208 (47104/50000)
+Train Loss: 0.175 | Acc: 93.776 (46888/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.171 | Acc: 93.860 (46930/50000)
+Train Loss: 0.172 | Acc: 93.872 (46936/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.167 | Acc: 94.118 (47059/50000)
+Train Loss: 0.169 | Acc: 94.138 (47069/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.166 | Acc: 94.086 (47043/50000)
+Train Loss: 0.166 | Acc: 94.158 (47079/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.167 | Acc: 94.156 (47078/50000)
+Train Loss: 0.165 | Acc: 94.126 (47063/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.165 | Acc: 94.236 (47118/50000)
+Train Loss: 0.168 | Acc: 94.096 (47048/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.171 | Acc: 93.872 (46936/50000)
+Train Loss: 0.163 | Acc: 94.148 (47074/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.166 | Acc: 94.118 (47059/50000)
+Train Loss: 0.165 | Acc: 94.174 (47087/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.504 | Acc: 85.160 (8516/10000)
+Epoch:13
+0
+Train Loss: 0.164 | Acc: 94.262 (47131/50000)
+Train Loss: 0.166 | Acc: 94.070 (47035/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.160 | Acc: 94.418 (47209/50000)
+Train Loss: 0.168 | Acc: 94.014 (47007/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.161 | Acc: 94.400 (47200/50000)
+Train Loss: 0.160 | Acc: 94.362 (47181/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.158 | Acc: 94.390 (47195/50000)
+Train Loss: 0.159 | Acc: 94.376 (47188/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.160 | Acc: 94.454 (47227/50000)
+Train Loss: 0.163 | Acc: 94.304 (47152/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.159 | Acc: 94.370 (47185/50000)
+Train Loss: 0.161 | Acc: 94.374 (47187/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.154 | Acc: 94.566 (47283/50000)
+Train Loss: 0.165 | Acc: 94.040 (47020/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.154 | Acc: 94.544 (47272/50000)
+Train Loss: 0.159 | Acc: 94.380 (47190/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.156 | Acc: 94.478 (47239/50000)
+Train Loss: 0.161 | Acc: 94.340 (47170/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.158 | Acc: 94.388 (47194/50000)
+Train Loss: 0.159 | Acc: 94.372 (47186/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.154 | Acc: 94.554 (47277/50000)
+Train Loss: 0.156 | Acc: 94.576 (47288/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.411 | Acc: 87.830 (8783/10000)
+Epoch:14
+0
+Train Loss: 0.156 | Acc: 94.502 (47251/50000)
+Train Loss: 0.160 | Acc: 94.360 (47180/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.155 | Acc: 94.496 (47248/50000)
+Train Loss: 0.156 | Acc: 94.514 (47257/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.150 | Acc: 94.640 (47320/50000)
+Train Loss: 0.158 | Acc: 94.326 (47163/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.151 | Acc: 94.614 (47307/50000)
+Train Loss: 0.156 | Acc: 94.480 (47240/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.148 | Acc: 94.862 (47431/50000)
+Train Loss: 0.152 | Acc: 94.608 (47304/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.147 | Acc: 94.858 (47429/50000)
+Train Loss: 0.151 | Acc: 94.674 (47337/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.145 | Acc: 94.746 (47373/50000)
+Train Loss: 0.152 | Acc: 94.676 (47338/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.149 | Acc: 94.658 (47329/50000)
+Train Loss: 0.151 | Acc: 94.622 (47311/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.141 | Acc: 94.940 (47470/50000)
+Train Loss: 0.153 | Acc: 94.640 (47320/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.148 | Acc: 94.790 (47395/50000)
+Train Loss: 0.152 | Acc: 94.566 (47283/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.145 | Acc: 94.922 (47461/50000)
+Train Loss: 0.150 | Acc: 94.688 (47344/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.450 | Acc: 86.770 (8677/10000)
+Epoch:15
+0
+Train Loss: 0.144 | Acc: 94.916 (47458/50000)
+Train Loss: 0.150 | Acc: 94.696 (47348/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.140 | Acc: 95.126 (47563/50000)
+Train Loss: 0.148 | Acc: 94.816 (47408/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.143 | Acc: 94.990 (47495/50000)
+Train Loss: 0.148 | Acc: 94.810 (47405/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.139 | Acc: 94.992 (47496/50000)
+Train Loss: 0.147 | Acc: 94.894 (47447/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.142 | Acc: 94.984 (47492/50000)
+Train Loss: 0.140 | Acc: 95.072 (47536/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.138 | Acc: 95.118 (47559/50000)
+Train Loss: 0.144 | Acc: 94.786 (47393/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.143 | Acc: 94.996 (47498/50000)
+Train Loss: 0.141 | Acc: 95.034 (47517/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.141 | Acc: 95.006 (47503/50000)
+Train Loss: 0.144 | Acc: 94.936 (47468/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.140 | Acc: 95.096 (47548/50000)
+Train Loss: 0.141 | Acc: 95.008 (47504/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.137 | Acc: 95.138 (47569/50000)
+Train Loss: 0.147 | Acc: 94.744 (47372/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.141 | Acc: 94.994 (47497/50000)
+Train Loss: 0.145 | Acc: 94.828 (47414/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.406 | Acc: 87.550 (8755/10000)
+Epoch:16
+0
+Train Loss: 0.136 | Acc: 95.138 (47569/50000)
+Train Loss: 0.142 | Acc: 94.946 (47473/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.131 | Acc: 95.462 (47731/50000)
+Train Loss: 0.141 | Acc: 95.038 (47519/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.133 | Acc: 95.368 (47684/50000)
+Train Loss: 0.139 | Acc: 95.082 (47541/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.135 | Acc: 95.242 (47621/50000)
+Train Loss: 0.136 | Acc: 95.224 (47612/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.133 | Acc: 95.278 (47639/50000)
+Train Loss: 0.140 | Acc: 94.878 (47439/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.135 | Acc: 95.190 (47595/50000)
+Train Loss: 0.137 | Acc: 95.122 (47561/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.133 | Acc: 95.302 (47651/50000)
+Train Loss: 0.134 | Acc: 95.286 (47643/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.131 | Acc: 95.364 (47682/50000)
+Train Loss: 0.137 | Acc: 95.248 (47624/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.127 | Acc: 95.618 (47809/50000)
+Train Loss: 0.145 | Acc: 94.826 (47413/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.132 | Acc: 95.374 (47687/50000)
+Train Loss: 0.140 | Acc: 94.962 (47481/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.132 | Acc: 95.308 (47654/50000)
+Train Loss: 0.134 | Acc: 95.144 (47572/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.471 | Acc: 86.730 (8673/10000)
+Epoch:17
+0
+Train Loss: 0.133 | Acc: 95.240 (47620/50000)
+Train Loss: 0.135 | Acc: 95.138 (47569/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.126 | Acc: 95.576 (47788/50000)
+Train Loss: 0.137 | Acc: 95.204 (47602/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.123 | Acc: 95.630 (47815/50000)
+Train Loss: 0.133 | Acc: 95.334 (47667/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.126 | Acc: 95.546 (47773/50000)
+Train Loss: 0.138 | Acc: 95.070 (47535/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.125 | Acc: 95.600 (47800/50000)
+Train Loss: 0.132 | Acc: 95.360 (47680/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.125 | Acc: 95.528 (47764/50000)
+Train Loss: 0.134 | Acc: 95.308 (47654/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.126 | Acc: 95.502 (47751/50000)
+Train Loss: 0.135 | Acc: 95.238 (47619/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.122 | Acc: 95.734 (47867/50000)
+Train Loss: 0.129 | Acc: 95.430 (47715/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.119 | Acc: 95.756 (47878/50000)
+Train Loss: 0.131 | Acc: 95.404 (47702/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.124 | Acc: 95.554 (47777/50000)
+Train Loss: 0.128 | Acc: 95.484 (47742/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.122 | Acc: 95.620 (47810/50000)
+Train Loss: 0.132 | Acc: 95.294 (47647/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.477 | Acc: 86.520 (8652/10000)
+Epoch:18
+0
+Train Loss: 0.124 | Acc: 95.618 (47809/50000)
+Train Loss: 0.128 | Acc: 95.532 (47766/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.117 | Acc: 95.890 (47945/50000)
+Train Loss: 0.131 | Acc: 95.408 (47704/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.118 | Acc: 95.850 (47925/50000)
+Train Loss: 0.123 | Acc: 95.634 (47817/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.115 | Acc: 95.878 (47939/50000)
+Train Loss: 0.131 | Acc: 95.244 (47622/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.118 | Acc: 95.912 (47956/50000)
+Train Loss: 0.134 | Acc: 95.212 (47606/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.119 | Acc: 95.874 (47937/50000)
+Train Loss: 0.127 | Acc: 95.502 (47751/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.122 | Acc: 95.718 (47859/50000)
+Train Loss: 0.127 | Acc: 95.524 (47762/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.119 | Acc: 95.760 (47880/50000)
+Train Loss: 0.127 | Acc: 95.464 (47732/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.115 | Acc: 95.966 (47983/50000)
+Train Loss: 0.129 | Acc: 95.430 (47715/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.119 | Acc: 95.774 (47887/50000)
+Train Loss: 0.126 | Acc: 95.500 (47750/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.119 | Acc: 95.788 (47894/50000)
+Train Loss: 0.123 | Acc: 95.654 (47827/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.429 | Acc: 88.040 (8804/10000)
+Epoch:19
+0
+Train Loss: 0.118 | Acc: 95.774 (47887/50000)
+Train Loss: 0.120 | Acc: 95.800 (47900/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.115 | Acc: 95.874 (47937/50000)
+Train Loss: 0.122 | Acc: 95.712 (47856/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.112 | Acc: 96.062 (48031/50000)
+Train Loss: 0.122 | Acc: 95.688 (47844/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.112 | Acc: 96.090 (48045/50000)
+Train Loss: 0.120 | Acc: 95.770 (47885/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.115 | Acc: 95.950 (47975/50000)
+Train Loss: 0.123 | Acc: 95.678 (47839/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.114 | Acc: 95.944 (47972/50000)
+Train Loss: 0.124 | Acc: 95.658 (47829/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.112 | Acc: 96.048 (48024/50000)
+Train Loss: 0.126 | Acc: 95.494 (47747/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.110 | Acc: 96.108 (48054/50000)
+Train Loss: 0.124 | Acc: 95.554 (47777/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.116 | Acc: 95.844 (47922/50000)
+Train Loss: 0.117 | Acc: 95.906 (47953/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.112 | Acc: 96.050 (48025/50000)
+Train Loss: 0.117 | Acc: 95.900 (47950/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.114 | Acc: 95.932 (47966/50000)
+Train Loss: 0.120 | Acc: 95.722 (47861/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.427 | Acc: 87.620 (8762/10000)
+Epoch:20
+0
+Train Loss: 0.109 | Acc: 96.112 (48056/50000)
+Train Loss: 0.121 | Acc: 95.766 (47883/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.112 | Acc: 96.064 (48032/50000)
+Train Loss: 0.121 | Acc: 95.734 (47867/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.104 | Acc: 96.362 (48181/50000)
+Train Loss: 0.120 | Acc: 95.782 (47891/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.110 | Acc: 96.130 (48065/50000)
+Train Loss: 0.117 | Acc: 95.906 (47953/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.108 | Acc: 96.210 (48105/50000)
+Train Loss: 0.116 | Acc: 95.926 (47963/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.111 | Acc: 96.090 (48045/50000)
+Train Loss: 0.119 | Acc: 95.628 (47814/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.103 | Acc: 96.372 (48186/50000)
+Train Loss: 0.117 | Acc: 95.924 (47962/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.107 | Acc: 96.332 (48166/50000)
+Train Loss: 0.118 | Acc: 95.806 (47903/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.109 | Acc: 96.110 (48055/50000)
+Train Loss: 0.115 | Acc: 95.934 (47967/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.109 | Acc: 96.164 (48082/50000)
+Train Loss: 0.111 | Acc: 96.128 (48064/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.109 | Acc: 96.220 (48110/50000)
+Train Loss: 0.116 | Acc: 95.928 (47964/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.465 | Acc: 86.860 (8686/10000)
+Epoch:21
+0
+Train Loss: 0.110 | Acc: 96.144 (48072/50000)
+Train Loss: 0.114 | Acc: 95.972 (47986/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.108 | Acc: 96.146 (48073/50000)
+Train Loss: 0.118 | Acc: 95.716 (47858/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.108 | Acc: 96.138 (48069/50000)
+Train Loss: 0.115 | Acc: 95.856 (47928/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.102 | Acc: 96.454 (48227/50000)
+Train Loss: 0.114 | Acc: 95.996 (47998/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.108 | Acc: 96.174 (48087/50000)
+Train Loss: 0.111 | Acc: 96.020 (48010/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.104 | Acc: 96.358 (48179/50000)
+Train Loss: 0.115 | Acc: 95.926 (47963/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.104 | Acc: 96.288 (48144/50000)
+Train Loss: 0.117 | Acc: 95.778 (47889/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.103 | Acc: 96.384 (48192/50000)
+Train Loss: 0.114 | Acc: 95.966 (47983/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.099 | Acc: 96.582 (48291/50000)
+Train Loss: 0.114 | Acc: 96.042 (48021/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.104 | Acc: 96.254 (48127/50000)
+Train Loss: 0.114 | Acc: 95.912 (47956/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.099 | Acc: 96.528 (48264/50000)
+Train Loss: 0.110 | Acc: 96.096 (48048/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.527 | Acc: 85.720 (8572/10000)
+Epoch:22
+0
+Train Loss: 0.102 | Acc: 96.348 (48174/50000)
+Train Loss: 0.111 | Acc: 95.966 (47983/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.101 | Acc: 96.410 (48205/50000)
+Train Loss: 0.113 | Acc: 96.036 (48018/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.097 | Acc: 96.564 (48282/50000)
+Train Loss: 0.109 | Acc: 96.134 (48067/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.098 | Acc: 96.556 (48278/50000)
+Train Loss: 0.112 | Acc: 96.072 (48036/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.093 | Acc: 96.672 (48336/50000)
+Train Loss: 0.114 | Acc: 95.974 (47987/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.099 | Acc: 96.536 (48268/50000)
+Train Loss: 0.108 | Acc: 96.172 (48086/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.096 | Acc: 96.614 (48307/50000)
+Train Loss: 0.107 | Acc: 96.254 (48127/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.097 | Acc: 96.596 (48298/50000)
+Train Loss: 0.109 | Acc: 96.126 (48063/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.100 | Acc: 96.428 (48214/50000)
+Train Loss: 0.108 | Acc: 96.190 (48095/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.095 | Acc: 96.582 (48291/50000)
+Train Loss: 0.109 | Acc: 96.168 (48084/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.102 | Acc: 96.396 (48198/50000)
+Train Loss: 0.108 | Acc: 96.180 (48090/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.381 | Acc: 89.040 (8904/10000)
+Epoch:23
+0
+Train Loss: 0.097 | Acc: 96.558 (48279/50000)
+Train Loss: 0.108 | Acc: 96.182 (48091/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.095 | Acc: 96.708 (48354/50000)
+Train Loss: 0.107 | Acc: 96.214 (48107/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.092 | Acc: 96.748 (48374/50000)
+Train Loss: 0.110 | Acc: 96.116 (48058/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.094 | Acc: 96.730 (48365/50000)
+Train Loss: 0.107 | Acc: 96.158 (48079/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.093 | Acc: 96.814 (48407/50000)
+Train Loss: 0.104 | Acc: 96.310 (48155/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.091 | Acc: 96.724 (48362/50000)
+Train Loss: 0.106 | Acc: 96.236 (48118/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.096 | Acc: 96.652 (48326/50000)
+Train Loss: 0.106 | Acc: 96.216 (48108/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.093 | Acc: 96.714 (48357/50000)
+Train Loss: 0.105 | Acc: 96.282 (48141/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.095 | Acc: 96.624 (48312/50000)
+Train Loss: 0.103 | Acc: 96.318 (48159/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.094 | Acc: 96.754 (48377/50000)
+Train Loss: 0.107 | Acc: 96.214 (48107/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.098 | Acc: 96.556 (48278/50000)
+Train Loss: 0.103 | Acc: 96.382 (48191/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.414 | Acc: 87.930 (8793/10000)
+Epoch:24
+0
+Train Loss: 0.091 | Acc: 96.894 (48447/50000)
+Train Loss: 0.107 | Acc: 96.262 (48131/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.087 | Acc: 96.916 (48458/50000)
+Train Loss: 0.103 | Acc: 96.402 (48201/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.092 | Acc: 96.786 (48393/50000)
+Train Loss: 0.106 | Acc: 96.108 (48054/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.086 | Acc: 96.958 (48479/50000)
+Train Loss: 0.106 | Acc: 96.212 (48106/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.090 | Acc: 96.808 (48404/50000)
+Train Loss: 0.103 | Acc: 96.392 (48196/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.086 | Acc: 96.978 (48489/50000)
+Train Loss: 0.103 | Acc: 96.372 (48186/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.089 | Acc: 96.894 (48447/50000)
+Train Loss: 0.098 | Acc: 96.484 (48242/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.087 | Acc: 96.982 (48491/50000)
+Train Loss: 0.104 | Acc: 96.294 (48147/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.090 | Acc: 96.748 (48374/50000)
+Train Loss: 0.102 | Acc: 96.342 (48171/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.089 | Acc: 96.928 (48464/50000)
+Train Loss: 0.094 | Acc: 96.756 (48378/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.092 | Acc: 96.754 (48377/50000)
+Train Loss: 0.104 | Acc: 96.282 (48141/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.392 | Acc: 88.850 (8885/10000)
+Epoch:25
+0
+Train Loss: 0.090 | Acc: 96.818 (48409/50000)
+Train Loss: 0.098 | Acc: 96.518 (48259/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.084 | Acc: 97.056 (48528/50000)
+Train Loss: 0.103 | Acc: 96.344 (48172/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.087 | Acc: 96.942 (48471/50000)
+Train Loss: 0.101 | Acc: 96.508 (48254/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.087 | Acc: 96.956 (48478/50000)
+Train Loss: 0.101 | Acc: 96.380 (48190/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.085 | Acc: 96.972 (48486/50000)
+Train Loss: 0.102 | Acc: 96.360 (48180/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.085 | Acc: 96.984 (48492/50000)
+Train Loss: 0.105 | Acc: 96.266 (48133/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.086 | Acc: 96.920 (48460/50000)
+Train Loss: 0.095 | Acc: 96.640 (48320/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.085 | Acc: 97.034 (48517/50000)
+Train Loss: 0.099 | Acc: 96.456 (48228/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.087 | Acc: 96.868 (48434/50000)
+Train Loss: 0.099 | Acc: 96.458 (48229/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.088 | Acc: 96.886 (48443/50000)
+Train Loss: 0.102 | Acc: 96.444 (48222/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.086 | Acc: 96.954 (48477/50000)
+Train Loss: 0.105 | Acc: 96.296 (48148/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.448 | Acc: 87.750 (8775/10000)
+Epoch:26
+0
+Train Loss: 0.082 | Acc: 97.180 (48590/50000)
+Train Loss: 0.097 | Acc: 96.586 (48293/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.084 | Acc: 97.108 (48554/50000)
+Train Loss: 0.099 | Acc: 96.532 (48266/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.081 | Acc: 97.204 (48602/50000)
+Train Loss: 0.100 | Acc: 96.482 (48241/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.087 | Acc: 97.030 (48515/50000)
+Train Loss: 0.095 | Acc: 96.620 (48310/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.080 | Acc: 97.198 (48599/50000)
+Train Loss: 0.096 | Acc: 96.592 (48296/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.082 | Acc: 97.094 (48547/50000)
+Train Loss: 0.093 | Acc: 96.720 (48360/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.082 | Acc: 97.118 (48559/50000)
+Train Loss: 0.095 | Acc: 96.644 (48322/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.081 | Acc: 97.140 (48570/50000)
+Train Loss: 0.096 | Acc: 96.592 (48296/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.083 | Acc: 97.120 (48560/50000)
+Train Loss: 0.093 | Acc: 96.756 (48378/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.085 | Acc: 97.004 (48502/50000)
+Train Loss: 0.093 | Acc: 96.776 (48388/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.085 | Acc: 97.012 (48506/50000)
+Train Loss: 0.096 | Acc: 96.600 (48300/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.447 | Acc: 87.350 (8735/10000)
+Epoch:27
+0
+Train Loss: 0.086 | Acc: 96.962 (48481/50000)
+Train Loss: 0.094 | Acc: 96.720 (48360/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.080 | Acc: 97.172 (48586/50000)
+Train Loss: 0.093 | Acc: 96.750 (48375/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.081 | Acc: 97.158 (48579/50000)
+Train Loss: 0.093 | Acc: 96.750 (48375/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.076 | Acc: 97.404 (48702/50000)
+Train Loss: 0.095 | Acc: 96.582 (48291/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.079 | Acc: 97.204 (48602/50000)
+Train Loss: 0.097 | Acc: 96.528 (48264/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.077 | Acc: 97.250 (48625/50000)
+Train Loss: 0.099 | Acc: 96.546 (48273/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.082 | Acc: 97.114 (48557/50000)
+Train Loss: 0.094 | Acc: 96.682 (48341/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.078 | Acc: 97.306 (48653/50000)
+Train Loss: 0.095 | Acc: 96.646 (48323/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.078 | Acc: 97.266 (48633/50000)
+Train Loss: 0.100 | Acc: 96.460 (48230/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.084 | Acc: 97.030 (48515/50000)
+Train Loss: 0.091 | Acc: 96.786 (48393/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.086 | Acc: 97.044 (48522/50000)
+Train Loss: 0.094 | Acc: 96.660 (48330/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.510 | Acc: 86.400 (8640/10000)
+Epoch:28
+0
+Train Loss: 0.074 | Acc: 97.420 (48710/50000)
+Train Loss: 0.089 | Acc: 96.874 (48437/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.080 | Acc: 97.210 (48605/50000)
+Train Loss: 0.092 | Acc: 96.760 (48380/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.080 | Acc: 97.214 (48607/50000)
+Train Loss: 0.089 | Acc: 96.890 (48445/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.081 | Acc: 97.198 (48599/50000)
+Train Loss: 0.093 | Acc: 96.704 (48352/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.077 | Acc: 97.298 (48649/50000)
+Train Loss: 0.091 | Acc: 96.826 (48413/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.073 | Acc: 97.394 (48697/50000)
+Train Loss: 0.091 | Acc: 96.802 (48401/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.076 | Acc: 97.360 (48680/50000)
+Train Loss: 0.088 | Acc: 96.890 (48445/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.075 | Acc: 97.338 (48669/50000)
+Train Loss: 0.089 | Acc: 96.916 (48458/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.075 | Acc: 97.340 (48670/50000)
+Train Loss: 0.092 | Acc: 96.758 (48379/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.074 | Acc: 97.414 (48707/50000)
+Train Loss: 0.091 | Acc: 96.810 (48405/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.077 | Acc: 97.244 (48622/50000)
+Train Loss: 0.089 | Acc: 96.838 (48419/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.395 | Acc: 89.310 (8931/10000)
+Epoch:29
+0
+Train Loss: 0.077 | Acc: 97.266 (48633/50000)
+Train Loss: 0.089 | Acc: 96.834 (48417/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.074 | Acc: 97.426 (48713/50000)
+Train Loss: 0.091 | Acc: 96.746 (48373/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.072 | Acc: 97.514 (48757/50000)
+Train Loss: 0.087 | Acc: 97.018 (48509/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.076 | Acc: 97.306 (48653/50000)
+Train Loss: 0.089 | Acc: 96.926 (48463/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.074 | Acc: 97.426 (48713/50000)
+Train Loss: 0.090 | Acc: 96.860 (48430/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.077 | Acc: 97.342 (48671/50000)
+Train Loss: 0.085 | Acc: 96.992 (48496/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.071 | Acc: 97.546 (48773/50000)
+Train Loss: 0.091 | Acc: 96.708 (48354/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.067 | Acc: 97.664 (48832/50000)
+Train Loss: 0.091 | Acc: 96.782 (48391/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.071 | Acc: 97.562 (48781/50000)
+Train Loss: 0.093 | Acc: 96.698 (48349/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.077 | Acc: 97.330 (48665/50000)
+Train Loss: 0.085 | Acc: 97.006 (48503/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.077 | Acc: 97.186 (48593/50000)
+Train Loss: 0.089 | Acc: 96.856 (48428/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.482 | Acc: 87.160 (8716/10000)
+Epoch:30
+0
+Train Loss: 0.073 | Acc: 97.468 (48734/50000)
+Train Loss: 0.087 | Acc: 96.952 (48476/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.068 | Acc: 97.634 (48817/50000)
+Train Loss: 0.092 | Acc: 96.774 (48387/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.068 | Acc: 97.710 (48855/50000)
+Train Loss: 0.085 | Acc: 97.054 (48527/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.071 | Acc: 97.560 (48780/50000)
+Train Loss: 0.085 | Acc: 97.004 (48502/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.070 | Acc: 97.522 (48761/50000)
+Train Loss: 0.089 | Acc: 96.884 (48442/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.070 | Acc: 97.576 (48788/50000)
+Train Loss: 0.082 | Acc: 97.100 (48550/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.071 | Acc: 97.538 (48769/50000)
+Train Loss: 0.081 | Acc: 97.222 (48611/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.072 | Acc: 97.460 (48730/50000)
+Train Loss: 0.081 | Acc: 97.202 (48601/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.074 | Acc: 97.436 (48718/50000)
+Train Loss: 0.085 | Acc: 96.984 (48492/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.073 | Acc: 97.418 (48709/50000)
+Train Loss: 0.088 | Acc: 96.920 (48460/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.071 | Acc: 97.518 (48759/50000)
+Train Loss: 0.086 | Acc: 96.960 (48480/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.458 | Acc: 87.540 (8754/10000)
+Epoch:31
+0
+Train Loss: 0.071 | Acc: 97.572 (48786/50000)
+Train Loss: 0.082 | Acc: 97.118 (48559/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.068 | Acc: 97.528 (48764/50000)
+Train Loss: 0.082 | Acc: 97.200 (48600/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.070 | Acc: 97.548 (48774/50000)
+Train Loss: 0.082 | Acc: 97.164 (48582/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.066 | Acc: 97.684 (48842/50000)
+Train Loss: 0.086 | Acc: 96.940 (48470/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.071 | Acc: 97.538 (48769/50000)
+Train Loss: 0.085 | Acc: 97.120 (48560/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.065 | Acc: 97.776 (48888/50000)
+Train Loss: 0.086 | Acc: 97.026 (48513/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.070 | Acc: 97.506 (48753/50000)
+Train Loss: 0.086 | Acc: 96.956 (48478/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.069 | Acc: 97.572 (48786/50000)
+Train Loss: 0.082 | Acc: 97.136 (48568/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.065 | Acc: 97.746 (48873/50000)
+Train Loss: 0.084 | Acc: 97.094 (48547/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.065 | Acc: 97.756 (48878/50000)
+Train Loss: 0.086 | Acc: 96.988 (48494/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.072 | Acc: 97.540 (48770/50000)
+Train Loss: 0.087 | Acc: 96.980 (48490/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.435 | Acc: 88.640 (8864/10000)
+Epoch:32
+0
+Train Loss: 0.069 | Acc: 97.610 (48805/50000)
+Train Loss: 0.079 | Acc: 97.260 (48630/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.065 | Acc: 97.786 (48893/50000)
+Train Loss: 0.082 | Acc: 97.106 (48553/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.063 | Acc: 97.824 (48912/50000)
+Train Loss: 0.085 | Acc: 96.980 (48490/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.065 | Acc: 97.722 (48861/50000)
+Train Loss: 0.085 | Acc: 97.026 (48513/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.061 | Acc: 97.966 (48983/50000)
+Train Loss: 0.079 | Acc: 97.238 (48619/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.064 | Acc: 97.758 (48879/50000)
+Train Loss: 0.081 | Acc: 97.164 (48582/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.063 | Acc: 97.882 (48941/50000)
+Train Loss: 0.077 | Acc: 97.294 (48647/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.069 | Acc: 97.498 (48749/50000)
+Train Loss: 0.082 | Acc: 97.152 (48576/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.063 | Acc: 97.890 (48945/50000)
+Train Loss: 0.081 | Acc: 97.110 (48555/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.071 | Acc: 97.548 (48774/50000)
+Train Loss: 0.079 | Acc: 97.256 (48628/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.063 | Acc: 97.870 (48935/50000)
+Train Loss: 0.084 | Acc: 97.012 (48506/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.599 | Acc: 84.850 (8485/10000)
+Epoch:33
+0
+Train Loss: 0.057 | Acc: 98.038 (49019/50000)
+Train Loss: 0.082 | Acc: 97.018 (48509/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.063 | Acc: 97.830 (48915/50000)
+Train Loss: 0.082 | Acc: 97.118 (48559/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.064 | Acc: 97.794 (48897/50000)
+Train Loss: 0.079 | Acc: 97.258 (48629/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.062 | Acc: 97.832 (48916/50000)
+Train Loss: 0.080 | Acc: 97.236 (48618/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.061 | Acc: 97.944 (48972/50000)
+Train Loss: 0.079 | Acc: 97.212 (48606/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.070 | Acc: 97.532 (48766/50000)
+Train Loss: 0.078 | Acc: 97.268 (48634/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.066 | Acc: 97.726 (48863/50000)
+Train Loss: 0.085 | Acc: 96.984 (48492/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.064 | Acc: 97.836 (48918/50000)
+Train Loss: 0.077 | Acc: 97.360 (48680/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.062 | Acc: 97.924 (48962/50000)
+Train Loss: 0.084 | Acc: 97.020 (48510/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.068 | Acc: 97.666 (48833/50000)
+Train Loss: 0.077 | Acc: 97.288 (48644/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.060 | Acc: 97.922 (48961/50000)
+Train Loss: 0.079 | Acc: 97.222 (48611/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.486 | Acc: 87.420 (8742/10000)
+Epoch:34
+0
+Train Loss: 0.064 | Acc: 97.720 (48860/50000)
+Train Loss: 0.073 | Acc: 97.468 (48734/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.058 | Acc: 98.012 (49006/50000)
+Train Loss: 0.075 | Acc: 97.398 (48699/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.061 | Acc: 97.934 (48967/50000)
+Train Loss: 0.077 | Acc: 97.256 (48628/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.061 | Acc: 97.938 (48969/50000)
+Train Loss: 0.080 | Acc: 97.230 (48615/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.060 | Acc: 97.912 (48956/50000)
+Train Loss: 0.079 | Acc: 97.180 (48590/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.059 | Acc: 97.964 (48982/50000)
+Train Loss: 0.077 | Acc: 97.246 (48623/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.058 | Acc: 97.980 (48990/50000)
+Train Loss: 0.076 | Acc: 97.346 (48673/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.060 | Acc: 97.980 (48990/50000)
+Train Loss: 0.077 | Acc: 97.320 (48660/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.056 | Acc: 98.114 (49057/50000)
+Train Loss: 0.075 | Acc: 97.354 (48677/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.059 | Acc: 97.910 (48955/50000)
+Train Loss: 0.072 | Acc: 97.538 (48769/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.060 | Acc: 97.902 (48951/50000)
+Train Loss: 0.076 | Acc: 97.344 (48672/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.448 | Acc: 88.580 (8858/10000)
+Epoch:35
+0
+Train Loss: 0.060 | Acc: 97.924 (48962/50000)
+Train Loss: 0.073 | Acc: 97.442 (48721/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.055 | Acc: 98.058 (49029/50000)
+Train Loss: 0.072 | Acc: 97.444 (48722/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.057 | Acc: 98.032 (49016/50000)
+Train Loss: 0.073 | Acc: 97.396 (48698/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.058 | Acc: 98.018 (49009/50000)
+Train Loss: 0.074 | Acc: 97.376 (48688/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.063 | Acc: 97.834 (48917/50000)
+Train Loss: 0.077 | Acc: 97.286 (48643/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.057 | Acc: 98.016 (49008/50000)
+Train Loss: 0.070 | Acc: 97.512 (48756/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.057 | Acc: 98.008 (49004/50000)
+Train Loss: 0.077 | Acc: 97.262 (48631/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.063 | Acc: 97.914 (48957/50000)
+Train Loss: 0.074 | Acc: 97.472 (48736/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.060 | Acc: 97.946 (48973/50000)
+Train Loss: 0.079 | Acc: 97.246 (48623/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.059 | Acc: 98.024 (49012/50000)
+Train Loss: 0.076 | Acc: 97.332 (48666/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.062 | Acc: 97.872 (48936/50000)
+Train Loss: 0.078 | Acc: 97.230 (48615/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.469 | Acc: 87.930 (8793/10000)
+Epoch:36
+0
+Train Loss: 0.059 | Acc: 98.048 (49024/50000)
+Train Loss: 0.076 | Acc: 97.272 (48636/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.054 | Acc: 98.222 (49111/50000)
+Train Loss: 0.072 | Acc: 97.458 (48729/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.055 | Acc: 98.034 (49017/50000)
+Train Loss: 0.068 | Acc: 97.666 (48833/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.061 | Acc: 97.880 (48940/50000)
+Train Loss: 0.074 | Acc: 97.418 (48709/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.058 | Acc: 98.002 (49001/50000)
+Train Loss: 0.070 | Acc: 97.614 (48807/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.059 | Acc: 97.990 (48995/50000)
+Train Loss: 0.072 | Acc: 97.512 (48756/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.054 | Acc: 98.108 (49054/50000)
+Train Loss: 0.076 | Acc: 97.302 (48651/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.055 | Acc: 98.104 (49052/50000)
+Train Loss: 0.071 | Acc: 97.558 (48779/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.058 | Acc: 98.032 (49016/50000)
+Train Loss: 0.077 | Acc: 97.262 (48631/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.053 | Acc: 98.232 (49116/50000)
+Train Loss: 0.072 | Acc: 97.432 (48716/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.056 | Acc: 98.072 (49036/50000)
+Train Loss: 0.071 | Acc: 97.488 (48744/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.428 | Acc: 89.060 (8906/10000)
+Epoch:37
+0
+Train Loss: 0.050 | Acc: 98.272 (49136/50000)
+Train Loss: 0.067 | Acc: 97.684 (48842/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.050 | Acc: 98.286 (49143/50000)
+Train Loss: 0.068 | Acc: 97.668 (48834/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.053 | Acc: 98.148 (49074/50000)
+Train Loss: 0.074 | Acc: 97.422 (48711/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.053 | Acc: 98.188 (49094/50000)
+Train Loss: 0.067 | Acc: 97.614 (48807/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.057 | Acc: 98.042 (49021/50000)
+Train Loss: 0.071 | Acc: 97.420 (48710/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.054 | Acc: 98.150 (49075/50000)
+Train Loss: 0.072 | Acc: 97.498 (48749/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.050 | Acc: 98.288 (49144/50000)
+Train Loss: 0.070 | Acc: 97.514 (48757/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.053 | Acc: 98.170 (49085/50000)
+Train Loss: 0.072 | Acc: 97.478 (48739/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.052 | Acc: 98.216 (49108/50000)
+Train Loss: 0.068 | Acc: 97.620 (48810/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.056 | Acc: 98.070 (49035/50000)
+Train Loss: 0.072 | Acc: 97.512 (48756/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.057 | Acc: 98.060 (49030/50000)
+Train Loss: 0.069 | Acc: 97.574 (48787/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.433 | Acc: 88.810 (8881/10000)
+Epoch:38
+0
+Train Loss: 0.053 | Acc: 98.198 (49099/50000)
+Train Loss: 0.067 | Acc: 97.670 (48835/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.050 | Acc: 98.260 (49130/50000)
+Train Loss: 0.066 | Acc: 97.658 (48829/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.053 | Acc: 98.220 (49110/50000)
+Train Loss: 0.068 | Acc: 97.550 (48775/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.051 | Acc: 98.284 (49142/50000)
+Train Loss: 0.065 | Acc: 97.728 (48864/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.051 | Acc: 98.312 (49156/50000)
+Train Loss: 0.066 | Acc: 97.830 (48915/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.048 | Acc: 98.336 (49168/50000)
+Train Loss: 0.070 | Acc: 97.566 (48783/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.051 | Acc: 98.234 (49117/50000)
+Train Loss: 0.071 | Acc: 97.598 (48799/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.051 | Acc: 98.258 (49129/50000)
+Train Loss: 0.069 | Acc: 97.518 (48759/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.055 | Acc: 98.092 (49046/50000)
+Train Loss: 0.070 | Acc: 97.582 (48791/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.053 | Acc: 98.148 (49074/50000)
+Train Loss: 0.069 | Acc: 97.620 (48810/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.053 | Acc: 98.154 (49077/50000)
+Train Loss: 0.070 | Acc: 97.560 (48780/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.422 | Acc: 89.380 (8938/10000)
+Epoch:39
+0
+Train Loss: 0.050 | Acc: 98.264 (49132/50000)
+Train Loss: 0.064 | Acc: 97.804 (48902/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.047 | Acc: 98.390 (49195/50000)
+Train Loss: 0.063 | Acc: 97.826 (48913/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.051 | Acc: 98.208 (49104/50000)
+Train Loss: 0.066 | Acc: 97.714 (48857/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.046 | Acc: 98.498 (49249/50000)
+Train Loss: 0.062 | Acc: 97.814 (48907/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.053 | Acc: 98.230 (49115/50000)
+Train Loss: 0.064 | Acc: 97.752 (48876/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.048 | Acc: 98.330 (49165/50000)
+Train Loss: 0.066 | Acc: 97.742 (48871/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.050 | Acc: 98.278 (49139/50000)
+Train Loss: 0.065 | Acc: 97.744 (48872/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.048 | Acc: 98.412 (49206/50000)
+Train Loss: 0.063 | Acc: 97.782 (48891/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.047 | Acc: 98.434 (49217/50000)
+Train Loss: 0.069 | Acc: 97.582 (48791/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.054 | Acc: 98.058 (49029/50000)
+Train Loss: 0.064 | Acc: 97.786 (48893/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.052 | Acc: 98.206 (49103/50000)
+Train Loss: 0.065 | Acc: 97.806 (48903/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.377 | Acc: 90.110 (9011/10000)
+Epoch:40
+0
+Train Loss: 0.047 | Acc: 98.362 (49181/50000)
+Train Loss: 0.066 | Acc: 97.682 (48841/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.047 | Acc: 98.426 (49213/50000)
+Train Loss: 0.056 | Acc: 98.044 (49022/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.049 | Acc: 98.360 (49180/50000)
+Train Loss: 0.060 | Acc: 97.930 (48965/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.043 | Acc: 98.662 (49331/50000)
+Train Loss: 0.059 | Acc: 97.942 (48971/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.048 | Acc: 98.332 (49166/50000)
+Train Loss: 0.066 | Acc: 97.692 (48846/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.045 | Acc: 98.452 (49226/50000)
+Train Loss: 0.063 | Acc: 97.804 (48902/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.050 | Acc: 98.298 (49149/50000)
+Train Loss: 0.065 | Acc: 97.802 (48901/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.047 | Acc: 98.340 (49170/50000)
+Train Loss: 0.061 | Acc: 97.910 (48955/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.049 | Acc: 98.422 (49211/50000)
+Train Loss: 0.067 | Acc: 97.718 (48859/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.050 | Acc: 98.276 (49138/50000)
+Train Loss: 0.061 | Acc: 97.902 (48951/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.049 | Acc: 98.338 (49169/50000)
+Train Loss: 0.070 | Acc: 97.502 (48751/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.469 | Acc: 88.360 (8836/10000)
+Epoch:41
+0
+Train Loss: 0.046 | Acc: 98.440 (49220/50000)
+Train Loss: 0.059 | Acc: 98.024 (49012/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.047 | Acc: 98.380 (49190/50000)
+Train Loss: 0.060 | Acc: 97.984 (48992/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.042 | Acc: 98.552 (49276/50000)
+Train Loss: 0.066 | Acc: 97.736 (48868/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.046 | Acc: 98.488 (49244/50000)
+Train Loss: 0.061 | Acc: 97.844 (48922/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.043 | Acc: 98.544 (49272/50000)
+Train Loss: 0.064 | Acc: 97.816 (48908/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.050 | Acc: 98.306 (49153/50000)
+Train Loss: 0.057 | Acc: 97.968 (48984/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.042 | Acc: 98.550 (49275/50000)
+Train Loss: 0.067 | Acc: 97.676 (48838/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.048 | Acc: 98.398 (49199/50000)
+Train Loss: 0.057 | Acc: 98.072 (49036/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.052 | Acc: 98.232 (49116/50000)
+Train Loss: 0.061 | Acc: 97.856 (48928/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.046 | Acc: 98.442 (49221/50000)
+Train Loss: 0.061 | Acc: 97.918 (48959/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.045 | Acc: 98.486 (49243/50000)
+Train Loss: 0.065 | Acc: 97.782 (48891/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.426 | Acc: 89.600 (8960/10000)
+Epoch:42
+0
+Train Loss: 0.043 | Acc: 98.608 (49304/50000)
+Train Loss: 0.065 | Acc: 97.804 (48902/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.041 | Acc: 98.580 (49290/50000)
+Train Loss: 0.060 | Acc: 97.948 (48974/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.036 | Acc: 98.842 (49421/50000)
+Train Loss: 0.063 | Acc: 97.842 (48921/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.041 | Acc: 98.656 (49328/50000)
+Train Loss: 0.056 | Acc: 98.098 (49049/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.046 | Acc: 98.434 (49217/50000)
+Train Loss: 0.061 | Acc: 97.872 (48936/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.040 | Acc: 98.660 (49330/50000)
+Train Loss: 0.060 | Acc: 97.938 (48969/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.042 | Acc: 98.610 (49305/50000)
+Train Loss: 0.062 | Acc: 97.830 (48915/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.039 | Acc: 98.690 (49345/50000)
+Train Loss: 0.061 | Acc: 97.888 (48944/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.045 | Acc: 98.502 (49251/50000)
+Train Loss: 0.058 | Acc: 98.036 (49018/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.043 | Acc: 98.526 (49263/50000)
+Train Loss: 0.057 | Acc: 98.006 (49003/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.046 | Acc: 98.504 (49252/50000)
+Train Loss: 0.062 | Acc: 97.874 (48937/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.490 | Acc: 87.930 (8793/10000)
+Epoch:43
+0
+Train Loss: 0.043 | Acc: 98.562 (49281/50000)
+Train Loss: 0.058 | Acc: 98.016 (49008/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.041 | Acc: 98.536 (49268/50000)
+Train Loss: 0.062 | Acc: 97.790 (48895/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.039 | Acc: 98.728 (49364/50000)
+Train Loss: 0.057 | Acc: 97.996 (48998/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.044 | Acc: 98.538 (49269/50000)
+Train Loss: 0.052 | Acc: 98.256 (49128/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.043 | Acc: 98.538 (49269/50000)
+Train Loss: 0.056 | Acc: 98.080 (49040/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.043 | Acc: 98.544 (49272/50000)
+Train Loss: 0.058 | Acc: 97.956 (48978/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.047 | Acc: 98.406 (49203/50000)
+Train Loss: 0.057 | Acc: 98.034 (49017/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.040 | Acc: 98.644 (49322/50000)
+Train Loss: 0.059 | Acc: 97.930 (48965/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.043 | Acc: 98.558 (49279/50000)
+Train Loss: 0.060 | Acc: 97.872 (48936/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.041 | Acc: 98.582 (49291/50000)
+Train Loss: 0.065 | Acc: 97.730 (48865/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.043 | Acc: 98.590 (49295/50000)
+Train Loss: 0.056 | Acc: 98.014 (49007/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.466 | Acc: 88.650 (8865/10000)
+Epoch:44
+0
+Train Loss: 0.039 | Acc: 98.716 (49358/50000)
+Train Loss: 0.054 | Acc: 98.136 (49068/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.035 | Acc: 98.858 (49429/50000)
+Train Loss: 0.055 | Acc: 98.132 (49066/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.033 | Acc: 98.908 (49454/50000)
+Train Loss: 0.052 | Acc: 98.230 (49115/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.039 | Acc: 98.680 (49340/50000)
+Train Loss: 0.061 | Acc: 97.884 (48942/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.037 | Acc: 98.790 (49395/50000)
+Train Loss: 0.053 | Acc: 98.204 (49102/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.042 | Acc: 98.618 (49309/50000)
+Train Loss: 0.050 | Acc: 98.336 (49168/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.034 | Acc: 98.924 (49462/50000)
+Train Loss: 0.055 | Acc: 98.110 (49055/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.040 | Acc: 98.616 (49308/50000)
+Train Loss: 0.056 | Acc: 98.056 (49028/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.037 | Acc: 98.814 (49407/50000)
+Train Loss: 0.053 | Acc: 98.212 (49106/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.037 | Acc: 98.756 (49378/50000)
+Train Loss: 0.056 | Acc: 98.100 (49050/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.040 | Acc: 98.672 (49336/50000)
+Train Loss: 0.055 | Acc: 98.136 (49068/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.440 | Acc: 89.030 (8903/10000)
+Epoch:45
+0
+Train Loss: 0.031 | Acc: 98.964 (49482/50000)
+Train Loss: 0.047 | Acc: 98.452 (49226/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.036 | Acc: 98.778 (49389/50000)
+Train Loss: 0.052 | Acc: 98.244 (49122/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.032 | Acc: 98.942 (49471/50000)
+Train Loss: 0.051 | Acc: 98.278 (49139/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.038 | Acc: 98.680 (49340/50000)
+Train Loss: 0.048 | Acc: 98.346 (49173/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.037 | Acc: 98.780 (49390/50000)
+Train Loss: 0.055 | Acc: 98.134 (49067/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.038 | Acc: 98.688 (49344/50000)
+Train Loss: 0.055 | Acc: 98.098 (49049/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.036 | Acc: 98.820 (49410/50000)
+Train Loss: 0.056 | Acc: 98.106 (49053/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.039 | Acc: 98.688 (49344/50000)
+Train Loss: 0.054 | Acc: 98.208 (49104/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.037 | Acc: 98.766 (49383/50000)
+Train Loss: 0.054 | Acc: 98.152 (49076/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.038 | Acc: 98.694 (49347/50000)
+Train Loss: 0.053 | Acc: 98.204 (49102/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.037 | Acc: 98.782 (49391/50000)
+Train Loss: 0.056 | Acc: 98.024 (49012/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.443 | Acc: 89.530 (8953/10000)
+Epoch:46
+0
+Train Loss: 0.039 | Acc: 98.714 (49357/50000)
+Train Loss: 0.050 | Acc: 98.386 (49193/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.035 | Acc: 98.884 (49442/50000)
+Train Loss: 0.049 | Acc: 98.354 (49177/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.036 | Acc: 98.800 (49400/50000)
+Train Loss: 0.050 | Acc: 98.298 (49149/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.031 | Acc: 98.950 (49475/50000)
+Train Loss: 0.050 | Acc: 98.246 (49123/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.035 | Acc: 98.858 (49429/50000)
+Train Loss: 0.055 | Acc: 98.112 (49056/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.034 | Acc: 98.884 (49442/50000)
+Train Loss: 0.048 | Acc: 98.344 (49172/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.039 | Acc: 98.712 (49356/50000)
+Train Loss: 0.048 | Acc: 98.372 (49186/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.040 | Acc: 98.646 (49323/50000)
+Train Loss: 0.049 | Acc: 98.348 (49174/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.039 | Acc: 98.696 (49348/50000)
+Train Loss: 0.051 | Acc: 98.310 (49155/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.039 | Acc: 98.712 (49356/50000)
+Train Loss: 0.052 | Acc: 98.264 (49132/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.034 | Acc: 98.918 (49459/50000)
+Train Loss: 0.051 | Acc: 98.304 (49152/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.377 | Acc: 90.430 (9043/10000)
+Epoch:47
+0
+Train Loss: 0.033 | Acc: 98.910 (49455/50000)
+Train Loss: 0.048 | Acc: 98.334 (49167/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.033 | Acc: 98.934 (49467/50000)
+Train Loss: 0.051 | Acc: 98.258 (49129/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.034 | Acc: 98.870 (49435/50000)
+Train Loss: 0.047 | Acc: 98.364 (49182/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.033 | Acc: 98.910 (49455/50000)
+Train Loss: 0.049 | Acc: 98.314 (49157/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.030 | Acc: 99.072 (49536/50000)
+Train Loss: 0.049 | Acc: 98.348 (49174/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.032 | Acc: 98.956 (49478/50000)
+Train Loss: 0.044 | Acc: 98.568 (49284/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.032 | Acc: 98.932 (49466/50000)
+Train Loss: 0.051 | Acc: 98.266 (49133/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.032 | Acc: 98.972 (49486/50000)
+Train Loss: 0.052 | Acc: 98.248 (49124/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.037 | Acc: 98.730 (49365/50000)
+Train Loss: 0.049 | Acc: 98.346 (49173/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.033 | Acc: 98.926 (49463/50000)
+Train Loss: 0.049 | Acc: 98.400 (49200/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.037 | Acc: 98.736 (49368/50000)
+Train Loss: 0.048 | Acc: 98.358 (49179/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.441 | Acc: 89.430 (8943/10000)
+Epoch:48
+0
+Train Loss: 0.030 | Acc: 98.984 (49492/50000)
+Train Loss: 0.048 | Acc: 98.376 (49188/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.032 | Acc: 98.918 (49459/50000)
+Train Loss: 0.046 | Acc: 98.458 (49229/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.031 | Acc: 98.976 (49488/50000)
+Train Loss: 0.044 | Acc: 98.504 (49252/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.031 | Acc: 99.000 (49500/50000)
+Train Loss: 0.053 | Acc: 98.216 (49108/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.036 | Acc: 98.830 (49415/50000)
+Train Loss: 0.047 | Acc: 98.416 (49208/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.028 | Acc: 99.100 (49550/50000)
+Train Loss: 0.044 | Acc: 98.502 (49251/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.032 | Acc: 98.928 (49464/50000)
+Train Loss: 0.050 | Acc: 98.262 (49131/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.031 | Acc: 99.014 (49507/50000)
+Train Loss: 0.047 | Acc: 98.374 (49187/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.031 | Acc: 99.024 (49512/50000)
+Train Loss: 0.048 | Acc: 98.424 (49212/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.035 | Acc: 98.814 (49407/50000)
+Train Loss: 0.049 | Acc: 98.352 (49176/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.028 | Acc: 99.132 (49566/50000)
+Train Loss: 0.050 | Acc: 98.272 (49136/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.390 | Acc: 90.080 (9008/10000)
+Epoch:49
+0
+Train Loss: 0.029 | Acc: 99.070 (49535/50000)
+Train Loss: 0.041 | Acc: 98.610 (49305/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.026 | Acc: 99.136 (49568/50000)
+Train Loss: 0.043 | Acc: 98.548 (49274/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.031 | Acc: 99.002 (49501/50000)
+Train Loss: 0.049 | Acc: 98.296 (49148/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.029 | Acc: 99.038 (49519/50000)
+Train Loss: 0.040 | Acc: 98.656 (49328/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.034 | Acc: 98.862 (49431/50000)
+Train Loss: 0.045 | Acc: 98.480 (49240/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.031 | Acc: 98.994 (49497/50000)
+Train Loss: 0.043 | Acc: 98.546 (49273/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.032 | Acc: 98.910 (49455/50000)
+Train Loss: 0.043 | Acc: 98.490 (49245/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.028 | Acc: 99.084 (49542/50000)
+Train Loss: 0.046 | Acc: 98.458 (49229/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.033 | Acc: 98.914 (49457/50000)
+Train Loss: 0.044 | Acc: 98.528 (49264/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.028 | Acc: 99.096 (49548/50000)
+Train Loss: 0.043 | Acc: 98.558 (49279/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.031 | Acc: 98.986 (49493/50000)
+Train Loss: 0.046 | Acc: 98.450 (49225/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.448 | Acc: 89.420 (8942/10000)
+Epoch:50
+0
+Train Loss: 0.033 | Acc: 98.916 (49458/50000)
+Train Loss: 0.040 | Acc: 98.654 (49327/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.031 | Acc: 98.918 (49459/50000)
+Train Loss: 0.044 | Acc: 98.444 (49222/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.029 | Acc: 99.040 (49520/50000)
+Train Loss: 0.046 | Acc: 98.414 (49207/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.029 | Acc: 99.052 (49526/50000)
+Train Loss: 0.041 | Acc: 98.634 (49317/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.025 | Acc: 99.228 (49614/50000)
+Train Loss: 0.045 | Acc: 98.458 (49229/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.030 | Acc: 98.982 (49491/50000)
+Train Loss: 0.040 | Acc: 98.600 (49300/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.028 | Acc: 99.086 (49543/50000)
+Train Loss: 0.037 | Acc: 98.718 (49359/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.030 | Acc: 99.044 (49522/50000)
+Train Loss: 0.046 | Acc: 98.478 (49239/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.027 | Acc: 99.110 (49555/50000)
+Train Loss: 0.040 | Acc: 98.752 (49376/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.032 | Acc: 98.928 (49464/50000)
+Train Loss: 0.036 | Acc: 98.822 (49411/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.029 | Acc: 99.054 (49527/50000)
+Train Loss: 0.043 | Acc: 98.574 (49287/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.433 | Acc: 89.510 (8951/10000)
+Epoch:51
+0
+Train Loss: 0.024 | Acc: 99.250 (49625/50000)
+Train Loss: 0.036 | Acc: 98.760 (49380/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.028 | Acc: 99.094 (49547/50000)
+Train Loss: 0.042 | Acc: 98.584 (49292/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.026 | Acc: 99.104 (49552/50000)
+Train Loss: 0.038 | Acc: 98.690 (49345/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.024 | Acc: 99.244 (49622/50000)
+Train Loss: 0.038 | Acc: 98.718 (49359/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.026 | Acc: 99.158 (49579/50000)
+Train Loss: 0.042 | Acc: 98.598 (49299/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.031 | Acc: 98.930 (49465/50000)
+Train Loss: 0.042 | Acc: 98.596 (49298/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.027 | Acc: 99.138 (49569/50000)
+Train Loss: 0.040 | Acc: 98.670 (49335/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.026 | Acc: 99.132 (49566/50000)
+Train Loss: 0.040 | Acc: 98.682 (49341/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.029 | Acc: 99.036 (49518/50000)
+Train Loss: 0.042 | Acc: 98.584 (49292/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.029 | Acc: 99.028 (49514/50000)
+Train Loss: 0.038 | Acc: 98.720 (49360/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.030 | Acc: 98.998 (49499/50000)
+Train Loss: 0.042 | Acc: 98.484 (49242/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.372 | Acc: 90.620 (9062/10000)
+Epoch:52
+0
+Train Loss: 0.022 | Acc: 99.366 (49683/50000)
+Train Loss: 0.038 | Acc: 98.680 (49340/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.024 | Acc: 99.198 (49599/50000)
+Train Loss: 0.039 | Acc: 98.704 (49352/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.026 | Acc: 99.188 (49594/50000)
+Train Loss: 0.035 | Acc: 98.824 (49412/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.023 | Acc: 99.242 (49621/50000)
+Train Loss: 0.041 | Acc: 98.660 (49330/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.024 | Acc: 99.274 (49637/50000)
+Train Loss: 0.034 | Acc: 98.846 (49423/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.033 | Acc: 98.914 (49457/50000)
+Train Loss: 0.035 | Acc: 98.876 (49438/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.025 | Acc: 99.212 (49606/50000)
+Train Loss: 0.040 | Acc: 98.694 (49347/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.023 | Acc: 99.264 (49632/50000)
+Train Loss: 0.035 | Acc: 98.852 (49426/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.023 | Acc: 99.276 (49638/50000)
+Train Loss: 0.039 | Acc: 98.678 (49339/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.023 | Acc: 99.290 (49645/50000)
+Train Loss: 0.041 | Acc: 98.600 (49300/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.025 | Acc: 99.222 (49611/50000)
+Train Loss: 0.034 | Acc: 98.868 (49434/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.403 | Acc: 90.230 (9023/10000)
+Epoch:53
+0
+Train Loss: 0.024 | Acc: 99.256 (49628/50000)
+Train Loss: 0.031 | Acc: 98.988 (49494/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.019 | Acc: 99.428 (49714/50000)
+Train Loss: 0.033 | Acc: 98.930 (49465/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.020 | Acc: 99.386 (49693/50000)
+Train Loss: 0.033 | Acc: 98.906 (49453/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.023 | Acc: 99.234 (49617/50000)
+Train Loss: 0.033 | Acc: 98.932 (49466/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.018 | Acc: 99.462 (49731/50000)
+Train Loss: 0.037 | Acc: 98.744 (49372/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.022 | Acc: 99.328 (49664/50000)
+Train Loss: 0.033 | Acc: 98.868 (49434/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.023 | Acc: 99.258 (49629/50000)
+Train Loss: 0.035 | Acc: 98.848 (49424/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.023 | Acc: 99.294 (49647/50000)
+Train Loss: 0.034 | Acc: 98.856 (49428/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.020 | Acc: 99.364 (49682/50000)
+Train Loss: 0.039 | Acc: 98.648 (49324/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.025 | Acc: 99.204 (49602/50000)
+Train Loss: 0.038 | Acc: 98.760 (49380/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.021 | Acc: 99.360 (49680/50000)
+Train Loss: 0.032 | Acc: 98.906 (49453/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.423 | Acc: 89.890 (8989/10000)
+Epoch:54
+0
+Train Loss: 0.022 | Acc: 99.290 (49645/50000)
+Train Loss: 0.032 | Acc: 98.934 (49467/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.022 | Acc: 99.324 (49662/50000)
+Train Loss: 0.036 | Acc: 98.778 (49389/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.020 | Acc: 99.368 (49684/50000)
+Train Loss: 0.033 | Acc: 98.878 (49439/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.018 | Acc: 99.452 (49726/50000)
+Train Loss: 0.033 | Acc: 98.968 (49484/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.016 | Acc: 99.524 (49762/50000)
+Train Loss: 0.035 | Acc: 98.830 (49415/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.020 | Acc: 99.346 (49673/50000)
+Train Loss: 0.034 | Acc: 98.852 (49426/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.022 | Acc: 99.306 (49653/50000)
+Train Loss: 0.030 | Acc: 99.000 (49500/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.018 | Acc: 99.448 (49724/50000)
+Train Loss: 0.032 | Acc: 98.940 (49470/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.022 | Acc: 99.286 (49643/50000)
+Train Loss: 0.033 | Acc: 98.914 (49457/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.024 | Acc: 99.240 (49620/50000)
+Train Loss: 0.032 | Acc: 98.932 (49466/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.024 | Acc: 99.236 (49618/50000)
+Train Loss: 0.036 | Acc: 98.788 (49394/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.407 | Acc: 90.250 (9025/10000)
+Epoch:55
+0
+Train Loss: 0.019 | Acc: 99.378 (49689/50000)
+Train Loss: 0.030 | Acc: 99.048 (49524/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.016 | Acc: 99.512 (49756/50000)
+Train Loss: 0.028 | Acc: 99.072 (49536/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.020 | Acc: 99.372 (49686/50000)
+Train Loss: 0.033 | Acc: 98.870 (49435/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.017 | Acc: 99.520 (49760/50000)
+Train Loss: 0.029 | Acc: 99.066 (49533/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.021 | Acc: 99.328 (49664/50000)
+Train Loss: 0.035 | Acc: 98.844 (49422/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.019 | Acc: 99.408 (49704/50000)
+Train Loss: 0.032 | Acc: 98.918 (49459/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.021 | Acc: 99.346 (49673/50000)
+Train Loss: 0.031 | Acc: 98.994 (49497/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.020 | Acc: 99.336 (49668/50000)
+Train Loss: 0.034 | Acc: 98.890 (49445/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.023 | Acc: 99.228 (49614/50000)
+Train Loss: 0.032 | Acc: 98.940 (49470/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.022 | Acc: 99.304 (49652/50000)
+Train Loss: 0.034 | Acc: 98.864 (49432/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.023 | Acc: 99.300 (49650/50000)
+Train Loss: 0.033 | Acc: 98.866 (49433/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.426 | Acc: 90.040 (9004/10000)
+Epoch:56
+0
+Train Loss: 0.017 | Acc: 99.488 (49744/50000)
+Train Loss: 0.028 | Acc: 99.094 (49547/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.017 | Acc: 99.492 (49746/50000)
+Train Loss: 0.028 | Acc: 99.030 (49515/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.018 | Acc: 99.458 (49729/50000)
+Train Loss: 0.033 | Acc: 98.892 (49446/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.018 | Acc: 99.434 (49717/50000)
+Train Loss: 0.030 | Acc: 98.962 (49481/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.018 | Acc: 99.452 (49726/50000)
+Train Loss: 0.030 | Acc: 99.022 (49511/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.019 | Acc: 99.408 (49704/50000)
+Train Loss: 0.031 | Acc: 98.948 (49474/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.020 | Acc: 99.344 (49672/50000)
+Train Loss: 0.029 | Acc: 99.042 (49521/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.020 | Acc: 99.362 (49681/50000)
+Train Loss: 0.027 | Acc: 99.130 (49565/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.022 | Acc: 99.304 (49652/50000)
+Train Loss: 0.034 | Acc: 98.876 (49438/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.019 | Acc: 99.364 (49682/50000)
+Train Loss: 0.028 | Acc: 99.028 (49514/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.015 | Acc: 99.572 (49786/50000)
+Train Loss: 0.031 | Acc: 98.952 (49476/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.473 | Acc: 89.390 (8939/10000)
+Epoch:57
+0
+Train Loss: 0.017 | Acc: 99.476 (49738/50000)
+Train Loss: 0.024 | Acc: 99.208 (49604/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.016 | Acc: 99.496 (49748/50000)
+Train Loss: 0.023 | Acc: 99.240 (49620/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.016 | Acc: 99.566 (49783/50000)
+Train Loss: 0.028 | Acc: 99.058 (49529/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.015 | Acc: 99.550 (49775/50000)
+Train Loss: 0.029 | Acc: 98.994 (49497/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.017 | Acc: 99.462 (49731/50000)
+Train Loss: 0.029 | Acc: 99.010 (49505/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.020 | Acc: 99.376 (49688/50000)
+Train Loss: 0.032 | Acc: 98.920 (49460/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.018 | Acc: 99.410 (49705/50000)
+Train Loss: 0.025 | Acc: 99.206 (49603/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.017 | Acc: 99.468 (49734/50000)
+Train Loss: 0.026 | Acc: 99.124 (49562/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.020 | Acc: 99.336 (49668/50000)
+Train Loss: 0.025 | Acc: 99.206 (49603/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.016 | Acc: 99.522 (49761/50000)
+Train Loss: 0.024 | Acc: 99.240 (49620/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.018 | Acc: 99.450 (49725/50000)
+Train Loss: 0.028 | Acc: 99.106 (49553/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.405 | Acc: 90.620 (9062/10000)
+Epoch:58
+0
+Train Loss: 0.014 | Acc: 99.584 (49792/50000)
+Train Loss: 0.024 | Acc: 99.222 (49611/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.015 | Acc: 99.582 (49791/50000)
+Train Loss: 0.022 | Acc: 99.286 (49643/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.014 | Acc: 99.580 (49790/50000)
+Train Loss: 0.025 | Acc: 99.184 (49592/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.015 | Acc: 99.520 (49760/50000)
+Train Loss: 0.022 | Acc: 99.310 (49655/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.012 | Acc: 99.644 (49822/50000)
+Train Loss: 0.027 | Acc: 99.108 (49554/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.014 | Acc: 99.606 (49803/50000)
+Train Loss: 0.024 | Acc: 99.206 (49603/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.018 | Acc: 99.418 (49709/50000)
+Train Loss: 0.025 | Acc: 99.220 (49610/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.015 | Acc: 99.546 (49773/50000)
+Train Loss: 0.028 | Acc: 99.088 (49544/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.017 | Acc: 99.460 (49730/50000)
+Train Loss: 0.027 | Acc: 99.112 (49556/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.015 | Acc: 99.540 (49770/50000)
+Train Loss: 0.028 | Acc: 99.108 (49554/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.014 | Acc: 99.594 (49797/50000)
+Train Loss: 0.024 | Acc: 99.192 (49596/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.408 | Acc: 90.860 (9086/10000)
+Epoch:59
+0
+Train Loss: 0.013 | Acc: 99.614 (49807/50000)
+Train Loss: 0.019 | Acc: 99.380 (49690/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.015 | Acc: 99.512 (49756/50000)
+Train Loss: 0.028 | Acc: 99.074 (49537/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.015 | Acc: 99.544 (49772/50000)
+Train Loss: 0.016 | Acc: 99.516 (49758/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.011 | Acc: 99.698 (49849/50000)
+Train Loss: 0.020 | Acc: 99.370 (49685/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.015 | Acc: 99.548 (49774/50000)
+Train Loss: 0.020 | Acc: 99.382 (49691/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.014 | Acc: 99.580 (49790/50000)
+Train Loss: 0.025 | Acc: 99.152 (49576/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.013 | Acc: 99.598 (49799/50000)
+Train Loss: 0.022 | Acc: 99.308 (49654/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.016 | Acc: 99.516 (49758/50000)
+Train Loss: 0.023 | Acc: 99.230 (49615/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.013 | Acc: 99.644 (49822/50000)
+Train Loss: 0.021 | Acc: 99.318 (49659/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.015 | Acc: 99.552 (49776/50000)
+Train Loss: 0.022 | Acc: 99.308 (49654/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.013 | Acc: 99.634 (49817/50000)
+Train Loss: 0.027 | Acc: 99.122 (49561/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.428 | Acc: 90.300 (9030/10000)
+Epoch:60
+0
+Train Loss: 0.011 | Acc: 99.664 (49832/50000)
+Train Loss: 0.016 | Acc: 99.520 (49760/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.011 | Acc: 99.696 (49848/50000)
+Train Loss: 0.018 | Acc: 99.420 (49710/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.011 | Acc: 99.676 (49838/50000)
+Train Loss: 0.021 | Acc: 99.316 (49658/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.013 | Acc: 99.616 (49808/50000)
+Train Loss: 0.020 | Acc: 99.356 (49678/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.012 | Acc: 99.646 (49823/50000)
+Train Loss: 0.022 | Acc: 99.304 (49652/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.015 | Acc: 99.532 (49766/50000)
+Train Loss: 0.022 | Acc: 99.264 (49632/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.010 | Acc: 99.722 (49861/50000)
+Train Loss: 0.022 | Acc: 99.312 (49656/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.012 | Acc: 99.638 (49819/50000)
+Train Loss: 0.018 | Acc: 99.442 (49721/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.009 | Acc: 99.750 (49875/50000)
+Train Loss: 0.020 | Acc: 99.404 (49702/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.009 | Acc: 99.742 (49871/50000)
+Train Loss: 0.016 | Acc: 99.514 (49757/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.011 | Acc: 99.692 (49846/50000)
+Train Loss: 0.019 | Acc: 99.440 (49720/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.405 | Acc: 90.770 (9077/10000)
+Epoch:61
+0
+Train Loss: 0.009 | Acc: 99.774 (49887/50000)
+Train Loss: 0.017 | Acc: 99.454 (49727/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.008 | Acc: 99.790 (49895/50000)
+Train Loss: 0.013 | Acc: 99.598 (49799/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.007 | Acc: 99.832 (49916/50000)
+Train Loss: 0.015 | Acc: 99.520 (49760/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.008 | Acc: 99.804 (49902/50000)
+Train Loss: 0.017 | Acc: 99.456 (49728/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.012 | Acc: 99.640 (49820/50000)
+Train Loss: 0.021 | Acc: 99.330 (49665/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.008 | Acc: 99.784 (49892/50000)
+Train Loss: 0.018 | Acc: 99.416 (49708/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.008 | Acc: 99.818 (49909/50000)
+Train Loss: 0.016 | Acc: 99.520 (49760/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.010 | Acc: 99.724 (49862/50000)
+Train Loss: 0.019 | Acc: 99.348 (49674/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.011 | Acc: 99.672 (49836/50000)
+Train Loss: 0.017 | Acc: 99.504 (49752/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.012 | Acc: 99.654 (49827/50000)
+Train Loss: 0.022 | Acc: 99.264 (49632/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.011 | Acc: 99.682 (49841/50000)
+Train Loss: 0.019 | Acc: 99.366 (49683/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.461 | Acc: 89.840 (8984/10000)
+Epoch:62
+0
+Train Loss: 0.008 | Acc: 99.804 (49902/50000)
+Train Loss: 0.010 | Acc: 99.704 (49852/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.007 | Acc: 99.816 (49908/50000)
+Train Loss: 0.013 | Acc: 99.602 (49801/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.009 | Acc: 99.754 (49877/50000)
+Train Loss: 0.018 | Acc: 99.404 (49702/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.009 | Acc: 99.756 (49878/50000)
+Train Loss: 0.013 | Acc: 99.610 (49805/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.009 | Acc: 99.760 (49880/50000)
+Train Loss: 0.014 | Acc: 99.566 (49783/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.010 | Acc: 99.724 (49862/50000)
+Train Loss: 0.018 | Acc: 99.446 (49723/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.012 | Acc: 99.644 (49822/50000)
+Train Loss: 0.016 | Acc: 99.500 (49750/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.012 | Acc: 99.640 (49820/50000)
+Train Loss: 0.017 | Acc: 99.476 (49738/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.011 | Acc: 99.678 (49839/50000)
+Train Loss: 0.018 | Acc: 99.396 (49698/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.010 | Acc: 99.710 (49855/50000)
+Train Loss: 0.014 | Acc: 99.574 (49787/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.011 | Acc: 99.676 (49838/50000)
+Train Loss: 0.018 | Acc: 99.456 (49728/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.425 | Acc: 90.860 (9086/10000)
+Epoch:63
+0
+Train Loss: 0.009 | Acc: 99.754 (49877/50000)
+Train Loss: 0.013 | Acc: 99.594 (49797/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.010 | Acc: 99.728 (49864/50000)
+Train Loss: 0.013 | Acc: 99.576 (49788/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.006 | Acc: 99.850 (49925/50000)
+Train Loss: 0.011 | Acc: 99.648 (49824/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.009 | Acc: 99.766 (49883/50000)
+Train Loss: 0.017 | Acc: 99.490 (49745/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.006 | Acc: 99.838 (49919/50000)
+Train Loss: 0.013 | Acc: 99.622 (49811/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.007 | Acc: 99.818 (49909/50000)
+Train Loss: 0.014 | Acc: 99.546 (49773/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.006 | Acc: 99.856 (49928/50000)
+Train Loss: 0.013 | Acc: 99.564 (49782/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.007 | Acc: 99.800 (49900/50000)
+Train Loss: 0.015 | Acc: 99.550 (49775/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.006 | Acc: 99.858 (49929/50000)
+Train Loss: 0.011 | Acc: 99.688 (49844/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.009 | Acc: 99.754 (49877/50000)
+Train Loss: 0.014 | Acc: 99.550 (49775/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.010 | Acc: 99.688 (49844/50000)
+Train Loss: 0.018 | Acc: 99.442 (49721/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.413 | Acc: 90.960 (9096/10000)
+Epoch:64
+0
+Train Loss: 0.008 | Acc: 99.776 (49888/50000)
+Train Loss: 0.014 | Acc: 99.604 (49802/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.006 | Acc: 99.836 (49918/50000)
+Train Loss: 0.010 | Acc: 99.668 (49834/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.006 | Acc: 99.856 (49928/50000)
+Train Loss: 0.010 | Acc: 99.698 (49849/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.006 | Acc: 99.852 (49926/50000)
+Train Loss: 0.011 | Acc: 99.692 (49846/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.008 | Acc: 99.794 (49897/50000)
+Train Loss: 0.012 | Acc: 99.646 (49823/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.006 | Acc: 99.844 (49922/50000)
+Train Loss: 0.011 | Acc: 99.678 (49839/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.009 | Acc: 99.726 (49863/50000)
+Train Loss: 0.012 | Acc: 99.656 (49828/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.004 | Acc: 99.928 (49964/50000)
+Train Loss: 0.009 | Acc: 99.766 (49883/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.007 | Acc: 99.812 (49906/50000)
+Train Loss: 0.011 | Acc: 99.688 (49844/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.008 | Acc: 99.786 (49893/50000)
+Train Loss: 0.013 | Acc: 99.608 (49804/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.005 | Acc: 99.874 (49937/50000)
+Train Loss: 0.012 | Acc: 99.646 (49823/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.421 | Acc: 91.000 (9100/10000)
+Epoch:65
+0
+Train Loss: 0.006 | Acc: 99.840 (49920/50000)
+Train Loss: 0.010 | Acc: 99.706 (49853/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.005 | Acc: 99.894 (49947/50000)
+Train Loss: 0.007 | Acc: 99.798 (49899/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.006 | Acc: 99.852 (49926/50000)
+Train Loss: 0.010 | Acc: 99.680 (49840/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.004 | Acc: 99.940 (49970/50000)
+Train Loss: 0.007 | Acc: 99.826 (49913/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.003 | Acc: 99.946 (49973/50000)
+Train Loss: 0.010 | Acc: 99.708 (49854/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.005 | Acc: 99.866 (49933/50000)
+Train Loss: 0.009 | Acc: 99.726 (49863/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.005 | Acc: 99.872 (49936/50000)
+Train Loss: 0.009 | Acc: 99.716 (49858/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.006 | Acc: 99.824 (49912/50000)
+Train Loss: 0.011 | Acc: 99.682 (49841/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.004 | Acc: 99.940 (49970/50000)
+Train Loss: 0.005 | Acc: 99.870 (49935/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.005 | Acc: 99.878 (49939/50000)
+Train Loss: 0.009 | Acc: 99.748 (49874/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.005 | Acc: 99.874 (49937/50000)
+Train Loss: 0.011 | Acc: 99.670 (49835/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.409 | Acc: 91.470 (9147/10000)
+Epoch:66
+0
+Train Loss: 0.005 | Acc: 99.868 (49934/50000)
+Train Loss: 0.007 | Acc: 99.804 (49902/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.004 | Acc: 99.898 (49949/50000)
+Train Loss: 0.006 | Acc: 99.868 (49934/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.005 | Acc: 99.908 (49954/50000)
+Train Loss: 0.006 | Acc: 99.836 (49918/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.005 | Acc: 99.870 (49935/50000)
+Train Loss: 0.008 | Acc: 99.766 (49883/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.003 | Acc: 99.962 (49981/50000)
+Train Loss: 0.005 | Acc: 99.870 (49935/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.003 | Acc: 99.962 (49981/50000)
+Train Loss: 0.006 | Acc: 99.860 (49930/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.003 | Acc: 99.960 (49980/50000)
+Train Loss: 0.006 | Acc: 99.846 (49923/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.003 | Acc: 99.970 (49985/50000)
+Train Loss: 0.004 | Acc: 99.904 (49952/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.005 | Acc: 99.878 (49939/50000)
+Train Loss: 0.012 | Acc: 99.590 (49795/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.005 | Acc: 99.908 (49954/50000)
+Train Loss: 0.005 | Acc: 99.856 (49928/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.004 | Acc: 99.906 (49953/50000)
+Train Loss: 0.008 | Acc: 99.786 (49893/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.449 | Acc: 90.790 (9079/10000)
+Epoch:67
+0
+Train Loss: 0.004 | Acc: 99.916 (49958/50000)
+Train Loss: 0.006 | Acc: 99.844 (49922/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.004 | Acc: 99.900 (49950/50000)
+Train Loss: 0.005 | Acc: 99.872 (49936/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.003 | Acc: 99.926 (49963/50000)
+Train Loss: 0.007 | Acc: 99.834 (49917/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.003 | Acc: 99.932 (49966/50000)
+Train Loss: 0.007 | Acc: 99.810 (49905/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.004 | Acc: 99.916 (49958/50000)
+Train Loss: 0.007 | Acc: 99.782 (49891/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.004 | Acc: 99.936 (49968/50000)
+Train Loss: 0.005 | Acc: 99.870 (49935/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.004 | Acc: 99.908 (49954/50000)
+Train Loss: 0.008 | Acc: 99.796 (49898/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.004 | Acc: 99.906 (49953/50000)
+Train Loss: 0.006 | Acc: 99.838 (49919/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.004 | Acc: 99.896 (49948/50000)
+Train Loss: 0.009 | Acc: 99.728 (49864/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.003 | Acc: 99.928 (49964/50000)
+Train Loss: 0.006 | Acc: 99.840 (49920/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.004 | Acc: 99.906 (49953/50000)
+Train Loss: 0.007 | Acc: 99.804 (49902/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.394 | Acc: 91.690 (9169/10000)
+Epoch:68
+0
+Train Loss: 0.004 | Acc: 99.904 (49952/50000)
+Train Loss: 0.005 | Acc: 99.884 (49942/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.004 | Acc: 99.924 (49962/50000)
+Train Loss: 0.005 | Acc: 99.868 (49934/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.003 | Acc: 99.960 (49980/50000)
+Train Loss: 0.003 | Acc: 99.924 (49962/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.003 | Acc: 99.950 (49975/50000)
+Train Loss: 0.003 | Acc: 99.936 (49968/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.005 | Acc: 99.868 (49934/50000)
+Train Loss: 0.005 | Acc: 99.874 (49937/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.003 | Acc: 99.930 (49965/50000)
+Train Loss: 0.004 | Acc: 99.894 (49947/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.003 | Acc: 99.958 (49979/50000)
+Train Loss: 0.005 | Acc: 99.852 (49926/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.003 | Acc: 99.936 (49968/50000)
+Train Loss: 0.004 | Acc: 99.920 (49960/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.003 | Acc: 99.936 (49968/50000)
+Train Loss: 0.005 | Acc: 99.890 (49945/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.002 | Acc: 99.972 (49986/50000)
+Train Loss: 0.003 | Acc: 99.954 (49977/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.003 | Acc: 99.968 (49984/50000)
+Train Loss: 0.004 | Acc: 99.896 (49948/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.388 | Acc: 91.770 (9177/10000)
+Epoch:69
+0
+Train Loss: 0.004 | Acc: 99.930 (49965/50000)
+Train Loss: 0.005 | Acc: 99.886 (49943/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.003 | Acc: 99.926 (49963/50000)
+Train Loss: 0.004 | Acc: 99.920 (49960/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.003 | Acc: 99.958 (49979/50000)
+Train Loss: 0.003 | Acc: 99.916 (49958/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.002 | Acc: 99.962 (49981/50000)
+Train Loss: 0.003 | Acc: 99.954 (49977/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.002 | Acc: 99.964 (49982/50000)
+Train Loss: 0.003 | Acc: 99.950 (49975/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.003 | Acc: 99.958 (49979/50000)
+Train Loss: 0.006 | Acc: 99.834 (49917/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.003 | Acc: 99.938 (49969/50000)
+Train Loss: 0.005 | Acc: 99.854 (49927/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.002 | Acc: 99.976 (49988/50000)
+Train Loss: 0.003 | Acc: 99.922 (49961/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.002 | Acc: 99.964 (49982/50000)
+Train Loss: 0.002 | Acc: 99.976 (49988/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.003 | Acc: 99.938 (49969/50000)
+Train Loss: 0.004 | Acc: 99.896 (49948/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.002 | Acc: 99.962 (49981/50000)
+Train Loss: 0.004 | Acc: 99.920 (49960/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.420 | Acc: 91.560 (9156/10000)
+Epoch:70
+0
+Train Loss: 0.002 | Acc: 99.964 (49982/50000)
+Train Loss: 0.003 | Acc: 99.932 (49966/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.002 | Acc: 99.972 (49986/50000)
+Train Loss: 0.002 | Acc: 99.962 (49981/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.002 | Acc: 99.982 (49991/50000)
+Train Loss: 0.003 | Acc: 99.942 (49971/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.002 | Acc: 99.992 (49996/50000)
+Train Loss: 0.002 | Acc: 99.964 (49982/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.002 | Acc: 99.988 (49994/50000)
+Train Loss: 0.002 | Acc: 99.982 (49991/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 99.992 (49996/50000)
+Train Loss: 0.002 | Acc: 99.952 (49976/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.002 | Acc: 99.976 (49988/50000)
+Train Loss: 0.003 | Acc: 99.934 (49967/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.002 | Acc: 99.970 (49985/50000)
+Train Loss: 0.002 | Acc: 99.966 (49983/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.002 | Acc: 99.980 (49990/50000)
+Train Loss: 0.003 | Acc: 99.956 (49978/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.002 | Acc: 99.980 (49990/50000)
+Train Loss: 0.003 | Acc: 99.944 (49972/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.002 | Acc: 99.986 (49993/50000)
+Train Loss: 0.002 | Acc: 99.974 (49987/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.416 | Acc: 91.690 (9169/10000)
+Epoch:71
+0
+Train Loss: 0.002 | Acc: 99.970 (49985/50000)
+Train Loss: 0.002 | Acc: 99.972 (49986/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.002 | Acc: 99.988 (49994/50000)
+Train Loss: 0.002 | Acc: 99.984 (49992/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.002 | Acc: 99.980 (49990/50000)
+Train Loss: 0.002 | Acc: 99.972 (49986/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 99.986 (49993/50000)
+Train Loss: 0.002 | Acc: 99.990 (49995/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.002 | Acc: 99.972 (49986/50000)
+Train Loss: 0.002 | Acc: 99.962 (49981/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+Train Loss: 0.002 | Acc: 99.984 (49992/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 99.986 (49993/50000)
+Train Loss: 0.003 | Acc: 99.942 (49971/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.002 | Acc: 99.984 (49992/50000)
+Train Loss: 0.002 | Acc: 99.978 (49989/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.002 | Acc: 99.986 (49993/50000)
+Train Loss: 0.002 | Acc: 99.982 (49991/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+Train Loss: 0.001 | Acc: 99.992 (49996/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+Train Loss: 0.001 | Acc: 99.992 (49996/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.400 | Acc: 92.050 (9205/10000)
+Epoch:72
+0
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+Train Loss: 0.002 | Acc: 99.976 (49988/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 99.992 (49996/50000)
+Train Loss: 0.002 | Acc: 99.976 (49988/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.002 | Acc: 99.984 (49992/50000)
+Train Loss: 0.002 | Acc: 99.972 (49986/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.002 | Acc: 99.984 (49992/50000)
+Train Loss: 0.002 | Acc: 99.982 (49991/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 99.990 (49995/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.992 (49996/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.399 | Acc: 92.170 (9217/10000)
+Epoch:73
+0
+Train Loss: 0.001 | Acc: 99.988 (49994/50000)
+Train Loss: 0.001 | Acc: 99.988 (49994/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 99.990 (49995/50000)
+Train Loss: 0.001 | Acc: 99.982 (49991/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 99.986 (49993/50000)
+Train Loss: 0.001 | Acc: 99.986 (49993/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.988 (49994/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+Train Loss: 0.001 | Acc: 99.990 (49995/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.986 (49993/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 99.986 (49993/50000)
+Train Loss: 0.001 | Acc: 99.992 (49996/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.389 | Acc: 92.220 (9222/10000)
+Epoch:74
+0
+Train Loss: 0.001 | Acc: 99.992 (49996/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 99.992 (49996/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+Train Loss: 0.001 | Acc: 99.992 (49996/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+Train Loss: 0.001 | Acc: 99.990 (49995/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 99.988 (49994/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.392 | Acc: 92.260 (9226/10000)
+Epoch:75
+0
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 99.992 (49996/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.392 | Acc: 92.270 (9227/10000)
+Epoch:76
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.396 | Acc: 92.210 (9221/10000)
+Epoch:77
+0
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 99.992 (49996/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.396 | Acc: 92.370 (9237/10000)
+Epoch:78
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 99.992 (49996/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.396 | Acc: 92.310 (9231/10000)
+Epoch:79
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.992 (49996/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.399 | Acc: 92.330 (9233/10000)
+Epoch:80
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.401 | Acc: 92.250 (9225/10000)
+Epoch:81
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.399 | Acc: 92.300 (9230/10000)
+Epoch:82
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.401 | Acc: 92.180 (9218/10000)
+Epoch:83
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 99.996 (49998/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 99.994 (49997/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.400 | Acc: 92.210 (9221/10000)
+Epoch:84
+0
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.400 | Acc: 92.320 (9232/10000)
+Epoch:85
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.403 | Acc: 92.260 (9226/10000)
+Epoch:86
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.403 | Acc: 92.220 (9222/10000)
+Epoch:87
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.402 | Acc: 92.240 (9224/10000)
+Epoch:88
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.402 | Acc: 92.240 (9224/10000)
+Epoch:89
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.403 | Acc: 92.230 (9223/10000)
+Epoch:90
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.403 | Acc: 92.290 (9229/10000)
+Epoch:91
+0
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.403 | Acc: 92.240 (9224/10000)
+Epoch:92
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.403 | Acc: 92.280 (9228/10000)
+Epoch:93
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.403 | Acc: 92.220 (9222/10000)
+Epoch:94
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.402 | Acc: 92.250 (9225/10000)
+Epoch:95
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.404 | Acc: 92.220 (9222/10000)
+Epoch:96
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.403 | Acc: 92.330 (9233/10000)
+Epoch:97
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.403 | Acc: 92.280 (9228/10000)
+Epoch:98
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.404 | Acc: 92.280 (9228/10000)
+Epoch:99
+0
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.0
+memory:0,dict_size:6615064 bytes
+1
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.conv1
+memory:0,dict_size:1953280 bytes
+2
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.0
+memory:0,dict_size:1734680 bytes
+3
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer4.1
+memory:0,dict_size:2711568 bytes
+4
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.0
+memory:0,dict_size:474136 bytes
+5
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer3.1
+memory:0,dict_size:831504 bytes
+6
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer2.1
+memory:0,dict_size:284688 bytes
+7
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.0
+memory:0,dict_size:109584 bytes
+8
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+layer1.1
+memory:0,dict_size:109584 bytes
+9
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+linear
+memory:0,dict_size:20520 bytes
+10
+Train Loss: 0.001 | Acc: 99.998 (49999/50000)
+Train Loss: 0.001 | Acc: 100.000 (50000/50000)
+1.bn1
+memory:0,dict_size:15392 bytes
+Test Loss: 0.403 | Acc: 92.240 (9224/10000)
+
+Evaluating on additional CIFAR-10 testset
+Traceback (most recent call last):
+  File "/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/train.py", line 279, in <module>
+    additional_acc, _ = test(test, additional_testloader)
+  File "/home/jndx/STRAGGLER/mono-cnn-pytorch-main/FedMono/train.py", line 164, in test
+    net.eval()
+AttributeError: 'function' object has no attribute 'eval'
